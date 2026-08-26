@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>MagnetGrid — Adatvédelmi irányelvek</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.55;color:#1a1a1a}
+h1{font-size:1.6em}h2{font-size:1.2em;margin-top:1.8em}
+a{color:#1a56db}
+.updated{color:#555;font-size:0.9em}
+</style>
+</head>
+<body>
+<h1>Adatvédelmi irányelvek — MagnetGrid</h1>
+<p class="updated">Utolsó frissítés: 2026. augusztus 26.</p>
+
+<p>Ez az Adatvédelmi irányelv leírja, hogy a MagnetGrid ("az App", csomagnév:
+<code>com.enila.magnet_grid</code>) hogyan gyűjti, használja és védi az
+adatokat a használat során. A MagnetGridet az Enila Studio fejleszti.</p>
+
+<h2>1. Milyen adatokat gyűjtünk</h2>
+<p>A MagnetGrid a játékbeli haladásodat, beállításaidat és preferenciáidat
+helyben, az eszközödön tárolja (helyi tárolással, pl. Isar és
+SharedPreferences). Ez a helyi adat nem személyazonosításra alkalmas, és az
+eszközödön marad, kivéve, ha az alábbi opcionális felhő-mentés funkciót
+használod.</p>
+
+<p><strong>Opcionális felhő-mentés:</strong> a MagnetGrid a helyi
+haladásodat menteni tudja a felhőbe (Firebase Firestore), egy az eszközödön
+automatikusan létrehozott anonim Firebase-fiók segítségével. Ez az anonim
+fiók nincs összekötve a neveddel, e-mail-címeddel vagy más
+személyazonosításra alkalmas adattal. A haladás új eszközön történő
+visszaállításához a MagnetGrid egy, az eredeti eszközön generált rövid
+visszaállítási kódot használ — Google-, Apple- vagy e-mail-fiókkal történő
+bejelentkezés nem szükséges és nem is támogatott.</p>
+
+<h2>2. Harmadik féltől származó szolgáltatások</h2>
+<ul>
+<li><strong>Google AdMob</strong> — app-on belüli hirdetéseket (köztük
+jutalmazott hirdetéseket) jelenít meg. Az AdMob eszközazonosítókat és
+használati adatokat gyűjthet a hirdetések megjelenítéséhez, illetve
+személyre szabott hirdetések megjelenítéséhez, ha ehhez hozzájárultál.</li>
+<li><strong>Google User Messaging Platform (UMP)</strong> — az Európai
+Gazdasági Térség (EGT), az Egyesült Királyság és Svájc felhasználói esetében
+kezeli a hirdetési hozzájárulási döntéseidet, a Google EU felhasználói
+hozzájárulási szabályzatával összhangban.</li>
+<li><strong>Firebase Analytics</strong> — anonim, összesített
+játékesemény-adatokat gyűjt (pl. pálya indítása/teljesítése, oktatóanyag
+haladása, beállítások használata), hogy megérthessük és fejleszthessük az
+Appot. Ezek az események nem tartalmazzák a pálya tartalmát vagy más
+személyes adatot.</li>
+<li><strong>Firebase Authentication (anonim) és Cloud Firestore</strong> —
+kizárólag az 1. pontban leírt opcionális felhő-mentés funkcióhoz
+használjuk.</li>
+</ul>
+
+<h2>3. Hirdetések és nyomkövetés</h2>
+<p>A MagnetGrid a Google AdMobon keresztül jelenít meg hirdetéseket. Ha az
+EGT-ben, az Egyesült Királyságban vagy Svájcban tartózkodsz, a hirdetések
+lekérése előtt egy hozzájárulási űrlap (Google UMP) jelenik meg, amelyben
+kiválaszthatod, hogy személyre szabott vagy nem személyre szabott
+hirdetéseket szeretnél-e kapni. Ezt a döntést bármikor megváltoztathatod a
+Beállítások → Hozzájárulás kezelése menüpontban.</p>
+<p>A MagnetGrid nem használja az Apple App Tracking Transparency (ATT)
+keretrendszerét, és iOS-en nem fér hozzá az eszköz hirdetési azonosítójához
+appok közötti nyomkövetés céljából.</p>
+
+<h2>4. Gyermekek adatvédelme</h2>
+<p>A MagnetGrid általános közönségnek készült, és nem 13 év alatti
+gyermekeknek (vagy a te joghatóságodban érvényes minimális életkor alatti
+személyeknek) szól. Tudatosan nem gyűjtünk személyes adatot gyermekektől. Ha
+úgy gondolod, hogy egy gyermek személyes adatot adott meg számunkra, kérjük,
+lépj kapcsolatba velünk a 8. pontban megadott elérhetőségen, hogy törölhessük
+azt.</p>
+
+<h2>5. Adatbiztonság és -megőrzés</h2>
+<p>A helyi adatok az eszközödön maradnak, amíg el nem távolítod az Appot,
+vagy vissza nem állítod a haladásodat a Beállításokban. A felhő-mentési
+adatokat (1. pont) addig őrizzük meg, amíg nem kéred a törlésüket (lásd 6.
+pont), vagy amíg inaktívvá nem válnak a megőrzési gyakorlatunk szerint.
+Ésszerű technikai intézkedéseket alkalmazunk — beleértve a Google Firebase
+által biztosítottakat is — a továbbított vagy tárolt adatok védelme
+érdekében.</p>
+
+<h2>6. Jogaid</h2>
+<p>Tartózkodási helyedtől függően jogaid lehetnek az Általános Adatvédelmi
+Rendelet (GDPR/UK GDPR) vagy a California Consumer Privacy Act (CCPA/CPRA)
+alapján, beleértve az adataidhoz való hozzáférés, azok helyesbítése,
+törlése, hordozhatósága, valamint a feldolgozás elleni tiltakozás vagy annak
+korlátozása iránti jogot. Mivel a MagnetGrid nem gyűjt a személyazonosságodhoz
+köthető adatot, ezek a jogok jellemzően csak az 1. pontban leírt anonim
+felhő-mentésre vonatkoznak; ezt bármikor törölheted, ha felveszed velünk a
+kapcsolatot (8. pont) a visszaállítási kódoddal.</p>
+<p><strong>Kaliforniai felhasználók:</strong> személyes adataidat nem adjuk
+el és nem osztjuk meg a CCPA/CPRA szerinti kontextusfüggetlen viselkedési
+hirdetés céljából.</p>
+
+<h2>7. Nemzetközi adattovábbítás</h2>
+<p>A felhő-mentés használata esetén az adatokat a Google (Firebase) által
+üzemeltetett, akár az országodon kívül — köztük az Amerikai Egyesült
+Államokban — található szervereken dolgozhatják fel és tárolhatják, a Google
+standard szerződéses garanciái mellett.</p>
+
+<h2>8. Az irányelv változásai</h2>
+<p>Ezt az Adatvédelmi irányelvet időről időre frissíthetjük. A lényeges
+változásokat a fenti "Utolsó frissítés" dátum frissítésével jelezzük. Az App
+további használata a változások hatálybalépése után a frissített irányelv
+elfogadását jelenti.</p>
+
+<h2>9. Kapcsolat</h2>
+<p>Kérdésed van az Adatvédelmi irányelvvel vagy az adataiddal kapcsolatban?
+Írj nekünk: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+
+<hr>
+<p>Lásd még: <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> ·
+<a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
+</body>
+</html>

@@ -23,3 +23,4 @@ here.
 
 - [number_puzzle](number_puzzle/privacy_policy.hu.html) — SzámKirakó (Number Puzzle)
 - [quest_word_search](quest_word_search/privacy_policy.hu.html) — Szókereső (Quest Word Search)
+- [magnet_grid](magnet_grid/privacy_policy.en.html) — MagnetGrid
