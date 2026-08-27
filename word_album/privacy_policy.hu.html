@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adatvédelmi irányelvek – Word Album</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
+  ul { padding-left: 1.4em; }
+  a { color: #0060df; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.94rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f6f7; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+</style>
+</head>
+<body>
+<h1>Adatvédelmi irányelvek</h1>
+<p class="meta">
+  Alkalmazás neve: Word Album<br>
+  Csomagnév: com.enila.wordalbum<br>
+  Utolsó frissítés: 2026. augusztus 27.
+</p>
+
+<h2>1. Bevezetés</h2>
+<p>Ez az adatvédelmi irányelv ismerteti, hogyan kezeli a Word Album alkalmazás a felhasználói adatokat. Az alkalmazás használatával Ön elfogadja az itt leírt gyakorlatot. Ha bármelyik pontban nem ért egyet vele, kérjük, ne használja az alkalmazást.</p>
+
+<h2>2. Milyen adatokat gyűjtünk</h2>
+<p>Az alkalmazás nem kér és nem gyűjt közvetlenül személyazonosító adatot (nevet, e-mail-címet, telefonszámot). Az alábbi játékadatokat kezeljük:</p>
+<ul>
+  <li>Megoldott fejtörők listája</li>
+  <li>Játéksorozat (streak) számlálója</li>
+  <li>Tipp-egyenleg és érme-egyenleg</li>
+  <li>Napi feladatok előrehaladása és statisztikák (pl. legjobb idő, megoldási idő)</li>
+  <li>Mentett játékállapotok</li>
+  <li>Beállítások (téma, nyelv, napi emlékeztető állapota)</li>
+</ul>
+<p>Ezeket az adatokat elsődlegesen az eszközén, helyi tárolóban (shared preferences) tároljuk.</p>
+
+<h3>Felhő alapú biztonsági mentés</h3>
+<p>Az alkalmazás a fenti játékadatokról opcionális, automatikus felhő-mentést készít a Google Firebase szolgáltatásain (Firebase Authentication, Cloud Firestore) keresztül, hogy egy új telepítés vagy eszközcsere esetén ne vesszen el a haladása. Ehhez az alkalmazás egy névtelen (anonim) Firebase-azonosítót hoz létre az Ön eszközén — nem kérünk és nem társítunk hozzá nevet, e-mail-címet, telefonszámot vagy bejelentkezési adatot. A mentés csak a fent felsorolt játékadatokra terjed ki, és csak akkor tölti vissza a felhőből, ha az adott eszközön még nincs helyi haladás (pl. új telepítés).</p>
+
+<h2>3. Harmadik fél szolgáltatások</h2>
+<p>Az alkalmazás az alábbi harmadik féltől származó szolgáltatásokat használja:</p>
+<table>
+  <tr><th>Szolgáltatás</th><th>Cél</th></tr>
+  <tr><td>Google AdMob</td><td>Hirdetések megjelenítése az alkalmazásban (személyre szabott vagy nem személyre szabott, a felhasználó hozzájárulásától függően)</td></tr>
+  <tr><td>Google User Messaging Platform (UMP)</td><td>Hirdetési hozzájárulás (consent) begyűjtése az EGT/Egyesült Királyság felhasználóitól, az EU GDPR és ePrivacy szabályai szerint</td></tr>
+  <tr><td>Firebase Authentication (anonim bejelentkezés)</td><td>Névtelen azonosító biztosítása a felhő-mentéshez, jelszó/e-mail nélkül</td></tr>
+  <tr><td>Cloud Firestore</td><td>A játékhaladás opcionális felhő-mentése és -visszaállítása</td></tr>
+  <tr><td>Firebase Analytics</td><td>Anonim, összesített használati statisztikák gyűjtése (pl. mely funkciókat használják a felhasználók), az alkalmazás fejlesztésének támogatására</td></tr>
+</table>
+<p>Ezek a szolgáltatók a saját adatvédelmi irányelveik szerint kezelhetnek technikai azonosítókat (pl. hirdetési azonosító, eszközazonosító). További információ: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google adatvédelmi irányelvei</a> és <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase adatvédelmi tájékoztató</a>.</p>
+
+<h2>4. Hirdetések és nyomkövetés</h2>
+<p>Az alkalmazás első indításakor — az Európai Gazdasági Térség (EGT), az Egyesült Királyság és Svájc felhasználói számára — megjelenik a Google UMP hozzájárulási űrlapja, ahol Ön eldöntheti, hogy engedélyezi-e a személyre szabott hirdetéseket. Amíg nem ad hozzájárulást, az alkalmazás csak nem személyre szabott hirdetést kérhet le. A választását bármikor módosíthatja a Beállítások → „Hozzájárulás kezelése” menüponton keresztül (ha ez a felület elérhető az Ön régiójában).</p>
+<p>iOS-en, a rendszer App Tracking Transparency (ATT) mechanizmusán keresztül külön engedélyt kérünk, mielőtt az eszköz hirdetési azonosítóját (IDFA) személyre szabottabb hirdetéshez felhasználnánk. Ezt bármikor visszavonhatja a Beállítások → Adatvédelem → Nyomkövetés menüpontban.</p>
+<p>Részletekért lásd a <a href="manage_consent.hu.html">Hozzájárulás-kezelési tájékoztatót</a>.</p>
+
+<h2>5. Gyermekek adatvédelme</h2>
+<p>Az alkalmazás nem kifejezetten gyermekeknek szól, hanem általános közönség számára készült. Nem kérünk és nem gyűjtünk tudatosan személyazonosító adatot 13 év alatti gyermekektől. Ha úgy véli, hogy gyermeke személyes adatot adott meg számunkra, kérjük, vegye fel velünk a kapcsolatot az alábbi e-mail-címen, és haladéktalanul intézkedünk a törlésről.</p>
+
+<h2>6. Adatbiztonság és -megőrzés</h2>
+<p>Az eszközön tárolt adatok biztonsága az Ön eszközének biztonsági beállításaitól függ. A felhőben tárolt (mentett) adatokat a Google Firebase iparági szabványoknak megfelelő infrastruktúrája védi. A játékadatokat addig őrizzük meg, amíg az alkalmazást használja, illetve amíg Ön nem kéri azok törlését.</p>
+
+<h2>7. Az Ön jogai</h2>
+<p><strong>GDPR / UK GDPR (EGT, Egyesült Királyság felhasználói):</strong> Önt megilleti a hozzáférés, helyesbítés, törlés, adatkezelés korlátozása, adathordozhatóság és a tiltakozás joga a rá vonatkozó adatkezeléssel kapcsolatban. Mivel az alkalmazás nem gyűjt közvetlenül azonosítható személyes adatot, ezek a jogok elsősorban a felhőben tárolt névtelen játékadatra vonatkoznak — ezek törlését az alkalmazás eltávolításával, vagy az alábbi e-mail-címen kérve tudja kezdeményezni.</p>
+<p><strong>CCPA/CPRA (Kalifornia):</strong> Nem adjuk el és nem osztjuk meg felhasználóink személyes adatát pénzért, és nem végzünk „cross-context behavioral advertising” célú adatmegosztást a jelen irányelvben leírtakon (hirdetési SDK működése) túl. Kaliforniai felhasználóink jogosultak a rájuk vonatkozó adat megismerésére és törlésére.</p>
+
+<h2>8. Nemzetközi adattovábbítás</h2>
+<p>A Google Firebase infrastruktúrája globálisan, több adatközpontban működik, ezért a felhő-mentés adatai az Európai Gazdasági Térségen kívülre is továbbításra kerülhetnek. Ezekre a továbbításokra a Google szerződéses garanciái (pl. EU sztenderd szerződéses feltételek) vonatkoznak.</p>
+
+<h2>9. Változások az irányelvekben</h2>
+<p>Ha az adatkezelési gyakorlatunk megváltozik, ezt az oldalt frissítjük, és a tetején feltüntetjük az új „utolsó frissítés” dátumot. Javasoljuk, hogy időnként ellenőrizze ezt az oldalt.</p>
+
+<h2>10. Kapcsolat</h2>
+<p>Ha kérdése van az adatvédelmi irányelvekkel kapcsolatban, keressen minket az alábbi e-mail-címen:<br>
+<a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+
+<footer>
+  Lásd még: <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> · <a href="terms_of_use.hu.html">Felhasználási feltételek</a>
+</footer>
+</body>
+</html>
