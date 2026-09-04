@@ -26,3 +26,4 @@ here.
 - [magnet_grid](magnet_grid/privacy_policy.en.html) — MagnetGrid
 - [word_album](word_album/privacy_policy.hu.html) — Word Album
 - [clusters](clusters/privacy_policy.en.html) — Clusters (icon-grouping puzzle game)
+- [household](household/privacy_policy.hu.html) — Meal Planner / Heti Menü (meal-planning app)
