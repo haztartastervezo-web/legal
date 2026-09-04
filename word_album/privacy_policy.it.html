@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informativa sulla privacy – Word Album</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
+  ul { padding-left: 1.4em; }
+  a { color: #0060df; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.94rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f6f7; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+</style>
+</head>
+<body>
+<h1>Informativa sulla privacy</h1>
+<p class="meta">
+  Nome dell'app: Word Album<br>
+  Nome del pacchetto: com.enila.wordalbum<br>
+  Ultimo aggiornamento: 4 settembre 2026
+</p>
+
+<h2>1. Introduzione</h2>
+<p>La presente Informativa sulla privacy spiega come l'app Word Album tratta i dati degli utenti. Utilizzando l'app, l'utente accetta le pratiche qui descritte. Se non si è d'accordo con una qualsiasi parte, si prega di non utilizzare l'app.</p>
+
+<h2>2. Quali dati raccogliamo</h2>
+<p>L'app non richiede né raccoglie direttamente informazioni di identificazione personale (nome, indirizzo e-mail, numero di telefono). Trattiamo i seguenti dati di gioco:</p>
+<ul>
+  <li>Elenco dei rompicapi risolti</li>
+  <li>Contatore della serie di partite (streak)</li>
+  <li>Saldo degli aiuti e saldo delle monete</li>
+  <li>Avanzamento delle sfide giornaliere e statistiche (ad es. tempo migliore, tempo di soluzione)</li>
+  <li>Stati di gioco salvati</li>
+  <li>Impostazioni (tema, lingua, stato del promemoria giornaliero)</li>
+</ul>
+<p>Questi dati sono archiviati principalmente in locale sul dispositivo (shared preferences).</p>
+
+<h3>Backup nel cloud</h3>
+<p>L'app crea inoltre un backup facoltativo e automatico nel cloud dei dati di gioco sopra elencati, tramite i servizi Google Firebase (Firebase Authentication, Cloud Firestore), affinché una nuova installazione o un nuovo dispositivo non comporti la perdita dei progressi. A tal fine l'app crea un identificatore Firebase anonimo sul dispositivo — non richiediamo né associamo ad esso un nome, un indirizzo e-mail, un numero di telefono o credenziali di accesso. Il backup riguarda solo i dati di gioco sopra elencati e viene ripristinato dal cloud solo quando il dispositivo non ha ancora progressi locali (ad es. una nuova installazione).</p>
+
+<h2>3. Servizi di terze parti</h2>
+<p>L'app utilizza i seguenti servizi di terze parti:</p>
+<table>
+  <tr><th>Servizio</th><th>Finalità</th></tr>
+  <tr><td>Google AdMob</td><td>Mostra annunci nell'app (personalizzati o non personalizzati, a seconda del consenso dell'utente)</td></tr>
+  <tr><td>Google User Messaging Platform (UMP)</td><td>Raccoglie il consenso pubblicitario dagli utenti nel SEE/Regno Unito, ai sensi del GDPR UE e delle norme ePrivacy</td></tr>
+  <tr><td>Firebase Authentication (accesso anonimo)</td><td>Fornisce un identificatore anonimo per il backup nel cloud, senza password né e-mail</td></tr>
+  <tr><td>Cloud Firestore</td><td>Backup e ripristino facoltativi nel cloud dei progressi di gioco</td></tr>
+  <tr><td>Firebase Analytics</td><td>Raccoglie statistiche d'uso anonime e aggregate (ad es. quali funzioni vengono utilizzate) per supportare lo sviluppo dell'app</td></tr>
+</table>
+<p>Questi fornitori possono trattare identificatori tecnici (ad es. ID pubblicitario, identificatore del dispositivo) in base alle proprie informative sulla privacy. Per maggiori informazioni si vedano l'<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Informativa sulla privacy di Google</a> e l'<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Informativa su privacy e sicurezza di Firebase</a>.</p>
+
+<h2>4. Pubblicità e tracciamento</h2>
+<p>Al primo avvio — per gli utenti nello Spazio economico europeo (SEE), nel Regno Unito e in Svizzera — l'app mostra il modulo di consenso Google UMP, in cui è possibile scegliere se consentire gli annunci personalizzati. Fino a quando non viene fornito il consenso, l'app può richiedere solo annunci non personalizzati. È possibile modificare la propria scelta in qualsiasi momento tramite Impostazioni → "Gestione del consenso" (dove questa opzione è disponibile nella propria regione).</p>
+<p>Su iOS, richiediamo separatamente l'autorizzazione tramite il meccanismo di sistema App Tracking Transparency (ATT) prima di utilizzare l'identificatore pubblicitario del dispositivo (IDFA) per annunci più personalizzati. È possibile revocarla in qualsiasi momento in Impostazioni → Privacy → Tracciamento.</p>
+<p>Per i dettagli si veda il documento <a href="manage_consent.it.html">Gestione del consenso</a>.</p>
+
+<h2>5. Privacy dei minori</h2>
+<p>L'app non è rivolta specificamente ai minori; è destinata a un pubblico generico. Non richiediamo né raccogliamo consapevolmente informazioni di identificazione personale da minori di 13 anni. Se si ritiene che un minore ci abbia fornito dati personali, si prega di contattarci all'indirizzo e-mail indicato di seguito e provvederemo tempestivamente alla loro cancellazione.</p>
+
+<h2>6. Sicurezza e conservazione dei dati</h2>
+<p>La sicurezza dei dati archiviati sul dispositivo dipende dalle impostazioni di sicurezza del dispositivo stesso. I dati archiviati nel cloud (backup) sono protetti dall'infrastruttura di Google Firebase, conforme agli standard di settore. Conserviamo i dati di gioco finché si utilizza l'app o finché non se ne richiede la cancellazione.</p>
+
+<h2>7. I tuoi diritti</h2>
+<p><strong>GDPR / UK GDPR (utenti del SEE e del Regno Unito):</strong> L'utente ha il diritto di accedere, rettificare, cancellare, limitare il trattamento, portare e opporsi al trattamento dei dati che lo riguardano. Poiché l'app non raccoglie direttamente dati personali identificabili, questi diritti riguardano principalmente i dati di gioco anonimi archiviati nel cloud — è possibile attivarne la cancellazione disinstallando l'app o contattandoci all'indirizzo e-mail indicato di seguito.</p>
+<p><strong>CCPA/CPRA (California):</strong> Non vendiamo i dati personali degli utenti e non li condividiamo per pubblicità comportamentale cross-contesto oltre a quanto descritto nella presente informativa (il funzionamento dell'SDK pubblicitario). I residenti in California hanno il diritto di conoscere, cancellare e correggere i propri dati e di rinunciare a qualsiasi vendita o condivisione. Rispettiamo inoltre i segnali di preferenza di opt-out come il Global Privacy Control (GPC), ove applicabile.</p>
+
+<h2>8. Trasferimenti internazionali di dati</h2>
+<p>L'infrastruttura di Google Firebase opera a livello globale su più data center, pertanto i dati di backup nel cloud possono essere trasferiti al di fuori dello Spazio economico europeo. Tali trasferimenti sono coperti dalle garanzie contrattuali di Google (ad es. le clausole contrattuali tipo dell'UE).</p>
+
+<h2>9. Modifiche alla presente informativa</h2>
+<p>Se le nostre pratiche di trattamento dei dati cambiano, aggiorneremo questa pagina e la data di "ultimo aggiornamento" in alto. Consigliamo di consultare periodicamente questa pagina.</p>
+
+<h2>10. Contatti</h2>
+<p>Per domande sulla presente Informativa sulla privacy, contattaci a:<br>
+<a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+
+<footer>
+  Vedi anche: <a href="manage_consent.it.html">Gestione del consenso</a> · <a href="terms_of_use.it.html">Condizioni d'uso</a>
+</footer>
+</body>
+</html>

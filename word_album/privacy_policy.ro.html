@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politica de confidențialitate – Word Album</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
+  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
+  ul { padding-left: 1.4em; }
+  a { color: #0060df; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.94rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f6f7; }
+  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+</style>
+</head>
+<body>
+<h1>Politica de confidențialitate</h1>
+<p class="meta">
+  Numele aplicației: Word Album<br>
+  Numele pachetului: com.enila.wordalbum<br>
+  Ultima actualizare: 4 septembrie 2026
+</p>
+
+<h2>1. Introducere</h2>
+<p>Această Politică de confidențialitate explică modul în care aplicația Word Album gestionează datele utilizatorilor. Prin utilizarea aplicației, sunteți de acord cu practicile descrise aici. Dacă nu sunteți de acord cu vreo parte, vă rugăm să nu utilizați aplicația.</p>
+
+<h2>2. Ce date colectăm</h2>
+<p>Aplicația nu solicită și nu colectează direct informații de identificare personală (nume, adresă de e-mail, număr de telefon). Gestionăm următoarele date de joc:</p>
+<ul>
+  <li>Lista puzzle-urilor rezolvate</li>
+  <li>Contorul seriei de jocuri (streak)</li>
+  <li>Soldul de indicii și soldul de monede</li>
+  <li>Progresul provocărilor zilnice și statistici (de ex. cel mai bun timp, timp de rezolvare)</li>
+  <li>Stări de joc salvate</li>
+  <li>Setări (temă, limbă, starea mementoului zilnic)</li>
+</ul>
+<p>Aceste date sunt stocate în principal local pe dispozitivul dumneavoastră (shared preferences).</p>
+
+<h3>Copie de rezervă în cloud</h3>
+<p>Aplicația creează, de asemenea, o copie de rezervă opțională și automată în cloud a datelor de joc enumerate mai sus, folosind serviciile Google Firebase (Firebase Authentication, Cloud Firestore), astfel încât o instalare nouă sau un dispozitiv nou să nu ducă la pierderea progresului. În acest scop, aplicația creează un identificator Firebase anonim pe dispozitivul dumneavoastră — nu solicităm și nu asociem acestuia un nume, o adresă de e-mail, un număr de telefon sau credențiale de autentificare. Copia de rezervă acoperă doar datele de joc enumerate mai sus și este restaurată din cloud numai atunci când dispozitivul nu are încă progres local (de ex. o instalare nouă).</p>
+
+<h2>3. Servicii ale terților</h2>
+<p>Aplicația utilizează următoarele servicii ale terților:</p>
+<table>
+  <tr><th>Serviciu</th><th>Scop</th></tr>
+  <tr><td>Google AdMob</td><td>Afișează anunțuri în aplicație (personalizate sau nepersonalizate, în funcție de consimțământul dumneavoastră)</td></tr>
+  <tr><td>Google User Messaging Platform (UMP)</td><td>Colectează consimțământul publicitar de la utilizatorii din SEE/Regatul Unit, conform GDPR UE și normelor ePrivacy</td></tr>
+  <tr><td>Firebase Authentication (autentificare anonimă)</td><td>Oferă un identificator anonim pentru copia de rezervă în cloud, fără parolă sau e-mail</td></tr>
+  <tr><td>Cloud Firestore</td><td>Copie de rezervă și restaurare opțională în cloud a progresului de joc</td></tr>
+  <tr><td>Firebase Analytics</td><td>Colectează statistici de utilizare anonime și agregate (de ex. ce funcții sunt folosite) pentru a sprijini dezvoltarea aplicației</td></tr>
+</table>
+<p>Acești furnizori pot prelucra identificatori tehnici (de ex. ID publicitar, identificator de dispozitiv) în conformitate cu propriile politici de confidențialitate. Pentru mai multe informații, consultați <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politica de confidențialitate Google</a> și <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Nota privind confidențialitatea și securitatea Firebase</a>.</p>
+
+<h2>4. Publicitate și urmărire</h2>
+<p>La prima lansare — pentru utilizatorii din Spațiul Economic European (SEE), Regatul Unit și Elveția — aplicația afișează formularul de consimțământ Google UMP, unde puteți alege dacă permiteți anunțuri personalizate. Până când acordați consimțământul, aplicația poate solicita doar anunțuri nepersonalizate. Vă puteți modifica alegerea în orice moment prin Setări → „Gestionarea consimțământului” (acolo unde această opțiune este disponibilă în regiunea dumneavoastră).</p>
+<p>Pe iOS, solicităm separat permisiunea prin mecanismul de sistem App Tracking Transparency (ATT) înainte de a folosi identificatorul publicitar al dispozitivului (IDFA) pentru anunțuri mai personalizate. Puteți revoca acest lucru oricând în Setări → Confidențialitate → Urmărire.</p>
+<p>Pentru detalii, consultați documentul <a href="manage_consent.ro.html">Gestionarea consimțământului</a>.</p>
+
+<h2>5. Confidențialitatea copiilor</h2>
+<p>Aplicația nu este adresată în mod special copiilor; este destinată unui public general. Nu solicităm și nu colectăm cu bună știință informații de identificare personală de la copii sub 13 ani. Dacă credeți că un copil ne-a furnizat date personale, vă rugăm să ne contactați la adresa de e-mail de mai jos și vom acționa prompt pentru a le șterge.</p>
+
+<h2>6. Securitatea și păstrarea datelor</h2>
+<p>Securitatea datelor stocate pe dispozitivul dumneavoastră depinde de setările de securitate ale dispozitivului. Datele stocate în cloud (copia de rezervă) sunt protejate de infrastructura Google Firebase, conformă cu standardele din industrie. Păstrăm datele de joc atât timp cât utilizați aplicația sau până când solicitați ștergerea acestora.</p>
+
+<h2>7. Drepturile dumneavoastră</h2>
+<p><strong>GDPR / UK GDPR (utilizatori din SEE și Regatul Unit):</strong> Aveți dreptul de acces, rectificare, ștergere, restricționare a prelucrării, portabilitate și de a vă opune prelucrării datelor care vă privesc. Întrucât aplicația nu colectează direct date personale identificabile, aceste drepturi se aplică în principal datelor de joc anonime stocate în cloud — puteți declanșa ștergerea acestora dezinstalând aplicația sau contactându-ne la adresa de e-mail de mai jos.</p>
+<p><strong>CCPA/CPRA (California):</strong> Nu vindem datele personale ale utilizatorilor și nu le partajăm pentru publicitate comportamentală între contexte dincolo de ceea ce este descris în această politică (funcționarea SDK-ului publicitar). Rezidenții din California au dreptul de a cunoaște, șterge și corecta datele lor și de a refuza orice vânzare sau partajare. De asemenea, respectăm semnalele de preferință de tip opt-out, cum ar fi Global Privacy Control (GPC), acolo unde este aplicabil.</p>
+
+<h2>8. Transferuri internaționale de date</h2>
+<p>Infrastructura Google Firebase funcționează la nivel global, în mai multe centre de date, prin urmare datele copiei de rezervă în cloud pot fi transferate în afara Spațiului Economic European. Astfel de transferuri sunt acoperite de garanțiile contractuale ale Google (de ex. Clauzele contractuale standard ale UE).</p>
+
+<h2>9. Modificări ale acestei politici</h2>
+<p>Dacă practicile noastre privind datele se schimbă, vom actualiza această pagină și data „ultimei actualizări” din partea de sus. Vă recomandăm să consultați periodic această pagină.</p>
+
+<h2>10. Contact</h2>
+<p>Dacă aveți întrebări despre această Politică de confidențialitate, contactați-ne la:<br>
+<a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+
+<footer>
+  Vedeți și: <a href="manage_consent.ro.html">Gestionarea consimțământului</a> · <a href="terms_of_use.ro.html">Condiții de utilizare</a>
+</footer>
+</body>
+</html>
