@@ -27,3 +27,4 @@ here.
 - [word_album](word_album/privacy_policy.hu.html) — Word Album
 - [clusters](clusters/privacy_policy.en.html) — Clusters (icon-grouping puzzle game)
 - [household](household/privacy_policy.hu.html) — Meal Planner / Heti Menü (meal-planning app)
+- [cryptogram](cryptogram/privacy_policy.hu.html) — Kódfejtő (Cryptogram) (decode-the-quote word puzzle)

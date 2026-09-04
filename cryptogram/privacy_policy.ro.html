@@ -1,0 +1,86 @@
+<title>Politica de confidențialitate – Cryptogram (Kódfejtő)</title>
+<style>
+  :root{color-scheme:light dark}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:2rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+</style>
+
+<h1>Politica de confidențialitate</h1>
+<p class="updated">Aplicație: Cryptogram / Kódfejtő (pachet: com.puzzles.cryptogram) &middot; Ultima actualizare: 4 septembrie 2026</p>
+
+<p>Această politică explică modul în care Cryptogram („Aplicația"), un joc de cuvinte în care decodezi citate criptate, tratează datele utilizatorilor. Prin utilizarea Aplicației accepți practicile descrise aici.</p>
+
+<div class="box">
+  <strong>Pe scurt:</strong> datele de joc sunt stocate în principal pe dispozitivul tău. Aplicația afișează și reclame (Google AdMob), colectează statistici de utilizare anonime (Firebase Analytics) și oferă un backup anonim în cloud și un formular de feedback în aplicație (Firebase). Aplicația nu cere niciodată nume, e-mail sau parolă și nu conține achiziții.
+</div>
+
+<h2>1. Operator de date</h2>
+<p>Aplicația este realizată de un dezvoltator independent cu sediul în Uniunea Europeană. Pentru întrebări privind confidențialitatea: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+
+<h2>2. Ce date colectăm</h2>
+<p><strong>2.1 Date locale (stocate doar pe dispozitivul tău)</strong></p>
+<ul>
+  <li>Progresul jocurilor, starea jocului curent și datele necesare pentru a continua</li>
+  <li>Jocuri rezolvate, statistici, serii (streak), starea provocării zilnice, date de nivel și progres</li>
+  <li>Conținut deblocat, monede/indicii din joc, starea bonusului zilnic</li>
+  <li>Setările Aplicației (sunet, temă, limbă, preferințe de notificare și pentru widgetul cu citatul zilei)</li>
+</ul>
+<p><strong>2.2 Backup anonim în cloud (Firebase Authentication + Cloud Firestore)</strong></p>
+<p>Aplicația îți permite să faci backup anonim al progresului în cloud. Pe dispozitiv se creează un identificator Firebase anonim, care nu este legat de nume, e-mail sau alt identificator personal. Starea locală a jocului este stocată într-un singur document Firestore pentru a putea fi restaurată după o instalare nouă. Opțional poți genera un cod scurt de restaurare (6 caractere) pentru a recupera backupul pe alt dispozitiv.</p>
+<p><strong>2.3 Feedback (Cloud Firestore)</strong></p>
+<p>Dacă trimiți feedback din ecranul Profil (o evaluare și un mesaj opțional), pe serverul nostru sunt trimise: evaluarea, textul mesajului, modelul și producătorul dispozitivului, versiunea sistemului de operare, versiunea Aplicației, limba selectată și data/ora trimiterii. Nu sunt incluse numele sau e-mailul, cu excepția cazului în care le introduci tu în textul mesajului.</p>
+<p><strong>2.4 Publicitate (Google AdMob)</strong></p>
+<p>Aplicația afișează reclame banner și cu recompensă prin Google AdMob. AdMob și partenerii săi pot folosi un identificator de dispozitiv (de ex. ID de publicitate / IDFA) și alte date tehnice pentru a difuza și măsura reclame. În Spațiul Economic European (SEE), Regatul Unit și Elveția solicităm consimțământ conform secțiunii 4.</p>
+<p><strong>2.5 Analiză de utilizare (Firebase Analytics)</strong></p>
+<p>Se înregistrează evenimente anonime și agregate (de ex. deschiderea aplicației, joc început/rezolvat, provocare zilnică jucată, indiciu folosit, vizualizări de ecrane). Sunt legate de un identificator de instanță a aplicației generat aleatoriu, nu de identitatea ta, și nu conțin date de identificare personală.</p>
+
+<h2>3. Permisiuni</h2>
+<table>
+  <tr><th>Permisiune</th><th>Scop</th></tr>
+  <tr><td>Trimiterea notificărilor (Android: POST_NOTIFICATIONS)</td><td>Afișarea mementoului opțional cu citatul/jocul zilei</td></tr>
+  <tr><td>Reprogramare după repornire (Android: RECEIVE_BOOT_COMPLETED)</td><td>Menținerea programării mementoului după o repornire a dispozitivului</td></tr>
+  <tr><td>Vibrație (Android: VIBRATE)</td><td>Feedback tactil în timpul jocului</td></tr>
+  <tr><td>Permisiune de urmărire (iOS App Tracking Transparency)</td><td>Difuzarea de reclame personalizate, dacă permiți</td></tr>
+</table>
+<p>Aplicația nu solicită acces la locație, contacte, cameră, microfon sau fișiere. Un widget opțional pe ecranul principal afișează citatul zilei; este generat pe dispozitivul tău și nu ne trimite date. Pe Android, Aplicația verifică în Play Store dacă există o versiune mai nouă (actualizare în aplicație) — acest lucru implică doar Google Play, nu serverele noastre.</p>
+
+<h2>4. Publicitate și urmărire (consimțământ)</h2>
+<p>Pentru utilizatorii din SEE, Regatul Unit și Elveția, la pornire Aplicația solicită consimțământul pentru reclame personalizate prin platforma de gestionare a consimțământului certificată de Google (User Messaging Platform, UMP). Pe iOS este afișată și fereastra nativă Apple App Tracking Transparency (ATT) înainte de a solicita orice reclamă personalizată bazată pe un identificator de dispozitiv. Dacă refuzi, Aplicația funcționează în continuare complet și afișează reclame nepersonalizate. Poți modifica alegerea oricând din linkul „Confidențialitatea reclamelor" / Opțiuni de confidențialitate din ecranul Profil. Vezi <a href="manage_consent.ro.html">Gestionează consimțământul</a>.</p>
+
+<h2>5. Confidențialitatea copiilor</h2>
+<p>Aplicația se adresează unui public general, nu este destinată copiilor și nu face parte din programul Google Play Families. Nu colectăm cu bună știință date personale de la copii sub 13 ani (sau sub vârsta consimțământului digital din țara ta). Dacă un părinte sau tutore consideră că un copil ne-a furnizat date personale, ne poate contacta la datele din secțiunea 10 pentru a le elimina.</p>
+
+<h2>6. Securitatea și păstrarea datelor</h2>
+<p>Datele locale rămân pe dispozitivul tău și sunt șterse la dezinstalare. Datele trimise în cloud (backup, feedback) sunt stocate pe infrastructura Google Firebase cu controale de acces standard din industrie; regulile de securitate Firestore limitează datele de backup la identificatorul anonim care le-a creat. Datele în tranzit sunt criptate (HTTPS/TLS). Păstrăm aceste date atât timp cât sunt necesare pentru Aplicație sau până când soliciți ștergerea lor.</p>
+
+<h2>7. Drepturile tale</h2>
+<p>Utilizatorii din SEE/Regatul Unit au, conform GDPR, dreptul de acces, rectificare, ștergere, portabilitate și opoziție, precum și dreptul de a depune o plângere la o autoritate de supraveghere (în Ungaria: NAIH, naih.hu). Rezidenții din California au, conform CCPA/CPRA, dreptul de a cunoaște, accesa, șterge și corecta datele și de a refuza vânzarea/partajarea datelor personale — Aplicația nu vinde și nu partajează date personale pentru bani sau pentru publicitate comportamentală între contexte dincolo de opțiunile din secțiunea 4 și respectă semnalele de renunțare recunoscute, acolo unde se aplică.</p>
+<ul>
+  <li><strong>Date locale:</strong> dezinstalarea Aplicației șterge definitiv toate datele locale de pe dispozitiv.</li>
+  <li><strong>Date în cloud (backup, feedback):</strong> poți solicita ștergerea, accesul sau rectificarea la adresa din secțiunea 10; vom da curs cererii într-un timp rezonabil.</li>
+</ul>
+<p>Acolo unde se aplică GDPR, temeiurile juridice sunt: <strong>consimțământul tău</strong> (reclame personalizate; pe iOS, utilizarea identificatorilor pentru urmărire); <strong>executarea unui serviciu solicitat</strong> (funcționarea jocului, backup în cloud, gestionarea feedbackului); <strong>interesele noastre legitime</strong> (afișarea de reclame nepersonalizate care finanțează Aplicația, securitate, înțelegerea utilizării agregate).</p>
+
+<h2>8. Transferuri internaționale de date</h2>
+<p>Serviciile cloud (Firebase: Authentication, Cloud Firestore, Analytics) și Google AdMob sunt operate de Google LLC, care poate transfera date în afara Spațiului Economic European, inclusiv în Statele Unite, în baza unor garanții contractuale conforme GDPR (de ex. Clauze contractuale standard).</p>
+
+<h2>9. Modificări ale acestei politici</h2>
+<p>Putem actualiza această politică din când în când, pe măsură ce funcțiile Aplicației se schimbă. Versiunea publicată la această adresă este întotdeauna cea în vigoare, iar data din partea de sus arată ultima modificare. Te rugăm să revii periodic pe această pagină.</p>
+
+<h2>10. Contact</h2>
+<p>Pentru întrebări sau solicitări, scrie-ne la: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<p style="color:#666;font-size:.85rem;margin-top:2rem">Acest document este oferit din motive de transparență și nu constituie consultanță juridică.</p>
