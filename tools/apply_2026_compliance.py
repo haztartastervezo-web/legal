@@ -13,12 +13,15 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 ACTIVE = ["clusters", "number_puzzle", "cryptogram", "magnet_grid", "household", "word_album"]
 DOCS = ["privacy_policy", "manage_consent", "terms_of_use"]
+# Keep these patterns intentionally local: do not let one section (e.g. an
+# anonymous guest-account paragraph) make an unrelated Analytics paragraph
+# look non-compliant.
 DANGEROUS_EN = [
-    r"By using (?:the )?(?:app|App).*agree to (?:this )?(?:privacy|Privacy)",
-    r"decline.*(?:will|you'll).*non-personalized ads",
-    r"must be at least 16.*use the app",
-    r"Firebase Analytics.*anonymous",
-    r"uninstall.*deletes all.*cloud",
+    r"By using (?:the )?(?:app|App)[^<]{0,220}agree to (?:this )?(?:privacy|Privacy)",
+    r"decline[^<]{0,220}(?:will|you'll)[^<]{0,120}non-personalized ads",
+    r"must be at least 16[^<]{0,220}use the app",
+    r"Firebase Analytics[^<]{0,260}\banonymous\b",
+    r"uninstall[^<]{0,260}deletes all[^<]{0,160}cloud",
 ]
 
 
@@ -56,7 +59,7 @@ def main() -> int:
                 failures.append(f"{app}/{loc}: missing privacy contact")
             if loc == "en":
                 for pattern in DANGEROUS_EN:
-                    if re.search(pattern, text, flags=re.I | re.S):
+                    if re.search(pattern, text, flags=re.I):
                         failures.append(f"{app}/{loc}: dangerous legacy wording: {pattern}")
         for doc in DOCS:
             if not (folder / f"{doc}.html").exists():
