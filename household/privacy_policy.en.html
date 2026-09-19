@@ -33,38 +33,40 @@ h1{font-size:1.65rem;margin:0 0 .2rem}h2{font-size:1.18rem;margin:2rem 0 .55rem}
 <li>language, units, theme and other app settings.</li>
 </ul>
 <p>The app's normal local operation does not upload this content to a database controlled by us. Local data remains on your device until you delete it in the app or through the operating system.</p>
-<h2>4. Optional Google Drive sync</h2>
+<h2>4. Nutrition calculations</h2>
+<p>Nutrient values shown in the app are calculated estimates. Ingredient data is primarily sourced from USDA <a href="https://fdc.nal.usda.gov/">FoodData Central</a>; percentages of daily reference values use the adult RI/NRV figures in Annex XIII of Regulation (EU) No 1169/2011. Calculations are based on mathematical scaling of ingredient, quantity and serving data, not health profiling. Source data and calculated results may be incomplete or inaccurate. For detailed limitations and sources, see <a href="terms_of_use.en.html">Terms of Use, section 5</a>.</p>
+<h2>5. Optional Google Drive sync</h2>
 <p>If you start sync, the app uses the app-specific hidden <code>appDataFolder</code> area of your own Google Drive account. The requested permission is the restricted <code>drive.appdata</code> scope.</p>
 <p>The backup may contain recipes and recipe images, weekly menus and daily menu notes, and cooking history. This data remains in storage attached to your Google account; we do not receive general access to the files in your Google Drive.</p>
-<h2>5. Optional account and sign-in</h2>
+<h2>6. Optional account and sign-in</h2>
 <p>Core features can be used without an account. If you sign in with Google or Apple, Firebase Authentication and the selected identity provider may process the identifiers required for authentication, including a user identifier, email address and, when provided by the identity provider, display name.</p>
 <p>You can delete the account from within the app. When Sign in with Apple is used, the deletion flow also initiates revocation of the Apple authentication authorization. See <a href="account_deletion.en.html">Account &amp; data deletion</a>.</p>
-<h2>6. Feedback</h2>
+<h2>7. Feedback</h2>
 <p>If you voluntarily send feedback from the app, the text you provide is stored in the Google Cloud Firestore <code>feedback_messages</code> collection solely for support, bug fixing and product improvement. The app does not attach a Firebase user ID, email address, advertising identifier or custom device identifier to the feedback record.</p>
 <p>The record may also contain technical fields such as creation time, status, an optional developer response and a 90-day expiry time. If we explicitly mark a feedback item for display in the app's “Responses” area, its message and developer response may become visible to other users; app clients cannot publish feedback themselves. Feedback becomes <strong>eligible for deletion after 90 days</strong> and is automatically removed by Firestore TTL; TTL deletion is a background process and may occur after a short technical delay following expiry.</p>
 <p>Firestore is otherwise used only to read developer-authored FAQ entries that contain no personal data; the app cannot write to the FAQ collection.</p>
-<h2>7. Firebase Analytics</h2>
+<h2>8. Firebase Analytics</h2>
 <p>Firebase Analytics collection is <strong>disabled at app level in the current release</strong>. The app does not use a custom Firestore collection to store usage or analytics events.</p>
-<h2>8. Notifications and Remote Config</h2>
+<h2>9. Notifications and Remote Config</h2>
 <p>If you grant notification permission, Firebase Cloud Messaging may process a technical push token to deliver notifications. The app can also schedule local notifications on your device. Firebase Remote Config downloads app configuration and feature settings; user recipe or diary content is not sent to Remote Config.</p>
-<h2>9. Advertising, UMP and iOS ATT</h2>
+<h2>10. Advertising, UMP and iOS ATT</h2>
 <p>The app uses Google AdMob. On Android and iOS, the app refreshes the Google User Messaging Platform (UMP) consent state at each launch and, where required, shows Google's privacy form. An ad request is made only when UMP reports that ads can be requested.</p>
 <p>On iOS, App Tracking Transparency (ATT) is a separate system permission. If tracking is denied, IDFA is not sent in the AdMob ad request. ATT and Google UMP choices are separate controls and are handled independently.</p>
-<h2>10. Camera, photos, files and shared content</h2>
+<h2>11. Camera, photos, files and shared content</h2>
 <p>Camera or photo access is requested only when you choose to capture or select an image. File pickers and system share features expose only content you select or explicitly share with the app. The app does not require location, contacts, microphone, SMS or call-log access for its normal operation.</p>
-<h2>11. External content and links</h2>
+<h2>12. External content and links</h2>
 <p>If you open or import recipes, images, videos or web links from an external service, that provider may process technical data such as your IP address to fulfil the request under its own privacy terms.</p>
-<h2>12. Legal bases under the GDPR</h2>
+<h2>13. Legal bases under the GDPR</h2>
 <ul>
 <li><strong>Article 6(1)(b)</strong>: providing optional account, authentication and Google Drive sync features that you request;</li>
 <li><strong>Article 6(1)(a)</strong>: where consent is legally required, including applicable personalised-advertising purposes and the iOS system tracking permission;</li>
 <li><strong>Article 6(1)(f)</strong>: processing feedback you voluntarily submit for bug fixing, support, security and product improvement. Sending feedback is optional.</li>
 </ul>
-<h2>13. Service providers</h2>
+<h2>14. Service providers</h2>
 <p>Depending on the features you use, the app relies on Google/Firebase services (Authentication, Cloud Firestore, Cloud Messaging, Remote Config, Google Drive API, AdMob/UMP) and Apple's Sign in with Apple. These providers may process technical data to operate their infrastructure.</p>
-<h2>14. International transfers</h2>
+<h2>15. International transfers</h2>
 <p>Google and Apple may process data outside the EEA. Depending on the particular data flow, transfers may rely on the provider's applicable safeguards, such as an adequacy decision, the EU–US Data Privacy Framework, or Standard Contractual Clauses.</p>
-<h2>15. Retention</h2>
+<h2>16. Retention</h2>
 <ul>
 <li>local data: until you delete it or remove the app/app data;</li>
 <li>Google Drive backup: for as long as you keep it in your own Google Drive account;</li>
@@ -72,12 +74,12 @@ h1{font-size:1.65rem;margin:0 0 .2rem}h2{font-size:1.18rem;margin:2rem 0 .55rem}
 <li>feedback: with a 90-day expiry followed by automatic TTL deletion;</li>
 <li>notification token: according to the provider/operating-system lifecycle and until the notification relationship ends.</li>
 </ul>
-<h2>16. Your rights</h2>
+<h2>17. Your rights</h2>
 <p>Depending on applicable law, you may request access, correction, deletion, restriction or portability, object to processing based on legitimate interests, and withdraw consent at any time. Contact <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
 <p>You may lodge a complaint with the Hungarian National Authority for Data Protection and Freedom of Information (NAIH) or the competent supervisory authority in your country of residence.</p>
-<h2>17. Children</h2>
+<h2>18. Children</h2>
 <p>The app is not directed to children and is not intended to collect personal data from children under 16. If we become aware that such data has been submitted, we will delete it where appropriate.</p>
-<h2>18. Changes</h2>
+<h2>19. Changes</h2>
 <p>Material changes are identified by the updated date and, where appropriate, communicated in the app. If a new processing activity requires consent, consent will be requested separately; simply using the app does not constitute blanket consent to data processing.</p>
 
 <p class="nav"><a href="privacy_policy.en.html">Privacy Policy</a> · <a href="manage_consent.en.html">Manage consent</a> · <a href="terms_of_use.en.html">Terms of Use</a> · <a href="account_deletion.en.html">Account & data deletion</a></p>
