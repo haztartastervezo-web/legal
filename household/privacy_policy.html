@@ -4,91 +4,82 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index,follow">
-<title>Adatvédelmi irányelvek — Meal Planner</title>
+<title>Adatvédelmi tájékoztató — Meal Planner / Heti Menü</title>
 <style>
-  :root{color-scheme:light dark}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.6;max-width:760px;margin:0 auto;padding:2rem 1.1rem 4rem;color:#1a1a1a;background:#fff}
-  @media (prefers-color-scheme:dark){body{color:#e9e9e9;background:#141414}a{color:#8ab4f8}}
-  h1{font-size:1.6rem;margin:0 0 .2rem}
-  h2{font-size:1.15rem;margin:2rem 0 .5rem}
-  .updated{color:#666;font-size:.9rem;margin-bottom:1.5rem}
-  @media (prefers-color-scheme:dark){.updated{color:#9a9a9a}}
-  ul{padding-left:1.2rem}
-  li{margin:.3rem 0}
-  footer{margin-top:3rem;font-size:.85rem;color:#666}
-  .nav{margin:1.2rem 0 0;font-size:.9rem}
+:root{color-scheme:light dark}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;max-width:820px;margin:0 auto;padding:2rem 1.1rem 4rem;color:#1a1a1a;background:#fff}
+@media(prefers-color-scheme:dark){body{color:#e9e9e9;background:#141414}a{color:#8ab4f8}.muted{color:#aaa}}
+h1{font-size:1.65rem;margin:0 0 .2rem}h2{font-size:1.18rem;margin:2rem 0 .55rem}h3{font-size:1rem;margin:1.2rem 0 .35rem}
+.updated,.muted{color:#666;font-size:.9rem}.updated{margin-bottom:1.5rem}ul{padding-left:1.25rem}li{margin:.35rem 0}
+.notice{border-left:4px solid currentColor;padding:.75rem 1rem;margin:1rem 0;background:rgba(127,127,127,.08)}
+.nav{margin:2rem 0 0;font-size:.92rem}footer{margin-top:2.5rem;font-size:.85rem;color:#777}
 </style>
 </head>
 <body>
-<h1>Adatvédelmi irányelvek</h1>
-<p class="updated">Meal Planner / Heti Menü (com.momreset.mealplanner) · Utolsó frissítés: 2026. szeptember 4.</p>
-<h2>Bevezetés</h2>
-<p>Ez a tájékoztató azt írja le, hogyan kezeli az információkat a Meal Planner (Heti Menü) alkalmazás (a továbbiakban „az alkalmazás”, „mi”), amelynek csomagneve <strong>com.momreset.mealplanner</strong>. Az alkalmazást az Európai Unióban működő független fejlesztő készíti. Az alkalmazás használatával elfogadod ezt a tájékoztatót.</p>
-<h2>Adatkezelő</h2>
-<p>Az alkalmazás üzemeltetője és az adatkezelő: Gábor Enikő, 1123 Budapest, Nagyenyed utca 5., Magyarország.</p>
-<h2>Az eszközödön tárolt adatok</h2>
-<p>A következőket az alkalmazás kizárólag a saját eszközödön tárolja (helyi adatbázisban és beállításokban), és nem küldi el nekünk:</p>
+
+<h1>Adatvédelmi tájékoztató</h1>
+<p class="updated">Meal Planner / Heti Menü (com.momreset.mealplanner) · Utolsó frissítés: 2026. szeptember 19.</p>
+<h2>1. Adatkezelő</h2>
+<p>Adatkezelő és az alkalmazás szolgáltatója: <strong>Fütyü-Gábor Enikő</strong>, magánszemély, 1123 Budapest, Nagyenyed utca 5., Magyarország. Adatvédelmi kapcsolattartás: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<h2>2. Az alkalmazás működésének alapelve</h2>
+<p>A Heti Menü local-first alkalmazás. Az étkezéstervezéshez megadott tartalmak túlnyomó része az eszközödön marad. Felhőbe csak az általad külön kezdeményezett vagy engedélyezett funkciókhoz szükséges adatok kerülnek.</p>
+<h2>3. Helyben, az eszközön tárolt adatok</h2>
 <ul>
-<li>Receptek, heti menü, bevásárlólista, kamra- (készlet-) tételek, ételnapló bejegyzések</li>
-<li>Profilkép és ételfotók, amelyeket te adsz hozzá</li>
-<li>Alkalmazásbeállítások (nyelv, mértékegység-rendszer, értesítések, téma)</li>
-<li>A hirdetési hozzájárulással kapcsolatos döntéseid</li>
+<li>receptek, hozzávalók, kategóriák, címkék és receptbeállítások;</li>
+<li>heti menü, bevásárlólista, kamra/készlet, ételnapló és táplálkozási beállítások;</li>
+<li>személyes feljegyzések, beleértve az általad szabad szövegként rögzített megfigyeléseket;</li>
+<li>főzési előzmények és használati beállítások;</li>
+<li>az általad kiválasztott profil- és ételfotók;</li>
+<li>nyelv, mértékegység, téma és egyéb alkalmazásbeállítások.</li>
 </ul>
-<h2>Fiók és bejelentkezés (opcionális)</h2>
-<p>Az alkalmazás alapvető funkciói fiók nélkül is működnek. Ha be szeretnéd kapcsolni a felhős mentést és szinkronizálást, bejelentkezhetsz Google- vagy Apple-fiókkal a Firebase Authentication szolgáltatáson keresztül. Ekkor a következőket kezeljük:</p>
+<p>Ezeket az adatokat az alkalmazás alapműködése önmagában nem továbbítja az adatkezelő saját adatbázisába. A helyi adatok az eszközön maradnak, amíg az alkalmazásban vagy az operációs rendszerben nem törlöd őket.</p>
+<h2>4. Opcionális Google Drive szinkron</h2>
+<p>Ha te indítod el a szinkront, az alkalmazás a saját Google Drive-fiókod alkalmazásspecifikus, rejtett <code>appDataFolder</code> területét használja. A kért jogosultság a korlátozott <code>drive.appdata</code> scope.</p>
+<p>A mentés tartalmazhat recepteket és receptképeket, heti menüt és napi menüjegyzeteket, valamint főzési előzményeket. Ezek az adatok a te Google-fiókodhoz tartozó Drive-tárhelyen maradnak; az adatkezelő nem kap általános hozzáférést a Drive-fájljaidhoz.</p>
+<h2>5. Opcionális fiók és bejelentkezés</h2>
+<p>Az alkalmazás alapvető funkciói fiók nélkül is használhatók. Google- vagy Apple-bejelentkezés esetén a Firebase Authentication és a választott bejelentkezési szolgáltató a hitelesítéshez szükséges azonosítókat kezelheti, így különösen a felhasználói azonosítót, e-mail-címet és – ha a szolgáltató átadja – a megjelenítendő nevet.</p>
+<p>A fiók közvetlenül az alkalmazásban törölhető. Sign in with Apple használata esetén a törlési folyamat az Apple-hitelesítési jogosultság visszavonását is kezdeményezi. Részletek: <a href="account_deletion.hu.html">Fiók és adatok törlése</a>.</p>
+<h2>6. Visszajelzés</h2>
+<p>Ha önkéntesen visszajelzést küldesz az alkalmazásból, a megadott üzenetet a Google Cloud Firestore <code>feedback_messages</code> gyűjteményében tároljuk kizárólag hibajavítás, támogatás és termékfejlesztés céljából. Az alkalmazás a visszajelzéshez nem ad hozzá Firebase-felhasználói azonosítót, e-mail-címet, hirdetési azonosítót vagy saját eszközazonosítót.</p>
+<p>A rekord technikai mezőket is tartalmazhat: létrehozási idő, állapot, esetleges fejlesztői válasz és egy 90 napos lejárati idő. Ha egy visszajelzést kifejezetten megjelölünk az alkalmazás „Válaszok” részében való megjelenítésre, annak üzenete és fejlesztői válasza más felhasználók számára is láthatóvá válhat; a kliens saját maga nem tehet közzé visszajelzést. A visszajelzés <strong>90 nap elteltével törlésre jogosult</strong>, és a Firestore TTL mechanizmusa automatikusan eltávolítja; a háttérben végzett TTL-törlés a lejárat után rövid technikai késéssel hajtódhat végre.</p>
+<p>A Firestore ezen kívül csak fejlesztő által létrehozott, személyes adatot nem tartalmazó FAQ-bejegyzések olvasását szolgálja; az alkalmazás ezekbe nem ír.</p>
+<h2>7. Firebase Analytics</h2>
+<p>A jelenlegi kiadásban a Firebase Analytics adatgyűjtése alkalmazásszinten <strong>ki van kapcsolva</strong>. Az alkalmazás nem használ saját Firestore-gyűjteményt használati vagy analitikai események tárolására.</p>
+<h2>8. Értesítések és távoli konfiguráció</h2>
+<p>Ha az operációs rendszerben engedélyezed az értesítéseket, a Firebase Cloud Messaging technikai push tokent kezelhet az értesítések kézbesítéséhez. Az alkalmazás helyi értesítéseket is ütemezhet az eszközön. A Firebase Remote Config alkalmazásbeállításokat és funkciókonfigurációt tölthet le; felhasználói recept- vagy naplótartalmat nem küldünk neki.</p>
+<h2>9. Hirdetések, UMP és iOS ATT</h2>
+<p>Az alkalmazás Google AdMob hirdetéseket használ. Androidon és iOS-en minden induláskor frissítjük a Google User Messaging Platform (UMP) hozzájárulási állapotát, és ahol szükséges, megjelenítjük a Google által biztosított adatvédelmi űrlapot. Hirdetési kérés csak akkor indul, ha az UMP szerint hirdetés kérhető.</p>
+<p>iOS-en az App Tracking Transparency (ATT) rendszerengedély külön döntés. Ha a nyomkövetést nem engedélyezed, az IDFA nem kerül átadásra az AdMob hirdetési kérésében. Az ATT és a Google UMP hozzájárulási döntése nem ugyanaz, és egymástól függetlenül kezelendő.</p>
+<h2>10. Kamera, fotók, fájlok és megosztott tartalom</h2>
+<p>Kamerához vagy fotókhoz csak akkor kérünk hozzáférést, amikor te képet választasz vagy készítesz. A fájlválasztó és a rendszer megosztási felülete csak az általad kiválasztott vagy az alkalmazással megosztott tartalmat adja át. Az alkalmazás normál működéséhez nem kér helyadat-, névjegy-, mikrofon-, SMS- vagy híváslista-hozzáférést.</p>
+<h2>11. Külső tartalom és linkek</h2>
+<p>Ha receptet, képet, videót vagy webes linket nyitsz meg vagy importálsz külső szolgáltatótól, az adott szolgáltató a kérés teljesítéséhez technikai adatokat – például IP-címet – kezelhet a saját adatvédelmi feltételei szerint.</p>
+<h2>12. Adatkezelési jogalapok</h2>
 <ul>
-<li>A bejelentkezési szolgáltatótól kapott azonosító, e-mail-cím és megjelenítendő név</li>
-<li>Az általad szinkronizált tartalom (receptek, heti menü, bevásárlólista, ételnapló, beállítások), a Google Cloud Firestore-ban tárolva, hogy másik eszközön is elérhető legyen</li>
-<li>Ha visszajelzést, kérdést vagy szavazatot küldesz: az üzeneted, valamint eszközmodell, operációs rendszer verziója, platform, alkalmazásverzió, nyelv és időbélyeg</li>
+<li><strong>GDPR 6. cikk (1) b)</strong>: az általad kért opcionális fiók-, hitelesítési és Drive-szinkron funkció biztosítása;</li>
+<li><strong>GDPR 6. cikk (1) a)</strong>: ahol jogszabály hozzájárulást kíván meg, különösen személyre szabott hirdetési célokhoz és iOS-en a rendszer szerinti nyomkövetési engedélyhez;</li>
+<li><strong>GDPR 6. cikk (1) f)</strong>: az általad önként elküldött visszajelzések kezelése hibajavítás, támogatás, biztonság és termékfejlesztés érdekében. A visszajelzés elküldése nem kötelező.</li>
 </ul>
-<h2>Google Drive biztonsági mentés (opcionális)</h2>
-<p>Ha te indítod, az alkalmazás a saját Google Drive-fiókodba készíthet biztonsági mentést az adataidról, és onnan vissza is állíthatja azokat. A mentés a te Drive-tárhelyeden marad; mi nem férünk hozzá. Ehhez az alkalmazás korlátozott Google Drive hozzáférést kér.</p>
-<h2>Harmadik fél szolgáltatók</h2>
+<h2>13. Adatfeldolgozók és szolgáltatók</h2>
+<p>Az alkalmazás funkciótól függően Google/Firebase szolgáltatásokat (Authentication, Cloud Firestore, Cloud Messaging, Remote Config, Google Drive API, AdMob/UMP) és Apple Sign in with Apple szolgáltatást használ. E szolgáltatók saját infrastruktúrájuk működtetéséhez technikai adatokat kezelhetnek.</p>
+<h2>14. Nemzetközi adattovábbítás</h2>
+<p>A Google és az Apple az adatokat az EGT-n kívül is feldolgozhatja. Az ilyen adattovábbítások az adott szolgáltató alkalmazandó jogi garanciáira – például megfelelőségi határozatra, EU–USA Adatvédelmi Keretre vagy általános szerződési feltételekre – támaszkodhatnak az adott adatáramlástól függően.</p>
+<h2>15. Megőrzés</h2>
 <ul>
-<li><strong>Google AdMob</strong> – hirdetések megjelenítése; eszköz- és hirdetési azonosítók feldolgozása</li>
-<li><strong>Google Firebase Authentication</strong> – bejelentkezés</li>
-<li><strong>Google Cloud Firestore</strong> – felhős tárolás és szinkronizálás</li>
-<li><strong>Google Firebase Analytics</strong> – összesített használati statisztika</li>
-<li><strong>Google Firebase Cloud Messaging</strong> – push értesítések küldése</li>
-<li><strong>Google Firebase Remote Config</strong> – funkciók távoli beállítása</li>
-<li><strong>Google / Apple bejelentkezés</strong> – hitelesítés</li>
-<li><strong>Google Drive API</strong> – felhasználó által indított biztonsági mentés</li>
+<li>helyi adatok: a felhasználó törléséig vagy az alkalmazás/adatok eltávolításáig;</li>
+<li>Google Drive mentés: amíg a felhasználó saját Google Drive-fiókjában megőrzi;</li>
+<li>Firebase Authentication fiókadatok: a fiók törléséig;</li>
+<li>visszajelzés: 90 napos lejárati idővel, majd automatikus TTL-törléssel;</li>
+<li>értesítési token: a szolgáltató és az operációs rendszer életciklusa szerint, illetve az értesítési jogosultság/megbízás megszűnéséig.</li>
 </ul>
-<h2>Hirdetések és nyomkövetés</h2>
-<p>Az alkalmazás a Google AdMob hirdetéseit jeleníti meg. Az Európai Gazdasági Térségben, az Egyesült Királyságban és Svájcban a hirdetések betöltése előtt a Google által tanúsított hozzájárulási üzenet (Google User Messaging Platform, UMP) jelenik meg, amely felsorolja a hirdetési partnereket és célokat, és ahol választhatsz a személyre szabott és a nem személyre szabott hirdetés között.</p>
-<p>iOS rendszeren a rendszer App Tracking Transparency ablaka kérdez rá, hogy az alkalmazás használhat-e azonosítókat alkalmazások közötti nyomkövetéshez. Ha elutasítod, csak nem személyre szabott hirdetéseket látsz. Részletek a „Hozzájárulás kezelése” oldalon.</p>
-<h2>Analitika</h2>
-<p>Az alkalmazás a Google Firebase Analytics szolgáltatást használja, hogy összesített szinten megértsük a használatot (például mely képernyők nyílnak meg), és javíthassuk az alkalmazást. Ezek az adatok egy véletlenszerűen generált alkalmazáspéldány-azonosítóhoz kötődnek, nem a személyazonosságodhoz.</p>
-<h2>Értesítések</h2>
-<p>Ha engedélyezed az emlékeztetőket, az alkalmazás helyi értesítéseket ütemez az eszközödön (például a napi menüről). Ezenkívül a Firebase Cloud Messaging révén küldhetünk push értesítéseket; ehhez a szolgáltató egy eszköz-tokent kezel. Az értesítések a rendszerbeállításokban bármikor kikapcsolhatók.</p>
-<h2>Jogalapok (GDPR)</h2>
-<ul>
-<li><strong>Hozzájárulás</strong> (6. cikk (1) a) – személyre szabott hirdetés, és iOS-en az azonosítók nyomkövetési célú használata; bármikor visszavonható</li>
-<li><strong>Szerződés / kért szolgáltatás teljesítése</strong> (6. cikk (1) b) – az alkalmazás működtetése, valamint a felhasznált opcionális funkciók (fiók, felhős szinkron, biztonsági mentés, visszajelzés)</li>
-<li><strong>Jogos érdek</strong> (6. cikk (1) f) – nem személyre szabott hirdetés, biztonság és stabilitás, összesített használatelemzés; ez ellen tiltakozhatsz</li>
-</ul>
-<h2>Adatbiztonság és -megőrzés</h2>
-<p>A helyi adatok addig maradnak meg, amíg nem törlöd őket vagy nem távolítod el az alkalmazást. A felhőben tárolt adatokat a fiókod fennállásáig, illetve a törlési kérésedig őrizzük. A visszajelzéseket a kérésed kezeléséhez szükséges ideig tartjuk meg. Az átvitel titkosított kapcsolaton történik.</p>
-<h2>Felhasználói jogok</h2>
-<p>A lakóhelyedtől függően jogaid vannak a személyes adataid felett, többek között:</p>
-<ul>
-<li>Hozzáférés, helyesbítés és törlés</li>
-<li>Adathordozhatóság, valamint az adatkezelés elleni tiltakozás vagy korlátozás</li>
-<li>A hozzájárulás bármikori visszavonása</li>
-<li>Panasz benyújtása az adatvédelmi hatóságnál</li>
-</ul>
-<p>Magyarországon az illetékes felügyeleti hatóság a Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH, naih.hu); a saját országod hatóságához is fordulhatsz.</p>
-<p>A fiókodat és a felhőben tárolt adataidat közvetlenül az alkalmazásból is törölheted (a fiókbeállításoknál a „Fiók törlése” lehetőséggel), vagy írj nekünk a lenti címre. Kaliforniai lakosok: nem adjuk el és nem „osztjuk meg” a személyes adatokat pénzért vagy kontextusokon átívelő viselkedésalapú hirdetés céljából a fent leírt hirdetési választásokon túl.</p>
-<h2>Nemzetközi adattovábbítás</h2>
-<p>A Google és az Apple az adatokat az országodon kívüli szervereken is feldolgozhatja, például az Egyesült Államokban. Az ilyen továbbítások e szolgáltatók garanciáira épülnek, például az Európai Bizottság általános szerződési feltételeire.</p>
-<h2>Gyermekek adatai</h2>
-<p>Az alkalmazás nem gyermekeknek szól, és tudatosan nem gyűjtünk személyes adatot 16 év alatti gyermekektől. Ha úgy gondolod, hogy egy gyermek adatot adott meg nekünk, jelezd, és töröljük.</p>
-<h2>A tájékoztató változásai</h2>
-<p>Ezt a tájékoztatót időről időre frissíthetjük. Az ezen a címen közzétett változat mindig az aktuális, és a tetején lévő dátum mutatja az utolsó módosítást. A lényeges változásokat kiemeljük az alkalmazásban vagy ezen az oldalon.</p>
-<h2>Kapcsolat</h2>
-<p>Az alkalmazás üzemeltetője és az adatkezelő: Gábor Enikő, 1123 Budapest, Nagyenyed utca 5., Magyarország.</p><p>Adatvédelemmel kapcsolatos kérdés vagy kérés esetén írj ide: <a href="mailto:mealplanapp2025@gmail.com">mealplanapp2025@gmail.com</a></p>
-<p class="nav"><a href="privacy_policy.hu.html">Adatvédelmi irányelvek</a> · <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> · <a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
-<footer>Ez a dokumentum a jelenlegi tájékoztatás célját szolgálja, és nem minősül jogi tanácsadásnak.</footer>
-</body>
-</html>
+<h2>16. Érintetti jogok</h2>
+<p>Jogosult lehetsz hozzáférést, helyesbítést, törlést, korlátozást vagy adathordozhatóságot kérni, tiltakozni a jogos érdeken alapuló adatkezelés ellen, valamint hozzájárulásodat bármikor visszavonni. Kérelmedet a <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> címen jelezheted.</p>
+<p>Panaszt tehetsz a Nemzeti Adatvédelmi és Információszabadság Hatóságnál (NAIH), illetve a lakóhelyed szerint illetékes uniós felügyeleti hatóságnál.</p>
+<h2>17. Gyermekek</h2>
+<p>Az alkalmazás nem gyermekeknek készült, és nem célja 16 év alatti gyermekek személyes adatainak gyűjtése. Ha tudomásunkra jut, hogy ilyen adat került hozzánk, indokolt esetben töröljük.</p>
+<h2>18. Változások</h2>
+<p>A tájékoztató lényeges módosításait az oldalon feltüntetett frissítési dátummal és szükség esetén az alkalmazásban jelezzük. Ha egy új adatkezeléshez hozzájárulás szükséges, azt külön kérjük; a jelen tájékoztató puszta használata nem minősül általános adatkezelési hozzájárulásnak.</p>
+
+<p class="nav"><a href="privacy_policy.hu.html">Adatvédelmi tájékoztató</a> · <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> · <a href="terms_of_use.hu.html">Felhasználási feltételek</a> · <a href="account_deletion.hu.html">Fiók és adatok törlése</a></p>
+<footer>Hatályos változat: 2026. szeptember 19.</footer>
+</body></html>
