@@ -1,86 +1,40 @@
 <title>Informativa sulla privacy – Cryptogram (Kódfejtő)</title>
 <style>
-  :root{color-scheme:light dark}
-  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f}
-  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
-  h1{font-size:1.7rem;margin-bottom:.25rem}
-  .updated{color:#666;font-size:.9rem;margin-bottom:2rem}
-  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
-  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
-  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
-  ul{padding-left:1.3rem}
-  li{margin:.35rem 0}
-  a{color:#0066cc}
-  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
-  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
-  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}}
-  table{border-collapse:collapse;width:100%;margin:1rem 0}
-  th,td{text-align:left;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
-  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  :root{color-scheme:light dark}body{max-width:800px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f}@media(prefers-color-scheme:dark){body{color:#e8e8ea;background:#111113}}h1{font-size:1.7rem;margin-bottom:.25rem}h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}h3{font-size:1rem;margin-top:1.4rem}.updated{color:#666;font-size:.9rem;margin-bottom:2rem}@media(prefers-color-scheme:dark){.updated{color:#9a9a9e}h2{border-color:#2c2c30}}ul{padding-left:1.3rem}li{margin:.35rem 0}a{color:#0066cc}@media(prefers-color-scheme:dark){a{color:#5aa9ff}}.box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}@media(prefers-color-scheme:dark){.box{background:#1c1c1f}}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{text-align:left;vertical-align:top;padding:.55rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
 </style>
-
 <h1>Informativa sulla privacy</h1>
-<p class="updated">App: Cryptogram / Kódfejtő (pacchetto: com.puzzles.cryptogram) &middot; Ultimo aggiornamento: 4 settembre 2026</p>
-
-<p>La presente informativa spiega come Cryptogram (l'"App"), un gioco di parole in cui si decifrano citazioni cifrate, tratta i dati degli utenti. Usando l'App accetti le pratiche qui descritte.</p>
-
-<div class="box">
-  <strong>In breve:</strong> i dati di gioco sono archiviati principalmente sul tuo dispositivo. L'App mostra inoltre annunci (Google AdMob), raccoglie statistiche d'uso anonime (Firebase Analytics) e offre un backup anonimo nel cloud e un modulo di feedback in-app (Firebase). L'App non chiede mai nome, e-mail o password e non contiene acquisti.
-</div>
-
+<p class="updated">App: Cryptogram / Kódfejtő (pacchetto: com.puzzles.cryptogram) &middot; Ultimo aggiornamento: 16 settembre 2026</p>
+<p>Questa informativa descrive il trattamento dei dati personali e delle informazioni tecniche durante l’uso dell’App. L’uso dell’App non equivale a un consenso generale a tutti i trattamenti descritti: ogni attività si fonda sulla base giuridica indicata di seguito.</p>
+<div class="box"><strong>In breve:</strong> l’App non richiede nome, indirizzo e-mail, numero di telefono o password per il normale utilizzo. Lo stato di gioco viene memorizzato sul dispositivo e sincronizzato anche con Firebase tramite un identificatore pseudonimo. L’App utilizza Firebase Analytics, Google AdMob / Google Mobile Ads, gli strumenti di consenso di Google, notifiche facoltative e moduli facoltativi di feedback/segnalazione.</div>
 <h2>1. Titolare del trattamento</h2>
-<p>L'App è realizzata da uno sviluppatore indipendente con sede nell'Unione europea. Per domande sulla privacy: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
-
-<h2>2. Quali dati raccogliamo</h2>
-<p><strong>2.1 Dati locali (archiviati solo sul tuo dispositivo)</strong></p>
-<ul>
-  <li>Avanzamento dei puzzle, stato del puzzle in corso e dati necessari per continuare</li>
-  <li>Puzzle risolti, statistiche, serie (streak), stato della sfida giornaliera, dati di livello e avanzamento</li>
-  <li>Contenuti sbloccati, monete/indizi di gioco, stato del bonus giornaliero</li>
-  <li>Impostazioni dell'App (audio, tema, lingua, preferenze di notifica e del widget della citazione del giorno)</li>
-</ul>
-<p><strong>2.2 Backup anonimo nel cloud (Firebase Authentication + Cloud Firestore)</strong></p>
-<p>L'App consente di eseguire il backup anonimo dei progressi nel cloud. Viene creato sul dispositivo un identificatore Firebase anonimo non collegato a nome, e-mail o altro identificatore personale. Lo stato di gioco locale è archiviato in un unico documento Firestore per poter essere ripristinato dopo una nuova installazione. Puoi facoltativamente generare un breve codice di ripristino (6 caratteri) per recuperare il backup su un altro dispositivo.</p>
-<p><strong>2.3 Feedback (Cloud Firestore)</strong></p>
-<p>Se invii un feedback dalla schermata Profilo (una valutazione e un messaggio facoltativo), al nostro server vengono inviati: la valutazione, il testo del messaggio, modello e produttore del dispositivo, versione del sistema operativo, versione dell'App, lingua selezionata e data/ora dell'invio. Non sono inclusi nome o e-mail, salvo che tu scelga di inserirli nel testo del messaggio.</p>
-<p><strong>2.4 Pubblicità (Google AdMob)</strong></p>
-<p>L'App mostra annunci banner e con premio tramite Google AdMob. AdMob e i suoi partner pubblicitari possono usare un identificatore del dispositivo (es. ID pubblicitario / IDFA) e altri dati tecnici per pubblicare e misurare gli annunci. Nello Spazio economico europeo (SEE), nel Regno Unito e in Svizzera richiediamo il consenso come descritto nella sezione 4.</p>
-<p><strong>2.5 Analisi d'uso (Firebase Analytics)</strong></p>
-<p>Vengono registrati eventi anonimi e aggregati (es. apertura dell'app, puzzle avviato/risolto, sfida giornaliera giocata, indizio usato, visualizzazioni di schermate). Sono collegati a un identificatore di istanza dell'app generato casualmente, non alla tua identità, e non contengono dati identificativi personali.</p>
-
+<p><strong>Titolare:</strong> Fütyü-Gábor Enikő, persona fisica<br><strong>Indirizzo postale:</strong> 1123 Budapest, Nagyenyed utca 5., Ungheria<br><strong>E-mail:</strong> <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a><br><strong>Sito web:</strong> <a href="https://www.egyszeruhaztartas.hu/">www.egyszeruhaztartas.hu</a></p>
+<h2>2. Dati trattati</h2>
+<h3>2.1 Dati locali di gioco e preferenze</h3>
+<p>L’App conserva sul dispositivo lo stato delle partite, i puzzle risolti, progressi, serie, statistiche, contenuti sbloccati, monete, suggerimenti, ricompense virtuali, stato delle sfide, lingua, tema, audio, notifiche e altre preferenze necessarie alla continuità del gioco.</p>
+<h3>2.2 Account Firebase pseudonimo e sincronizzazione cloud</h3>
+<p>Dopo l’inizializzazione di Firebase, l’App crea o utilizza automaticamente un account Firebase Authentication senza chiedere nome, e-mail o password. Sebbene Firebase lo definisca tecnicamente “anonymous”, l’UID Firebase viene trattato come <strong>identificatore online pseudonimo</strong>, non come dato necessariamente anonimo.</p>
+<p>Cloud Firestore sincronizza lo stato locale di gioco e delle preferenze associandolo a tale UID. Su una nuova installazione possono essere ripristinati dati cloud quando l’account pertinente è identificabile; quando l’App passa in background, le modifiche locali possono essere caricate. È inoltre possibile generare un codice di ripristino di 6 caratteri collegato all’UID. Conservare il codice in modo riservato.</p>
+<h3>2.3 Feedback, segnalazioni e richieste lingua</h3>
+<p>Se inviati volontariamente, possiamo ricevere valutazione, messaggio opzionale, modello del dispositivo, versione del sistema operativo, piattaforma, versione/build dell’App, lingua, identificativi di puzzle/serie/capitolo, tipo di segnalazione, eventuale ID citazione e data/ora lato server. Le richieste relative a una lingua possono includere la lingua richiesta e un testo opzionale. Non inserire dati sensibili nei campi liberi.</p>
+<h3>2.4 Firebase Analytics</h3>
+<p>L’App usa Google Analytics for Firebase per comprendere l’utilizzo e migliorare il gioco. Gli eventi possono includere scelte di onboarding, identificativi di puzzle/serie/capitolo, avvio/completamento/abbandono, durata, difficoltà, errori, suggerimenti, capitoli/libri/serie completati, posizione degli annunci premiati, lingua, apertura da notifica e interazioni di cross-promotion. L’SDK può usare identificatori pseudonimi dell’app/dispositivo e dati tecnici. Non inviamo nome o e-mail come proprietà utente Analytics.</p>
+<h3>2.5 Pubblicità</h3>
+<p>L’App usa Google Mobile Ads / AdMob e può mostrare annunci <strong>banner, nativi e con premio</strong>. Google e i fornitori di tecnologia pubblicitaria possono trattare, dove consentito, identificatori pubblicitari, indirizzo IP, informazioni su dispositivo e App, interazioni con gli annunci, diagnostica e altri dati tecnici per erogazione, misurazione, controllo frequenza, prevenzione frodi e, previo consenso, personalizzazione.</p>
 <h2>3. Autorizzazioni</h2>
-<table>
-  <tr><th>Autorizzazione</th><th>Finalità</th></tr>
-  <tr><td>Invio notifiche (Android: POST_NOTIFICATIONS)</td><td>Mostrare il promemoria facoltativo della citazione/puzzle del giorno</td></tr>
-  <tr><td>Riprogrammazione dopo il riavvio (Android: RECEIVE_BOOT_COMPLETED)</td><td>Mantenere programmato il promemoria dopo un riavvio del dispositivo</td></tr>
-  <tr><td>Vibrazione (Android: VIBRATE)</td><td>Feedback tattile durante il gioco</td></tr>
-  <tr><td>Autorizzazione al tracciamento (iOS App Tracking Transparency)</td><td>Pubblicare annunci personalizzati, se lo consenti</td></tr>
-</table>
-<p>L'App non richiede accesso a posizione, contatti, fotocamera, microfono o file. Un widget facoltativo nella schermata Home mostra la citazione del giorno; è generato sul tuo dispositivo e non ci invia dati. Su Android l'App verifica sul Play Store se è disponibile una versione più recente (aggiornamento in-app): ciò coinvolge solo Google Play, non i nostri server.</p>
-
-<h2>4. Pubblicità e tracciamento (consenso)</h2>
-<p>Per gli utenti nel SEE, nel Regno Unito e in Svizzera, all'avvio l'App richiede il consenso agli annunci personalizzati tramite la piattaforma di gestione del consenso certificata da Google (User Messaging Platform, UMP). Su iOS viene mostrata anche la richiesta nativa Apple App Tracking Transparency (ATT) prima di richiedere qualsiasi annuncio personalizzato basato su un identificatore del dispositivo. Se rifiuti, l'App funziona comunque pienamente e mostra annunci non personalizzati. Puoi modificare la scelta in qualsiasi momento dal link "Privacy degli annunci" / Opzioni sulla privacy nella schermata Profilo. Vedi <a href="manage_consent.it.html">Gestisci il consenso</a>.</p>
-
-<h2>5. Privacy dei minori</h2>
-<p>L'App è destinata a un pubblico generico, non è rivolta ai minori e non fa parte del programma Google Play Families. Non raccogliamo consapevolmente dati personali di minori di 13 anni (o al di sotto dell'età del consenso digitale nel tuo Paese). Se un genitore o tutore ritiene che il proprio figlio ci abbia fornito dati personali, ci contatti ai recapiti della sezione 10 per la rimozione.</p>
-
-<h2>6. Sicurezza e conservazione dei dati</h2>
-<p>I dati locali restano sul tuo dispositivo e vengono eliminati alla disinstallazione. I dati inviati al cloud (backup, feedback) sono archiviati sull'infrastruttura Google Firebase con controlli di accesso standard di settore; le regole di sicurezza di Firestore limitano i dati di backup all'identificatore anonimo che li ha creati. I dati in transito sono cifrati (HTTPS/TLS). Conserviamo questi dati per il tempo necessario all'App o finché non ne richiedi la cancellazione.</p>
-
-<h2>7. I tuoi diritti</h2>
-<p>Gli utenti nel SEE/Regno Unito hanno, ai sensi del GDPR, il diritto di accesso, rettifica, cancellazione, portabilità e opposizione, e di proporre reclamo a un'autorità di controllo (in Ungheria: NAIH, naih.hu). I residenti in California hanno, ai sensi di CCPA/CPRA, il diritto di conoscere, accedere, cancellare e correggere i dati e di rinunciare alla vendita/condivisione dei dati personali — l'App non vende né condivide dati personali per denaro o per pubblicità comportamentale tra contesti oltre le opzioni descritte nella sezione 4 e rispetta i segnali di opt-out riconosciuti ove applicabile.</p>
-<ul>
-  <li><strong>Dati locali:</strong> la disinstallazione elimina definitivamente tutti i dati locali dal dispositivo.</li>
-  <li><strong>Dati nel cloud (backup, feedback):</strong> puoi richiederne cancellazione, accesso o rettifica all'indirizzo della sezione 10; daremo seguito entro un tempo ragionevole.</li>
-</ul>
-<p>Ove si applichi il GDPR, le basi giuridiche sono: il tuo <strong>consenso</strong> (annunci personalizzati; su iOS, uso di identificatori per il tracciamento); l'<strong>esecuzione di un servizio richiesto</strong> (funzionamento del gioco, backup nel cloud, gestione dei feedback); i nostri <strong>legittimi interessi</strong> (mostrare annunci non personalizzati che finanziano l'App, sicurezza, comprensione dell'uso aggregato).</p>
-
-<h2>8. Trasferimenti internazionali di dati</h2>
-<p>I servizi cloud (Firebase: Authentication, Cloud Firestore, Analytics) e Google AdMob sono gestiti da Google LLC, che può trasferire dati al di fuori dello Spazio economico europeo, anche negli Stati Uniti, in base a garanzie contrattuali conformi al GDPR (es. Clausole contrattuali standard).</p>
-
-<h2>9. Modifiche alla presente informativa</h2>
-<p>Possiamo aggiornare questa informativa di tanto in tanto in base all'evoluzione delle funzioni dell'App. La versione pubblicata a questo indirizzo è sempre quella vigente e la data in alto ne indica l'ultima modifica. Ti invitiamo a consultare periodicamente questa pagina.</p>
-
-<h2>10. Contatti</h2>
-<p>Per domande o richieste, scrivi a: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
-<p style="color:#666;font-size:.85rem;margin-top:2rem">Questo documento è fornito per trasparenza e non costituisce consulenza legale.</p>
+<p>L’App può richiedere autorizzazioni per notifiche, vibrazione/feedback aptico e, su iOS, App Tracking Transparency (ATT). Su Android può ripristinare le notifiche pianificate dopo il riavvio. La versione attuale non richiede per il gioco accesso a posizione precisa, contatti, fotocamera o microfono.</p>
+<h2>4. Finalità e basi giuridiche</h2>
+<table><tr><th>Trattamento</th><th>Finalità</th><th>Base GDPR</th></tr><tr><td>Dati locali</td><td>Funzionamento del gioco e memorizzazione di progressi/preferenze</td><td>Esecuzione del servizio richiesto (art. 6(1)(b)); per preferenze facoltative, interesse legittimo (art. 6(1)(f)).</td></tr><tr><td>Firebase Auth e cloud sync pseudonimi</td><td>Continuità, backup e recupero</td><td>Interesse legittimo a preservare in modo affidabile i progressi (art. 6(1)(f)).</td></tr><tr><td>Feedback, bug report, richieste lingua</td><td>Supporto, qualità, correzioni e sviluppo</td><td>Interesse legittimo (art. 6(1)(f)); invio volontario.</td></tr><tr><td>Firebase Analytics</td><td>Misurazione e miglioramento</td><td>Interesse legittimo ove consentito; eventuale consenso richiesto dalle norme ePrivacy/local storage applicabili.</td></tr><tr><td>Pubblicità personalizzata / tracking</td><td>Personalizzazione e misurazione</td><td>Consenso (art. 6(1)(a)) e, su iOS se applicabile, autorizzazione ATT.</td></tr></table>
+<h2>5. Consenso pubblicitario</h2>
+<p>Dove richiesto, compresi SEE, Regno Unito e Svizzera, l’App usa Google User Messaging Platform (UMP) per presentare le scelte privacy relative alla pubblicità. Su iOS, ATT è un’autorizzazione separata. Le opzioni disponibili possono essere riaperte dall’area Profilo/privacy quando Google lo richiede. Dettagli: <a href="manage_consent.it.html">Gestione del consenso</a>.</p>
+<h2>6. Destinatari e trasferimenti</h2>
+<p>L’App utilizza servizi Google, tra cui Firebase Authentication, Cloud Firestore, Google Analytics for Firebase, Google Mobile Ads/AdMob e strumenti di consenso. Google e i fornitori pubblicitari indicati nell’interfaccia di consenso possono ricevere dati tecnici/pseudonimi per fornire i servizi. I dati possono essere trattati anche fuori dall’SEE, inclusi gli Stati Uniti, sulla base dei meccanismi di trasferimento applicabili, quali decisioni di adeguatezza o clausole contrattuali standard.</p>
+<h2>7. Conservazione</h2>
+<ul><li><strong>Dati locali:</strong> fino alla cancellazione dei dati dell’App o alla disinstallazione, salvo funzioni di backup/ripristino del sistema operativo.</li><li><strong>Stato cloud e UID Firebase:</strong> finché necessari per sincronizzazione/ripristino, fino a richiesta di cancellazione o cessazione del servizio.</li><li><strong>Codice di ripristino:</strong> finché è disponibile il salvataggio collegato, salvo cancellazione anticipata.</li><li><strong>Feedback e segnalazioni bug:</strong> normalmente cancellati entro <strong>3 mesi</strong>, salvo necessità legali, di sicurezza o antiabuso.</li><li><strong>Richieste lingua:</strong> normalmente non oltre <strong>3 mesi</strong> in forma identificabile/pseudonima; dati aggregati possono essere conservati più a lungo.</li><li><strong>Firebase Analytics:</strong> secondo le impostazioni di conservazione della proprietà Analytics/Firebase e le regole del servizio; i report aggregati possono durare più a lungo.</li></ul>
+<h2>8. Diritti e cancellazione</h2>
+<p>Nei casi previsti dal GDPR puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità o opporti al trattamento. Il consenso può essere revocato in qualsiasi momento senza pregiudicare il trattamento precedente lecito.</p>
+<p>Puoi chiedere la cancellazione dei dati server scrivendo a <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> o seguendo la pagina <a href="https://www.egyszeruhaztartas.hu/data-account-deletion-enila-studio-apps/">Data &amp; Account Deletion</a>. Indica l’App e, se disponibile, il codice di ripristino o altre informazioni non sensibili mostrate dall’App che aiutino a individuare il record pseudonimo. Non inviare password. Le richieste vengono gestite senza ingiustificato ritardo e, ove si applica il GDPR, normalmente entro un mese. È possibile presentare reclamo all’autorità di controllo competente.</p>
+<h2>9. Minori e sicurezza</h2>
+<p>L’App è un puzzle per pubblico generale e non richiede ai minori nome, e-mail o altri contatti diretti. I genitori/tutori dovrebbero supervisionarne l’uso. Le comunicazioni con Firebase/Google usano connessioni cifrate standard; nessun servizio internet può garantire sicurezza assoluta, quindi non inserire dati sensibili nei campi liberi.</p>
+<h2>10. Modifiche e contatti</h2>
+<p>Questa informativa può essere aggiornata quando cambiano l’App, i fornitori o le norme. La versione pubblicata a questo indirizzo è quella vigente.</p>
+<p>Fütyü-Gábor Enikő<br>1123 Budapest, Nagyenyed utca 5., Ungheria<br><a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a><br><a href="https://www.egyszeruhaztartas.hu/">www.egyszeruhaztartas.hu</a></p>
