@@ -28,3 +28,4 @@ here.
 - [clusters](clusters/privacy_policy.en.html) — Clusters (icon-grouping puzzle game)
 - [household](household/privacy_policy.hu.html) — Meal Planner / Heti Menü (meal-planning app)
 - [cryptogram](cryptogram/privacy_policy.hu.html) — Kódfejtő (Cryptogram) (decode-the-quote word puzzle)
+- [logic_riddles](logic_riddles/privacy_policy.en.html) — Logic Riddles (visual logic-grid puzzle game)
