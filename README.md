@@ -29,3 +29,4 @@ here.
 - [household](household/privacy_policy.hu.html) — Meal Planner / Heti Menü (meal-planning app)
 - [cryptogram](cryptogram/privacy_policy.hu.html) — Kódfejtő (Cryptogram) (decode-the-quote word puzzle)
 - [logic_riddles](logic_riddles/privacy_policy.en.html) — Logic Riddles (visual logic-grid puzzle game)
+- [quickdailyfitness](quickdailyfitness/privacy_policy.hu.html) — Quick Daily Fitness (short daily home-workout app)
