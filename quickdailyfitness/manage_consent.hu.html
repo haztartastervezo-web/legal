@@ -32,21 +32,18 @@
 <p class="lang"><a href="manage_consent.en.html">English</a> · Magyar</p>
 
 <h1>Hozzájárulás kezelése</h1>
-<p class="updated">Alkalmazás: Quick Daily Fitness (com.enila.quickdailyfitness) &middot; Fejlesztő: Enila Studio &middot; Utolsó frissítés: 2026. október 10.</p>
+<p class="updated">Alkalmazás: Quick Daily Fitness (com.enila.quickdailyfitness) &middot; Fejlesztő: Enila Studio &middot; Utolsó frissítés: 2026. október 11.</p>
 
 <p>Ez az oldal bemutatja, milyen hozzájárulási és engedélyezési lehetőségek léteznek ténylegesen a Quick Daily Fitness alkalmazásban (a továbbiakban: „Alkalmazás”), mit szabályoznak, és hogyan módosíthatod vagy vonhatod vissza őket.</p>
 
 <h2>1. A Google hirdetési hozzájárulási ablaka (UMP) — EGT, Egyesült Királyság, Svájc</h2>
-<p><strong>Mit szabályoz:</strong> azt, hogy a Google AdMob és az ablakban felsorolt hirdetési partnerek tárolhatnak-e információt az eszközödön, illetve hozzáférhetnek-e ahhoz, és felhasználhatják-e adataidat személyre szabott hirdetésekhez és hirdetésméréshez.</p>
+<p><strong>Mit szabályoz:</strong> azt, hogy a Google AdMob és az ablakban felsorolt hirdetési partnerek tárolhatnak-e információt az eszközödön, illetve hozzáférhetnek-e ahhoz, és felhasználhatják-e adataidat személyre szabott hirdetésekhez és hirdetésméréshez — valamint a Google Consent Mode révén azt is, hogy a Google Analytics for Firebase tárolhat-e statisztikai azonosítót az eszközödön, és használhat-e hirdetési jelzéseket.</p>
 <p><strong>Mikor jelenik meg:</strong> indításkor, ha a Google megállapítja, hogy a régiódban hozzájárulás szükséges. A Mobile Ads SDK csak e lépés után indul el.</p>
 <p><strong>Ha elutasítod vagy korlátozott döntést hozol:</strong> döntésedtől függően a Google nem személyre szabott, korlátozott hirdetéseket, vagy egyáltalán nem jelenít meg hirdetést. Az elutasítás az Alkalmazás egyetlen edzésfunkcióját sem korlátozza.</p>
 <p><strong>Hogyan módosíthatod:</strong> Több → „Rólunk” → „Hozzájárulás kezelése”. Ez a menüpont ott jelenik meg, ahol a Google előírja a döntés módosításának lehetőségét; ha nem látod, a régiódban nincs szükség hozzájárulásra.</p>
 
 <h2>2. App Tracking Transparency (ATT) — csak iOS</h2>
-<p><strong>Mit szabályoz:</strong> azt, hogy az Alkalmazás és a Google hozzáférhet-e az eszközöd hirdetési azonosítójához (IDFA), hogy más cégek alkalmazásaiban és webhelyein kövessen.</p>
-<p><strong>Mikor jelenik meg:</strong> egyszer, a Google hozzájárulási lépése után, a hirdetések indítása előtt.</p>
-<p><strong>Ha elutasítod:</strong> az IDFA nem válik elérhetővé. Hirdetések ettől még megjelenhetnek, és a Google a Google-hozzájárulási döntéseid keretein belül nem IDFA-alapú jeleket továbbra is használhat.</p>
-<p><strong>Hogyan módosíthatod:</strong> iOS Beállítások → Adatvédelem és biztonság → Követés → Quick Daily Fitness. Az ATT és a Google ablaka független egymástól — mindkettő érvényes.</p>
+<p>A jelenlegi változat <strong>nem</strong> jeleníti meg az Apple követési engedélykérését, és nem fér hozzá az eszközöd hirdetési azonosítójához (IDFA). Ha egy későbbi változat olyan hirdetéseket használ, amelyek más cégek alkalmazásaiban és webhelyein követhetnek, az iOS előbb megkérdez — a Google ablakától függetlenül —, és ezt az iOS Beállítások → Adatvédelem és biztonság → Követés menüben módosíthatod majd. Ezt az oldalt akkor frissítjük.</p>
 
 <h2>3. Hirdetési azonosító — Android</h2>
 <p>A hirdetési azonosítódat bármikor visszaállíthatod vagy törölheted az Android beállításaiban (pl. Beállítások → Adatvédelem → Hirdetések, vagy Beállítások → Google → Hirdetések, eszköztől függően). Törlés után az alkalmazások nem kapják meg személyre szabott hirdetésekhez.</p>
@@ -56,7 +53,9 @@
 <p><strong>Hogyan módosíthatod:</strong> kapcsold ki az emlékeztetőt az Alkalmazás beállításaiban, vagy vond vissza az értesítési engedélyt az eszköz beállításaiban.</p>
 
 <h2>5. Statisztika és hibajelentések (Android-változat)</h2>
-<p>A Google Analytics for Firebase és a Firebase Crashlytics jogos érdekünk alapján működik, és <strong>nem</strong> a hirdetési hozzájárulási ablak szabályozza. Az Alkalmazásban jelenleg nincs külön kapcsoló ezekhez. Bármikor tiltakozhatsz, ha írsz a <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> címre. A jelenlegi iOS-változatban ezek a Firebase-szolgáltatások nincsenek aktiválva.</p>
+<p><strong>Statisztika:</strong> a Google Analytics for Firebase tiltott azonosító-tárolással indul (Google Consent Mode). Az EGT-ben, az Egyesült Királyságban és Svájcban csak akkor tárol statisztikai azonosítót, ha a Google ablakában (1. pont) hozzájárulsz az eszközön történő adattároláshoz és/vagy -hozzáféréshez; ha ezt a „Hozzájárulás kezelése” menüpontban visszavonod, azonnal érvényes. Máshol jogos érdekünk alapján működik — e-mailben tiltakozhatsz.</p>
+<p><strong>Hibajelentések:</strong> a Firebase Crashlytics jogos érdekünk alapján működik, és nem az ablak szabályozza. Bármikor tiltakozhatsz, ha írsz a <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> címre.</p>
+<p>A jelenlegi iOS-változatban ezek a Firebase-szolgáltatások nincsenek aktiválva.</p>
 
 <h2>6. A hozzájárulás visszavonásának hatása</h2>
 <p>A hozzájárulás visszavonása a visszavonás pillanatától érvényes; nem érinti a korábban végzett adatkezelés jogszerűségét. A visszavonás vagy elutasítás soha nem korlátozza az Alkalmazás edzésfunkcióit.</p>

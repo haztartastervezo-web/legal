@@ -32,21 +32,18 @@
 <p class="lang">English · <a href="manage_consent.hu.html">Magyar</a></p>
 
 <h1>Manage Consent</h1>
-<p class="updated">App: Quick Daily Fitness (com.enila.quickdailyfitness) &middot; Developer: Enila Studio &middot; Last updated: October 10, 2026</p>
+<p class="updated">App: Quick Daily Fitness (com.enila.quickdailyfitness) &middot; Developer: Enila Studio &middot; Last updated: October 11, 2026</p>
 
 <p>This page describes the consent and permission choices that actually exist in the Quick Daily Fitness app (the "App"), what each one controls, and how you can change or withdraw it.</p>
 
 <h2>1. Google ad-consent dialog (UMP) — EEA, UK, Switzerland</h2>
-<p><strong>What it controls:</strong> whether Google AdMob and the ad partners listed in the dialog may store or access information on your device and use your data for personalized ads and ad measurement.</p>
+<p><strong>What it controls:</strong> whether Google AdMob and the ad partners listed in the dialog may store or access information on your device and use your data for personalized ads and ad measurement — and, through Google Consent Mode, whether Google Analytics for Firebase may store an analytics identifier on your device and use ad-related signals.</p>
 <p><strong>When it appears:</strong> at startup, if Google determines that consent is required in your region. The Mobile Ads SDK is only started after this step.</p>
 <p><strong>If you decline or make limited choices:</strong> depending on your choices, Google may show non-personalized ads, limited ads, or no ads at all. Declining does not block any workout feature of the App.</p>
 <p><strong>How to change it:</strong> More → "About us" → "Manage consent". This item is shown where Google requires a way to revisit your choice; if you do not see it, consent is not required for you in your region.</p>
 
 <h2>2. App Tracking Transparency (ATT) — iOS only</h2>
-<p><strong>What it controls:</strong> whether the App and Google may access your device's advertising identifier (IDFA) to track you across other companies' apps and websites.</p>
-<p><strong>When it appears:</strong> once, after the Google consent step and before ads are started.</p>
-<p><strong>If you decline:</strong> the IDFA is not made available. Ads may still be shown, and Google may still use non-IDFA signals within the limits of your Google consent choices.</p>
-<p><strong>How to change it:</strong> iOS Settings → Privacy &amp; Security → Tracking → Quick Daily Fitness. ATT and the Google dialog are separate — both apply.</p>
+<p>The current version does <strong>not</strong> show Apple's tracking prompt and does not access your device's advertising identifier (IDFA). If a future version uses ads that may track you across other companies' apps and websites, iOS will ask first — separately from the Google dialog — and you will be able to change it in iOS Settings → Privacy &amp; Security → Tracking. This page will be updated then.</p>
 
 <h2>3. Advertising ID — Android</h2>
 <p>You can reset or delete your advertising ID at any time in Android Settings (e.g. Settings → Privacy → Ads, or Settings → Google → Ads, depending on your device). After deletion, apps no longer receive it for personalized advertising.</p>
@@ -56,7 +53,9 @@
 <p><strong>How to change it:</strong> turn the reminder off in the App's settings, or withdraw notification permission in your device settings.</p>
 
 <h2>5. Analytics and crash reports (Android version)</h2>
-<p>Google Analytics for Firebase and Firebase Crashlytics run on the basis of our legitimate interest and are <strong>not</strong> controlled by the ad-consent dialog. The App currently has no separate in-app switch for them. You can object at any time by emailing <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. In the current iOS version these Firebase services are not activated.</p>
+<p><strong>Analytics:</strong> Google Analytics for Firebase starts with identifier storage denied (Google Consent Mode). In the EEA, the UK and Switzerland it stores an analytics identifier only if you consent in the Google dialog (section 1) to storing and/or accessing information on your device; withdrawing that choice via "Manage consent" takes effect immediately. Elsewhere it is enabled on the basis of our legitimate interest — you can object by email.</p>
+<p><strong>Crash reports:</strong> Firebase Crashlytics runs on the basis of our legitimate interest and is not controlled by the dialog. You can object at any time by emailing <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<p>In the current iOS version these Firebase services are not activated.</p>
 
 <h2>6. Effect of withdrawing consent</h2>
 <p>Withdrawing consent applies from that moment on; it does not affect the lawfulness of processing carried out before. Withdrawing or declining never blocks the App's workout features.</p>
