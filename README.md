@@ -29,5 +29,5 @@ here.
 - [magnet_grid](magnet_grid/privacy_policy.en.html) — Magnet Grid
 - [nectar_flow](nectar_flow/privacy_policy.en.html) — Nectar Flow
 - [quick_daily_fitness](quick_daily_fitness/privacy_policy.hu.html) — Quick Daily Fitness (short daily home-workout app)
-- [logic_riddles](logic_riddles/privacy_policy.en.html) — Logic Riddles (visual logic-grid puzzle game)
+- [clue_riddles](clue_riddles/privacy_policy.en.html) — Clue Riddles (visual logic-grid puzzle game)
 - [quest_word_search](quest_word_search/privacy_policy.hu.html) — Szókereső (Quest Word Search)
