@@ -13,50 +13,32 @@ a{color:#1a56db}
 </head>
 <body>
 <h1>Hozzájárulás kezelése — MagnetGrid</h1>
-<p class="updated">Utolsó frissítés: 2026. augusztus 26.</p>
+<p class="updated">Utolsó frissítés: 2026. szeptember 30.</p>
 
-<p>A MagnetGrid a Google AdMobon keresztül jelenít meg hirdetéseket. Ez az
-oldal elmagyarázza, milyen hozzájárulásokat kér a MagnetGrid, és hogyan
-tudod ezeket megváltoztatni.</p>
+<p>A MagnetGrid a Google AdMob szolgáltatáson keresztül jelenít meg hirdetéseket. Ez az oldal ismerteti, hogyan kezeli az App a hirdetésekhez kapcsolódó adatvédelmi választásokat.</p>
 
-<h2>1. Milyen hozzájárulást kérünk</h2>
-<p>Ha az Európai Gazdasági Térségben (EGT), az Egyesült Királyságban vagy
-Svájcban tartózkodsz, a MagnetGrid az App első megnyitásakor egy
-hozzájárulási űrlapot jelenít meg (a Google User Messaging Platform, UMP
-segítségével), amelyben megkérdezi, hozzájárulsz-e a személyre szabott
-hirdetésekhez. Az ezeken a régiókon kívüli felhasználóknak ez az űrlap nem
-jelenik meg, mivel jogilag csak ott kötelező.</p>
-<p>A MagnetGrid nem kér App Tracking Transparency (ATT) engedélyt iOS-en, és
-nem használ Firebase Crashlyticset vagy más nyomkövetési hozzájárulást a
-fent leírt hirdetési hozzájáruláson kívül.</p>
+<h2>1. Google UMP adatvédelmi üzenetek</h2>
+<p>A MagnetGrid a Google User Messaging Platformot (UMP) használja. Az App indulásakor a UMP frissíti a hozzájárulási információkat, majd a felhasználó régiója és az Apphoz beállított adatvédelmi üzenetek alapján meghatározza, hogy szükséges-e adatvédelmi üzenet megjelenítése.</p>
+<p>Ha hozzájárulási űrlap szükséges, a UMP a régiódban támogatott beállításoktól függően kérhet választást például a személyre szabott hirdetésekkel, hirdetési célokkal, szolgáltatókkal vagy más adatvédelmi lehetőségekkel kapcsolatban.</p>
 
-<h2>2. Hogyan változtathatod meg a döntésed</h2>
-<p>A hirdetési hozzájárulásodat bármikor újra megnézheted és megváltoztathatod:</p>
-<ul>
-<li><strong>Az Appban:</strong> nyisd meg a Beállítások → "Hozzájárulás
-kezelése" menüpontot a hozzájárulási űrlap újbóli megnyitásához és a döntésed
-frissítéséhez. Ez a lehetőség csak azoknak a felhasználóknak jelenik meg,
-akikre vonatkoznak a Google hozzájárulási követelményei.</li>
-<li><strong>iOS-en</strong> (ha egy jövőbeli verzióban nyomkövetési engedélyt
-vezetnénk be): Beállítások → Adatvédelem és biztonság → Nyomkövetés.</li>
-</ul>
+<h2>2. Hogyan módosíthatod a választásodat</h2>
+<p>Ha a Google UMP szerint adatvédelmi beállítási lehetőséget kell biztosítani, a MagnetGrid megjeleníti a <strong>Beállítások → Hozzájárulás kezelése</strong> menüpontot. Ezzel újra megnyithatod a Google adatvédelmi beállítási űrlapját, és módosíthatod az ott elérhető választásaidat.</p>
+<p>Az űrlapon látható pontos beállításokat a Google biztosítja; azok régiónként, az alkalmazandó jog és az App adatvédelmiüzenet-beállításai szerint eltérhetnek.</p>
 
-<h2>3. Mi történik, ha nem járulsz hozzá</h2>
-<p>Ha nem járulsz hozzá a személyre szabott hirdetésekhez, a MagnetGrid
-pontosan ugyanúgy működik tovább — továbbra is fogsz hirdetéseket látni,
-de azok nem lesznek személyre szabottak.</p>
+<h2>3. Mi történik, ha nem járulsz hozzá a személyre szabott hirdetésekhez</h2>
+<p>A játék alapfunkciói továbbra is használhatók. A hozzájárulási állapottól és a Google által támogatott hirdetéskiszolgálási módtól függően nem személyre szabott, korlátozott vagy kizárólag technikailag kiszolgált hirdetések jelenhetnek meg, illetve előfordulhat, hogy hirdetés nem érhető el. A választható jutalmazott előnyökhöz elérhető hirdetés szükséges.</p>
 
-<h2>4. EGT-/UK-/svájci felhasználók</h2>
-<p>A Google UMP hozzájárulási folyamata megfelel a GDPR/UK GDPR és a Google
-EU felhasználói hozzájárulási szabályzata e régiókra vonatkozó
-követelményeinek, beleértve azt is, hogy a hozzájárulás visszavonása
-ugyanolyan egyszerű legyen, mint a megadása.</p>
+<h2>4. App Tracking Transparency iOS-en</h2>
+<p>A MagnetGrid jelenleg nem kér Apple App Tracking Transparency (ATT) engedélyt. Az App ezért nem támaszkodik ATT-engedéllyel elérhető hirdetési azonosítón alapuló alkalmazások közötti nyomkövetésre. Harmadik fél szolgáltatásai ettől függetlenül kezelhetnek olyan adatokat, amelyeket az Apple szabályai ATT-engedély nélkül is megengednek.</p>
 
-<h2>5. Kapcsolódó dokumentumok</h2>
-<p><a href="privacy_policy.hu.html">Adatvédelmi irányelvek</a> ·
+<h2>5. Analitika és felhőszinkronizálás</h2>
+<p>A UMP által kezelt hirdetési hozzájárulás elkülönül az App Firebase Analytics és automatikus anonim Firebase-felhőszinkronizálási funkcióitól. Ezekről és az általuk kezelt adatokról az <a href="privacy_policy.hu.html">Adatvédelmi tájékoztatóban</a> olvashatsz.</p>
+
+<h2>6. Kapcsolódó dokumentumok</h2>
+<p><a href="privacy_policy.hu.html">Adatvédelmi tájékoztató</a> ·
 <a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
 
-<h2>6. Kapcsolat</h2>
+<h2>7. Kapcsolat</h2>
 <p><a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
 </body>
 </html>

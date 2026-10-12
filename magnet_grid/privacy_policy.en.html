@@ -13,96 +13,61 @@ a{color:#1a56db}
 </head>
 <body>
 <h1>Privacy Policy — MagnetGrid</h1>
-<p class="updated">Last updated: August 26, 2026</p>
+<p class="updated">Last updated: September 30, 2026</p>
 
-<p>This Privacy Policy explains how MagnetGrid ("the App", package name
-<code>com.enila.magnet_grid</code>) collects, uses, and protects information
-when you use it. MagnetGrid is a puzzle game developed by Enila Studio.</p>
+<p>This Privacy Policy explains how MagnetGrid ("the App"), developed by Enila Studio, handles information when you use the App.</p>
 
-<h2>1. Data We Collect</h2>
-<p>MagnetGrid stores your game progress, settings, and preferences locally on
-your device (using local storage such as Isar and SharedPreferences). This
-local data is not personally identifiable and stays on your device unless
-you use the optional cloud backup feature described below.</p>
+<h2>1. Local App Data</h2>
+<p>MagnetGrid stores game progress and app settings locally on your device. This may include completed levels, coins, lives, consumable rewards, daily-reward or streak state, theme and language choices, temporary ad-free reward state, and other app preferences. This information is used to operate the game and remember your choices.</p>
 
-<p><strong>Optional cloud backup:</strong> MagnetGrid can back up your local
-progress to our cloud database (Firebase Firestore) using an anonymous
-Firebase account that is automatically created on your device. This
-anonymous account is not linked to your name, email address, or any other
-personally identifying information. To restore your progress on a new
-device, MagnetGrid uses a short restore code generated on your original
-device — no sign-in with a Google, Apple, or email account is required or
-supported.</p>
+<h2>2. Automatic Cloud Sync</h2>
+<p>When Firebase is available, the App may automatically create an anonymous Firebase Authentication account and use Cloud Firestore to back up locally stored app state. No Google, Apple, email, name, or password sign-in is required.</p>
+<p>The current implementation may synchronize values stored by the App in its local SharedPreferences storage. This can include game progress, virtual currency and lives, consumables and reward state, daily progress, selected settings, language or theme preferences, temporary ad-free state, and similar app-state values. The App does not intentionally upload the contents of an individual puzzle board as a cloud-backup field.</p>
+<p>Cloud sync is best-effort. On a fresh local installation the App may try to retrieve an existing backup associated with the current anonymous Firebase installation, and when the App moves to the background it may upload changed local state.</p>
 
-<h2>2. Third-Party Services We Use</h2>
+<h2>3. Analytics</h2>
+<p>MagnetGrid uses Firebase Analytics to understand app usage and improve the game. Analytics events may include app opens, settings usage, level starts and completions, difficulty or game mode, moves and restarts, hint or reward interactions, advertising events, and cross-promotion interactions. We do not intentionally send your name, email address, message content, contacts, or full puzzle-board contents in these custom events.</p>
+<p>Firebase Analytics and related Google services may also process pseudonymous identifiers and technical information about the app, device, and usage as described in Google's documentation and privacy materials.</p>
+
+<h2>4. Advertising and Consent</h2>
+<p>MagnetGrid displays advertising through Google AdMob, including rewarded ads and other supported ad formats. Depending on the ad configuration and your choices, Google and its advertising partners may process information such as device or app identifiers, approximate location inferred from an IP address, ad interactions, product interactions, diagnostics, and other information used to deliver, measure, protect, and personalize advertising.</p>
+<p>The App uses Google's User Messaging Platform (UMP) to request and manage advertising-related privacy choices where a privacy message is required. UMP determines whether a consent form or privacy-options entry point is required based on applicable region and the privacy messages configured for the App. Where the Settings screen shows "Manage consent", you can reopen the available privacy-options form there.</p>
+<p>If you do not consent to personalized advertising, advertising may be non-personalized, limited, technically served without personalization, or unavailable, depending on the applicable consent state and Google's supported ad-serving mode. The core game remains usable, although optional rewarded benefits require an ad to be available.</p>
+<p>MagnetGrid does not currently request Apple's App Tracking Transparency (ATT) permission. The App therefore does not rely on ATT-authorized cross-app tracking through the advertising identifier. Third-party services may still process data that Apple permits without ATT authorization.</p>
+
+<h2>5. Third-Party Services</h2>
 <ul>
-<li><strong>Google AdMob</strong> — displays in-app advertising (including
-rewarded ads). AdMob may collect device identifiers and usage data to serve
-ads, and to serve personalized ads where you have consented.</li>
-<li><strong>Google User Messaging Platform (UMP)</strong> — collects and
-manages your advertising consent choices for users in the European Economic
-Area (EEA), the UK, and Switzerland, in line with Google's EU User Consent
-Policy.</li>
-<li><strong>Firebase Analytics</strong> — collects anonymous, aggregated
-gameplay event data (e.g. level starts/completions, tutorial progress,
-settings usage) to help us understand how the App is used and improve it.
-No puzzle board contents or other personal data are included in these
-events.</li>
-<li><strong>Firebase Authentication (anonymous) &amp; Cloud Firestore</strong>
-— used only for the optional cloud backup feature described in Section 1.</li>
+<li><strong>Google AdMob</strong> — advertising delivery, measurement, fraud prevention, and where permitted, personalization.</li>
+<li><strong>Google User Messaging Platform (UMP)</strong> — advertising privacy and consent choices.</li>
+<li><strong>Firebase Analytics</strong> — pseudonymous usage and gameplay analytics.</li>
+<li><strong>Firebase Authentication (anonymous)</strong> — anonymous installation account used for cloud sync.</li>
+<li><strong>Cloud Firestore</strong> — storage of synchronized app state.</li>
 </ul>
 
-<h2>3. Advertising and Tracking</h2>
-<p>MagnetGrid shows ads served through Google AdMob. If you are located in
-the EEA, the UK, or Switzerland, a consent form (Google UMP) is shown before
-any ads are requested, allowing you to choose whether to receive personalized
-or non-personalized ads. You can change this choice at any time from
-Settings → Manage consent.</p>
-<p>MagnetGrid does not use Apple's App Tracking Transparency (ATT) framework
-and does not access your device's advertising identifier for cross-app
-tracking on iOS.</p>
+<h2>6. Purposes and Legal Bases</h2>
+<p>We process information to provide and maintain the App, preserve game state, understand how features are used, improve reliability and gameplay, prevent abuse, and deliver or measure advertising. Depending on the processing and your jurisdiction, the legal basis may be performance of the service, our legitimate interests in operating and improving the App, or consent where consent is required, including for personalized advertising or related tracking technologies.</p>
 
-<h2>4. Children's Privacy</h2>
-<p>MagnetGrid is designed for a general audience and is not directed at
-children under 13 (or the equivalent minimum age in your jurisdiction). We
-do not knowingly collect personal information from children. If you believe
-a child has provided us with personal information, please contact us using
-the details in Section 8 so we can remove it.</p>
+<h2>7. Data Retention and Security</h2>
+<p>Local data remains on your device until you remove it through available app or operating-system controls, reset relevant app data, or uninstall the App. Cloud records may remain after uninstalling because they are stored separately on Firebase servers under an anonymous identifier.</p>
+<p>We retain cloud and analytics information only for as long as reasonably necessary for the purposes described above, subject to the retention settings and technical operation of the relevant Google services. We use reasonable technical and organizational measures and the security features provided by Firebase and Google services to protect transmitted and stored data.</p>
 
-<h2>5. Data Security and Retention</h2>
-<p>Local data stays on your device until you uninstall the App or reset your
-progress from Settings. Cloud backup data (Section 1) is retained until you
-request its deletion (see Section 6) or it becomes inactive per our
-retention practices. We use reasonable technical measures, including those
-provided by Google Firebase, to protect any data that is transmitted or
-stored.</p>
+<h2>8. Your Privacy Rights</h2>
+<p>Depending on your location, you may have rights to request access, correction, deletion, restriction, objection, portability, or withdrawal of consent. For advertising consent, use Settings → Manage consent when that option is available.</p>
+<p>Because cloud backups are associated with an anonymous Firebase identifier rather than a name or email address, we may not always be able to link a support request to a specific anonymous cloud record unless sufficient technical information is available to identify it. If you contact us with a privacy request, we will respond and take reasonable steps consistent with applicable law.</p>
+<p>We do not knowingly sell personal information for money. Advertising-related disclosures to Google or advertising partners are governed by your applicable privacy choices and the configuration of the advertising services.</p>
 
-<h2>6. Your Rights</h2>
-<p>Depending on your location, you may have rights under the General Data
-Protection Regulation (GDPR/UK GDPR) or the California Consumer Privacy Act
-(CCPA/CPRA), including the right to access, correct, delete, or port your
-data, and the right to object to or restrict processing. Because MagnetGrid
-does not collect data linked to your identity, most of these rights apply
-only to the anonymous cloud backup described in Section 1; you can delete
-this backup at any time by contacting us (Section 8) with your restore code.</p>
-<p><strong>California users:</strong> we do not sell or share your personal
-information for cross-context behavioral advertising in the sense defined
-by the CCPA/CPRA.</p>
+<h2>9. Children's Privacy</h2>
+<p>MagnetGrid is intended for a general audience and is not specifically directed to children under 13, or the equivalent minimum age in the user's jurisdiction. We do not knowingly request a child's name, email address, or other directly identifying account information. If you believe a child has provided personal information to us, please contact us.</p>
 
-<h2>7. International Data Transfers</h2>
-<p>Where cloud backup is used, data may be processed and stored on servers
-operated by Google (Firebase) located outside your country, including in the
-United States, under Google's standard contractual safeguards.</p>
+<h2>10. International Data Transfers</h2>
+<p>Google services may process data in countries other than the country where you live. Where required, such transfers are handled under safeguards provided by Google and applicable data-protection law.</p>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. Material changes
-will be reflected by updating the "Last updated" date above. Continued use
-of the App after changes take effect constitutes acceptance of the revised
-policy.</p>
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy when the App, our providers, or legal requirements change. We will update the "Last updated" date above and provide additional notice where required by law.</p>
 
-<h2>9. Contact Us</h2>
-<p>Questions about this Privacy Policy or your data? Contact us at
-<a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<h2>12. Developer and Contact</h2>
+<p>Developer responsible for the App: Enila Studio.</p>
+<p>Privacy and support contact: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
 
 <hr>
 <p>See also: <a href="manage_consent.en.html">Manage Consent</a> ·
