@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Meal Plan / Heti Menü</title></head><body>
+<h1>Privacy Policy</h1>
+<p>Meal Plan / Heti Menü (com.momreset.mealplanner) · Last updated: September 24, 2026</p>
+<h2>1. Data controller</h2>
+<p>Controller and provider: <strong>Fütyü-Gábor Enikő</strong>, private individual, 1123 Budapest, Nagyenyed utca 5., Hungary. Privacy contact: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<h2>2. Local-first design</h2>
+<p>Most meal-planning content remains on your device. Cloud processing occurs only for functions that use an online service, such as sign-in, optional sync, feedback, nutrition-data correction reports, notifications, analytics or advertising.</p>
+<h2>3. Data stored locally</h2>
+<ul><li>recipes, ingredients, categories, tags and recipe settings;</li><li>weekly menus, shopping lists, pantry/stock, food diary and nutrition settings;</li><li>notes and observations entered as free text;</li><li>cooking history and usage settings;</li><li>profile and food photos selected by you;</li><li>language, units, theme and other app preferences.</li></ul>
+<p>Local data remains on your device until you delete it in the app or through the operating system, except where you choose a feature that synchronises or submits specific data to a cloud service.</p>
+<h2>4. Nutrition calculations</h2>
+<p>Nutrient values are estimates. Ingredient data is primarily based on USDA FoodData Central. Percentages of daily reference values use adult RI/NRV figures from Annex XIII of Regulation (EU) No 1169/2011. Calculations are mathematical estimates and are not medical, dietetic, diagnostic or treatment advice. See the Terms of Use for detailed limitations.</p>
+<h2>5. Optional Google Drive sync</h2>
+<p>If you start sync, the app uses the app-specific hidden <code>appDataFolder</code> area of your Google Drive account through the restricted <code>drive.appdata</code> scope. Backups may contain recipes and recipe images, weekly menus, daily menu notes and cooking history. We do not receive general access to the files in your Google Drive.</p>
+<h2>6. Optional account and sign-in</h2>
+<p>Core features can be used without an account. If you sign in with Google or Apple, Firebase Authentication and the selected identity provider process the identifiers required for authentication, which may include a user identifier, email address and display name.</p>
+<p>When you delete your account, the app deletes the Firebase Authentication account after any required re-authentication. For Sign in with Apple, the app also requests revocation of the Apple authorization token. Server-side deletion configured in Firebase removes account-linked Firestore data as described in section 16.</p>
+<h2>7. Firestore data used by app features</h2>
+<p>Depending on the feature you use, the app may store the following records in Google Cloud Firestore:</p>
+<ul>
+<li><strong>Cooking history:</strong> when signed in, cooking events may be stored under <code>users/{uid}/cook_events</code> so they can be synchronised across sessions or devices.</li>
+<li><strong>Nutrition correction reports:</strong> if you report a missing or incorrect ingredient mapping, the report may contain recipe and ingredient identifiers/names, quantity, unit, USDA mapping information, your optional note, app version and, when signed in, your Firebase user ID.</li>
+<li><strong>Feedback:</strong> feedback text, creation time, status, developer response fields and an expiry time.</li>
+<li><strong>Poll votes:</strong> an app-generated pseudonymous device UUID, the submitted answer, poll identifier, timestamp and expiry time. Aggregated poll totals contain counts rather than the device UUID.</li>
+<li><strong>Language preferences:</strong> an app-generated pseudonymous device UUID, the language preference, optional custom language name, update time and expiry time.</li>
+<li><strong>Product telemetry stored in Firestore:</strong> selected aggregate/product events such as device/app language or recipe-count snapshots may be stored without an account UID or custom device identifier.</li>
+<li><strong>FAQ content:</strong> developer-authored FAQ entries are read from Firestore and contain no user personal data.</li>
+</ul>
+<h2>8. Firebase Analytics</h2>
+<p>The app uses Google Analytics for Firebase to understand app usage and important product actions. Firebase Analytics can automatically collect app-instance, device, technical and usage information and may receive custom events such as recipe creation/import, cooking, sharing, PDF export, shopping-list generation, rewarded-ad start, store-opening actions and similar product events.</p>
+<p>Where European consent rules apply, Google User Messaging Platform (UMP) and Google Consent Mode are used to reflect applicable consent choices, including analytics-storage choices, provided that Consent Mode is enabled and configured for the app in the Google/AdMob console. Analytics collection and retention also depend on the Firebase/Google Analytics project configuration.</p>
+<h2>9. Notifications and Remote Config</h2>
+<p>If you grant notification permission, Firebase Cloud Messaging may process a technical push token to deliver notifications. The app can also schedule local notifications. Firebase Remote Config downloads app configuration and feature settings; recipe or diary content is not sent to Remote Config.</p>
+<h2>10. Advertising, UMP and iOS ATT</h2>
+<p>The app uses Google AdMob. On Android and iOS, the app refreshes UMP consent information at app launch, shows Google's consent form where required, and requests ads only when UMP reports that ads can be requested.</p>
+<p>On iOS, App Tracking Transparency (ATT) is a separate system permission. If tracking is denied, IDFA is not available for ad requests. ATT and UMP are separate controls.</p>
+<h2>11. Camera, photos, files and shared content</h2>
+<p>Camera or photo access is requested only when you choose to capture or select an image. File pickers and system share features expose only content you select or explicitly share with the app. The app does not require contacts, microphone, SMS or call-log access for normal operation.</p>
+<h2>12. External content and links</h2>
+<p>If you open or import recipes, images, videos or web links from an external service, that provider may process technical information such as your IP address under its own privacy terms.</p>
+<h2>13. Legal bases under the GDPR</h2>
+<ul>
+<li><strong>Article 6(1)(b):</strong> providing optional account, authentication and sync functions requested by you;</li>
+<li><strong>Article 6(1)(a):</strong> processing that requires consent, including applicable advertising, analytics-storage and iOS tracking choices;</li>
+<li><strong>Article 6(1)(f):</strong> voluntary feedback, product-improvement telemetry, security, abuse prevention, poll integrity and correction of nutrition-data mappings, where our legitimate interests are not overridden by your rights and interests.</li>
+</ul>
+<h2>14. Service providers</h2>
+<p>Depending on the features you use, processors or independent providers may include Google/Firebase services (Authentication, Cloud Firestore, Cloud Messaging, Remote Config, Google Analytics for Firebase, Google Drive API, AdMob/UMP) and Apple (Sign in with Apple and ATT-related platform services). Each provider processes data under its own applicable terms and safeguards.</p>
+<h2>15. International transfers</h2>
+<p>Google and Apple may process data outside the EEA. Transfers may rely on applicable adequacy decisions, the EU–US Data Privacy Framework where available, Standard Contractual Clauses or other lawful safeguards.</p>
+<h2>16. Retention and deletion</h2>
+<ul>
+<li>local app data: until you delete it or remove the app/app data;</li>
+<li>Google Drive backup: while it remains in your Google account;</li>
+<li>Firebase Authentication account data: until the account is deleted;</li>
+<li>account-linked Firestore data under <code>users/{uid}</code>: deleted server-side after Firebase Authentication account deletion when the configured Firebase Delete User Data process runs;</li>
+<li>nutrition correction reports: up to 365 days, subject to Firestore TTL, and account-linked reports may also be deleted through UID-based deletion;</li>
+<li>feedback: 90 days, subject to Firestore TTL processing delay;</li>
+<li>raw pseudonymous poll votes: up to 180 days, subject to Firestore TTL; aggregated counts may be retained because they no longer contain the device UUID;</li>
+<li>language-preference records: up to 365 days, subject to Firestore TTL;</li>
+<li>Firebase Analytics data: according to the retention period configured in the Google Analytics/Firebase project;</li>
+<li>notification tokens: according to provider/operating-system lifecycle and until the notification relationship ends.</li>
+</ul>
+<p>Firestore TTL and server-side account-data deletion are asynchronous and may complete after a short technical delay.</p>
+<h2>17. Your rights</h2>
+<p>Depending on applicable law, you may request access, correction, deletion, restriction or portability, object to processing based on legitimate interests, and withdraw consent at any time. Contact <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<p>You may lodge a complaint with the Hungarian National Authority for Data Protection and Freedom of Information (NAIH) or the competent supervisory authority in your country of residence.</p>
+<h2>18. Children</h2>
+<p>The app is not directed to children and is not intended to collect personal data from children under 16. Where local law uses a different digital-consent threshold, that local threshold applies.</p>
+<h2>19. Changes</h2>
+<p>Material changes are identified by the updated date and, where appropriate, communicated in the app. Where new processing requires consent, consent will be requested separately.</p>
+<p><a href="privacy_policy.en.html">Privacy Policy</a> · <a href="manage_consent.en.html">Manage consent</a> · <a href="terms_of_use.en.html">Terms of Use</a> · <a href="account_deletion.en.html">Account &amp; data deletion</a></p>
+</body></html>
