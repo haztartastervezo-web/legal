@@ -22,7 +22,7 @@ here.
 ## Apps
 
 - [meal_plan](meal_plan/privacy_policy.hu.html) — Meal Plan / Heti Menü (meal-planning app)
-- [decode_quest](decode_quest/privacy_policy.hu.html) — DecodeQuest (Kódfejtő) (decode-the-quote word puzzle)
+- [decode_quest](decode_quest/privacy_policy.hu.html) — Decode Quest (Kódfejtő) (decode-the-quote word puzzle)
 - [sum_and_pair](sum_and_pair/privacy_policy.hu.html) — Sum & Pair
 - [four_clues](four_clues/privacy_policy.en.html) — Four Clues (icon-grouping puzzle game)
 - [word_album](word_album/privacy_policy.hu.html) — Word Album
