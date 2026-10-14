@@ -1,87 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Word Album</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
-  h1 { font-size: 1.6rem; margin-bottom: 4px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
-  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
-  ul { padding-left: 1.4em; }
-  a { color: #0060df; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.94rem; }
-  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; vertical-align: top; }
-  th { background: #f6f6f7; }
-  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+  :root{color-scheme:light dark}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc;overflow-wrap:anywhere}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
 </head>
 <body>
+<p class="lang"><a href="privacy_policy.hu.html">Magyar</a> · English · <a href="privacy_policy.el.html">Ελληνικά</a> · <a href="privacy_policy.it.html">Italiano</a> · <a href="privacy_policy.ro.html">Română</a></p>
 <h1>Privacy Policy</h1>
-<p class="meta">
-  App name: Word Album<br>
-  Package name: com.enila.wordalbum<br>
-  Last updated: September 4, 2026
-</p>
+<p class="updated">App: Word Album (com.enila.wordalbum) &middot; Last updated: October 13, 2026</p>
+<div class="box id"><strong>Controller and provider:</strong> Fütyü-Gábor Enikő (Enila Studio), private individual &middot; 4032 Debrecen, Cívis utca 3., Hungary &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<h2>1. Introduction</h2>
-<p>This Privacy Policy explains how the Word Album app handles user data. By using the app, you agree to the practices described here. If you disagree with any part of it, please do not use the app.</p>
+<p>This Privacy Policy explains what data the Word Album mobile app (the “App”), a word puzzle game with a sticker album, processes, for what purposes, with whom it is shared and what rights you have. It is for information only: where your consent is required, the App asks for it separately.</p>
 
-<h2>2. What data we collect</h2>
-<p>The app does not ask for or directly collect personally identifiable information (name, email address, phone number). We handle the following game data:</p>
+<div class="box"><strong>In short:</strong> Your game progress and settings are stored on your device. So that your progress is not lost, the App also automatically backs it up to Google Firebase under a random, pseudonymous ID — without your name, e-mail address or password. The App shows ads through Google AdMob and uses Google Analytics for Firebase for usage statistics. These Google services process pseudonymous technical identifiers (e.g. app-instance ID or advertising ID) and device data — this is not anonymous data. In the EEA, the UK and Switzerland, Google's consent form asks for your ad choices; on iOS, Apple's tracking permission prompt is also shown.</div>
+
+<h2>1. Controller and contact</h2>
+
+<p>The controller of your personal data and the provider of the App is <strong>Fütyü-Gábor Enikő</strong>, private individual, publishing apps under the name Enila Studio (address: 4032 Debrecen, Cívis utca 3., Hungary). For any privacy question or request, write to <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. We have not appointed a data protection officer, as we are not required to.</p>
+
+<h2>2. Data stored only on your device</h2>
+
 <ul>
-  <li>List of solved puzzles</li>
-  <li>Play-streak counter</li>
-  <li>Hint balance and coin balance</li>
-  <li>Daily task progress and statistics (e.g. best time, solve time)</li>
-  <li>Saved game states</li>
-  <li>Settings (theme, language, daily reminder status)</li>
+  <li>Game progress: completed puzzles and levels, statistics, streaks and the state of an unfinished game</li>
+  <li>Status of the daily challenge and daily bonus</li>
+  <li>In-game coins, hints and other items earned in the game (these have no monetary value)</li>
+  <li>The expiry time of an ad-free period earned by watching a rewarded ad</li>
+  <li>Settings (e.g. language, theme, sound, vibration)</li>
+  <li>Which of our other apps the “More apps” card recommended last</li>
 </ul>
-<p>This data is primarily stored locally on your device (shared preferences).</p>
 
-<h3>Cloud backup</h3>
-<p>The app also creates an optional, automatic cloud backup of the game data listed above, using Google Firebase services (Firebase Authentication, Cloud Firestore), so a fresh install or a new device doesn't lose your progress. For this, the app creates an anonymous Firebase identifier on your device — we do not request or attach a name, email address, phone number, or login credential to it. The backup covers only the game data listed above, and is restored from the cloud only when the device has no local progress yet (e.g. a fresh install).</p>
+<p>This data stays on your device, except for the backup described in section 3.</p>
 
-<h2>3. Third-party services</h2>
-<p>The app uses the following third-party services:</p>
-<table>
-  <tr><th>Service</th><th>Purpose</th></tr>
-  <tr><td>Google AdMob</td><td>Displays ads in the app (personalized or non-personalized, depending on your consent)</td></tr>
-  <tr><td>Google User Messaging Platform (UMP)</td><td>Collects advertising consent from users in the EEA/UK, per EU GDPR and ePrivacy rules</td></tr>
-  <tr><td>Firebase Authentication (anonymous sign-in)</td><td>Provides an anonymous identifier for cloud backup, without a password or email</td></tr>
-  <tr><td>Cloud Firestore</td><td>Optional cloud backup and restore of game progress</td></tr>
-  <tr><td>Firebase Analytics</td><td>Collects anonymous, aggregated usage statistics (e.g. which features are used) to support app development</td></tr>
-</table>
-<p>These providers may process technical identifiers (e.g. advertising ID, device identifier) under their own privacy policies. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> and the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security notice</a> for more information.</p>
+<p>Uninstalling the App deletes this local data from your device. Note: if you use your device's own backup (e.g. Android or iCloud device backup), the operating system may also back up app data according to your device settings — this is outside our control.</p>
 
-<h2>4. Advertising and tracking</h2>
-<p>On first launch — for users in the European Economic Area (EEA), the UK, and Switzerland — the app shows Google's UMP consent form, where you can choose whether to allow personalized ads. Until you give consent, the app can only request non-personalized ads. You can change your choice at any time via Settings → "Manage Consent" (where this option is available in your region).</p>
-<p>On iOS, we separately request permission via the system's App Tracking Transparency (ATT) mechanism before using your device's advertising identifier (IDFA) for more personalized ads. You can revoke this at any time in Settings → Privacy → Tracking.</p>
-<p>See the <a href="manage_consent.en.html">Manage Consent</a> document for details.</p>
+<h2>3. Automatic cloud backup (Google Firebase)</h2>
 
-<h2>5. Children's privacy</h2>
-<p>The app is not directed specifically at children; it is intended for a general audience. We do not knowingly request or collect personally identifiable information from children under 13. If you believe your child has provided us with personal information, please contact us at the email address below and we will act promptly to delete it.</p>
+<p>When you first open the App, it automatically creates a pseudonymous account for you with Firebase Authentication (anonymous sign-in). This account has a random user ID (UID) and is not linked to your name, e-mail address or phone number.</p>
 
-<h2>6. Data security and retention</h2>
-<p>The security of data stored on your device depends on your device's own security settings. Data stored in the cloud (backup) is protected by Google Firebase's industry-standard infrastructure. We retain game data for as long as you use the app, or until you request its deletion.</p>
+<p>Under this UID the App automatically saves a copy of your game progress and settings (see section 2) in Google Cloud Firestore — usually when you leave the App — so that your progress is protected and can be restored where possible. This backup is part of how the App works and contains no contact details.</p>
 
-<h2>7. Your rights</h2>
-<p><strong>GDPR / UK GDPR (EEA, UK users):</strong> You have the right to access, rectify, erase, restrict processing, port, and object to processing of data concerning you. Since the app does not directly collect identifiable personal data, these rights primarily apply to the anonymous game data stored in the cloud — you can trigger its deletion by uninstalling the app, or by contacting us at the email address below.</p>
-<p><strong>CCPA/CPRA (California):</strong> We do not sell your personal information, and we do not share it for cross-context behavioral advertising beyond what is described in this policy (the operation of the advertising SDK). California residents have the right to know about, delete, and correct their data, and to opt out of any sale or sharing. We also honor opt-out preference signals such as Global Privacy Control (GPC) where applicable.</p>
+<p>Uninstalling the App does <strong>not</strong> by itself delete the cloud backup. To have it deleted, write to us (section 1). Because the account is pseudonymous, we need information to find your backup: the approximate date of last use and your device model.</p>
 
-<h2>8. International data transfers</h2>
-<p>Google Firebase's infrastructure operates globally across multiple data centers, so cloud backup data may be transferred outside the European Economic Area. Such transfers are covered by Google's contractual safeguards (e.g. EU Standard Contractual Clauses).</p>
+<h2>4. Data you send us</h2>
 
-<h2>9. Changes to this policy</h2>
-<p>If our data practices change, we will update this page and the "last updated" date at the top. We recommend checking this page periodically.</p>
+<ul>
+  <li><strong>Feedback:</strong> if you send feedback in the App, we receive your rating, the text of your message and technical data (device model and manufacturer, operating system version, app version, app language) together with the time of submission. Please do not include personal data in the message.</li>
+</ul>
 
-<h2>10. Contact</h2>
-<p>If you have questions about this Privacy Policy, contact us at:<br>
-<a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<p>This data is stored in Google Cloud Firestore.</p>
 
-<footer>
-  See also: <a href="manage_consent.en.html">Manage Consent</a> · <a href="terms_of_use.en.html">Terms of Use</a>
-</footer>
+<h2>5. Advertising (Google AdMob)</h2>
+
+<p>The App is free and funded by advertising: banner ads, native ads that blend into the screen and optional rewarded ads that you choose to watch in exchange for an in-game reward. Ads are served by Google AdMob (Google Ireland Limited / Google LLC). To show, limit, measure and — where permitted — personalise ads and to prevent fraud, Google may process: the advertising ID (Android) and, on iOS, the IDFA only if you allow tracking (ATT); your IP address and the approximate location derived from it; device and app data (model, OS version, language, app version); and ad interactions (impressions, clicks). Google acts under its own rules: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+
+<h2>6. Usage analytics (Google Analytics for Firebase)</h2>
+
+<p>To understand how the App is used and to improve its puzzles and features, the App sends usage events to Google Analytics for Firebase — for example app opens, starting and completing puzzles or levels, hint use, rewarded-ad interactions and impressions and clicks of the “More apps” card. Firebase also collects data automatically, such as a randomly generated app-instance ID, device model, OS version, app version, language/region, approximate location derived from the IP address and session data; on Android it may also receive the advertising ID.</p>
+
+<p>These identifiers are pseudonymous: we do not link them to your name or contact details, but under the GDPR they are personal data. Analytics starts when the App is opened and is not controlled by the ad consent form. You can object to analytics processing at any time by writing to us (section 1).</p>
+
+<h2>7. Consent and tracking choices</h2>
+
+<ul>
+  <li><strong>EEA, UK, Switzerland:</strong> at start-up the App uses Google's User Messaging Platform (UMP) — a consent management platform certified by Google — to ask for your choices about storing/accessing information on your device and about ad personalisation. The App only requests ads after this step. Depending on your choices, Google may show personalised, non-personalised or limited ads, or no ads at all. You can change your choice at any time in the App's settings under “Manage consent” / privacy settings (shown where Google requires it).</li>
+  <li><strong>iOS – App Tracking Transparency (ATT):</strong> after the consent step, iOS asks whether the App may track you across other companies' apps and websites. If you decline, the IDFA is not available to the App or to Google; ads may still be shown. You can change this at any time in iOS Settings → Privacy &amp; Security → Tracking. ATT is independent of Google's consent form — both apply.</li>
+</ul>
+
+<p>Details: <a href="manage_consent.en.html">Manage Consent</a>.</p>
+
+<h2>8. Other functions and permissions</h2>
+
+<ul>
+  <li><strong>Contact by e-mail:</strong> if you write to us (e.g. via “Contact” or “I have an idea”), we receive your e-mail address and the content of your message and use them only to reply.</li>
+  <li><strong>Sharing and store links:</strong> “Share” opens your device's share sheet; “Rate us” and the “More apps” card open the app store. We receive no data about these actions beyond the analytics events described above.</li>
+  <li><strong>In-app update (Android):</strong> the App asks Google Play whether a newer version is available. This is handled by Google Play, not by our servers.</li>
+  <li><strong>Reminders:</strong> if you allow notifications, the App schedules reminders locally on your device. We do not use a push-notification service and receive no data. You can switch reminders off in the App or in your device settings.</li>
+  <li><strong>Photo library (iOS):</strong> the App declares photo-library access only for an internal developer tool that saves generated images to your photo library. This tool is not available in normal use, and the App never sends photos to us.</li>
+</ul>
+
+<p>Permissions the App uses: internet access and notifications (for reminders; on Android also rescheduling after restart). The App does not access your location, contacts, camera, microphone or files, and has no in-app purchases.</p>
+
+<h2>9. Purposes and legal bases (GDPR)</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Processing</th><th>Purpose</th><th>Legal basis</th></tr>
+  <tr><td>Local progress and settings</td><td>Running the game you requested</td><td>Necessary to provide the service (GDPR Art. 6(1)(b)); storage on the device that is strictly necessary for the service</td></tr>
+  <tr><td>Pseudonymous account and automatic cloud backup</td><td>Protecting and restoring your progress</td><td>Necessary to provide the service (Art. 6(1)(b)) and our legitimate interest in preventing loss of progress (Art. 6(1)(f))</td></tr>
+  <tr><td>Feedback, error reports, language wishes and statistics</td><td>Handling your message, fixing errors, improving the App</td><td>Legitimate interest (Art. 6(1)(f))</td></tr>
+  <tr><td>Storing/accessing information on the device for advertising, personalised ads</td><td>Showing and personalising ads</td><td>Your consent (Art. 6(1)(a) and the ePrivacy rules), via UMP; on iOS also ATT</td></tr>
+  <tr><td>Ad delivery, measurement and fraud prevention where permitted without consent</td><td>Funding the free App, security</td><td>Legitimate interest (Art. 6(1)(f)), within your consent choices</td></tr>
+  <tr><td>Usage analytics</td><td>Understanding usage, improving the App</td><td>Legitimate interest (Art. 6(1)(f)); you may object at any time</td></tr>
+  <tr><td>Support e-mails</td><td>Replying to your request</td><td>Steps at your request / legitimate interest (Art. 6(1)(b), (f))</td></tr>
+</table></div>
+
+<h2>10. Recipients (processors and independent providers)</h2>
+
+<ul>
+  <li>Google (Firebase: Analytics, Authentication, Cloud Firestore) — as our processor. <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
+  <li>Google AdMob and, where applicable, the ad partners listed in the consent form — ad delivery; Google acts partly as an independent controller under its own terms.</li>
+  <li>Google Play (Android) — update check and store pages.</li>
+  <li>Apple (iOS) — the ATT permission is handled by iOS.</li>
+</ul>
+
+<p>We do not sell your personal data for money. We do not disclose data to any other third party unless required by law.</p>
+
+<h2>11. Retention</h2>
+
+<ul>
+  <li>Local data: until you uninstall the App or delete the data.</li>
+  <li>Cloud backup: as long as it is needed for the App to work, or until you ask us to delete it.</li>
+  <li>Feedback, error reports, language wishes and statistics: as long as needed to process them and improve the App; deleted earlier at your request.</li>
+  <li>Analytics data: kept by Google according to the data-retention setting of our Google Analytics property and Google's own retention rules; aggregated reports may be kept longer.</li>
+  <li>Advertising data: kept by Google according to its own rules (<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
+  <li>Support e-mails: as long as needed to handle the request, then deleted unless the law requires us to keep them.</li>
+</ul>
+
+<p>Uninstalling the App deletes local data but does not by itself delete data already received by Google or stored in the cloud; see section 12.</p>
+
+<h2>12. Your rights and deletion</h2>
+
+<p>If the GDPR or UK GDPR applies to you, you have the right of access, rectification, erasure, restriction of processing, data portability, the right to object to processing based on legitimate interest (such as analytics), and the right to withdraw consent at any time without affecting the lawfulness of earlier processing. You can lodge a complaint with a supervisory authority, in particular in the country of your residence. In Hungary: Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH), 1055 Budapest, Falk Miksa utca 9–11.; postal address: 1363 Budapest, Pf. 9.; phone: +36 1 391 1400; <a href="https://naih.hu">naih.hu</a>.</p>
+
+<p>To exercise your rights, write to <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. We reply within one month. Because the App has no named account, we may ask for information that lets us find your data (for example the app-instance ID or, for the cloud backup, the details in section 3). You can also reset your advertising ID in your device settings, withdraw ad consent under “Manage consent”, and on iOS revoke the tracking permission.</p>
+
+<p><strong>US residents:</strong> depending on your state (e.g. California, CCPA/CPRA), you may have the right to know about, access, delete and correct personal information and to opt out of its “sale”/“sharing” or of targeted advertising. Using the advertising ID for personalised ads may count as “sharing” under some state laws; you can opt out by limiting ad tracking / deleting the advertising ID in your device settings, by declining tracking on iOS, or by contacting us. We do not sell personal data for money.</p>
+
+<h2>13. International transfers</h2>
+
+<p>Google may process data outside the European Economic Area, including in the United States. These transfers rely on the EU–US Data Privacy Framework (under which Google is certified) and/or the Standard Contractual Clauses approved by the European Commission.</p>
+
+<h2>14. Children</h2>
+
+<p>The App is a puzzle game for a general audience; it is not directed at children under 13 and is not part of the Google Play Families programme. We do not knowingly collect personal data from children. If you are a parent or guardian and believe your child has given us personal data (e.g. by e-mail), write to us and we will delete it.</p>
+
+<h2>15. Security</h2>
+
+<p>Data sent to Google is transmitted encrypted (HTTPS/TLS). Local data is stored in the App's private storage on your device. Firestore security rules restrict access to a backup to the pseudonymous account that created it.</p>
+
+<h2>16. Automated decision-making</h2>
+
+<p>The App does not make decisions based solely on automated processing that produce legal or similarly significant effects for you. Google's selection of ads may be automated.</p>
+
+<h2>17. Changes</h2>
+
+<p>We may update this policy when the App or the law changes. The current version is always available at this address, with the date at the top.</p>
+
+<p>See also: <a href="manage_consent.en.html">Manage Consent</a> · <a href="terms_of_use.en.html">Terms of Use</a></p>
+<p class="note">This document is provided for transparency and does not constitute legal advice.</p>
 </body>
 </html>

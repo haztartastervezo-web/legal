@@ -1,63 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
-<title>Zásady ochrany osobních údajů — Four Clues</title>
+<title>Zásady ochrany osobních údajů – Four Clues</title>
 <style>
   :root{color-scheme:light dark}
-  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    line-height:1.6;max-width:760px;margin:0 auto;padding:2rem 1.1rem 4rem;color:#1a1a1a;background:#fff}
-  @media (prefers-color-scheme:dark){body{color:#e9e9e9;background:#141414}a{color:#8ab4f8}}
-  h1{font-size:1.6rem;margin:0 0 .2rem}
-  h2{font-size:1.15rem;margin:2rem 0 .5rem}
-  .updated{color:#666;font-size:.9rem;margin-bottom:1.5rem}
-  @media (prefers-color-scheme:dark){.updated{color:#9a9a9a}}
-  ul{padding-left:1.2rem}
-  li{margin:.3rem 0}
-  footer{margin-top:3rem;font-size:.85rem;color:#666}
-  .nav{margin:1.2rem 0 0;font-size:.9rem}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc;overflow-wrap:anywhere}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
 </head>
 <body>
+<p class="lang"><a href="privacy_policy.hu.html">Magyar</a> · <a href="privacy_policy.en.html">English</a> · Čeština · <a href="privacy_policy.de.html">Deutsch</a> · <a href="privacy_policy.el.html">Ελληνικά</a> · <a href="privacy_policy.es.html">Español</a> · <a href="privacy_policy.fr.html">Français</a> · <a href="privacy_policy.id.html">Bahasa Indonesia</a> · <a href="privacy_policy.it.html">Italiano</a> · <a href="privacy_policy.nl.html">Nederlands</a> · <a href="privacy_policy.pl.html">Polski</a> · <a href="privacy_policy.pt.html">Português</a> · <a href="privacy_policy.pt_BR.html">Português (Brasil)</a> · <a href="privacy_policy.ro.html">Română</a> · <a href="privacy_policy.tr.html">Türkçe</a></p>
 <h1>Zásady ochrany osobních údajů</h1>
-<p class="updated">Four Clues (com.enila.icongroups) · Poslední aktualizace: 3. září 2026</p>
-<h2>Úvod</h2>
-<p>Tyto zásady ochrany osobních údajů vysvětlují, jak hra Four Clues (com.enila.icongroups) („aplikace“, „my“) nakládá s informacemi, když ji používáte. Aplikaci vytváří nezávislý vývojář se sídlem v Evropské unii. Používáním aplikace tyto zásady přijímáte.</p>
-<h2>Správce údajů</h2>
-<p>Správcem údajů a poskytovatelem aplikace je Gábor Enikő, 1123 Budapest, Nagyenyed utca 5., Maďarsko.</p>
-<h2>Údaje uložené ve vašem zařízení</h2>
-<p>Následující údaje jsou uloženy pouze ve vašem zařízení ve standardním úložišti aplikace a nejsou nám odesílány:</p>
-<ul><li>Postup ve hře, odemčené úrovně a nejlepší skóre</li><li>Nastavení aplikace (jazyk, zvuk, motiv, denní připomenutí)</li><li>Vaše volby souhlasu s reklamou</li></ul>
-<h2>Údaje zpracovávané v cloudu (volitelné)</h2>
-<p>Pokud je cloudová záloha dostupná a zapnutá, prostřednictvím Firebase Authentication se vytvoří anonymní účet (náhodný identifikátor, bez jména či e-mailu). Váš herní postup se poté ukládá do Google Cloud Firestore, aby jej bylo možné obnovit na novém zařízení. V systému Android můžete volitelně propojit Google Play Games a v systému iOS Game Center, abyste si postup zachovali mezi zařízeními.</p>
-<ul><li>Anonymní identifikátor uživatele</li><li>Herní postup a statistiky</li><li>Při odeslání zpětné vazby: vaše zpráva a dále model zařízení, verze operačního systému, platforma, verze aplikace, jazyk a časové razítko</li></ul>
-<h2>Reklama</h2>
-<p>Aplikace zobrazuje reklamy prostřednictvím Google AdMob, včetně odměňovaných reklam a bannerů. K tomu může Google zpracovávat identifikátory zařízení a reklamní identifikátory. V Evropském hospodářském prostoru, Spojeném království a Švýcarsku se před načtením reklam zobrazí zpráva o souhlasu certifikovaná společností Google (Google User Messaging Platform) a můžete zvolit personalizované nebo nepersonalizované reklamy.</p>
-<p>V systému iOS se systémové okno App Tracking Transparency ptá, zda aplikace může používat identifikátory ke sledování napříč aplikacemi. Pokud odmítnete, zobrazují se pouze nepersonalizované reklamy. Podrobnosti najdete na stránce Spravovat souhlas.</p>
-<h2>Analytika</h2>
-<p>Aplikace používá Google Firebase Analytics k pochopení agregovaného využití (například které obrazovky se otevírají a jak probíhají relace), abychom mohli hru zlepšovat. Tato data jsou vázána na náhodně vygenerovaný identifikátor instance aplikace, nikoli na vaši totožnost.</p>
-<h2>Oznámení</h2>
-<p>Pokud zapnete denní připomenutí, ve vašem zařízení se naplánuje místní oznámení. Je generováno zcela v zařízení a k tomuto účelu nám nejsou odesílána žádná data.</p>
-<h2>Právní základy zpracování</h2>
-<p>Pokud se uplatní obecné nařízení EU o ochraně osobních údajů (GDPR), opíráme se o tyto právní základy:</p>
-<ul><li><strong>Váš souhlas</strong> (čl. 6 odst. 1 písm. a) — pro personalizovanou reklamu a v systému iOS pro použití identifikátorů ke sledování; můžete jej kdykoli odvolat</li><li><strong>Poskytnutí služby, kterou požadujete</strong> (čl. 6 odst. 1 písm. b) — pro provoz hry a, když je používáte, pro cloudovou zálohu a vyřizování zpětné vazby</li><li><strong>Naše oprávněné zájmy</strong> (čl. 6 odst. 1 písm. f) — pro zobrazování nepersonalizované reklamy financující aplikaci, udržení jejího zabezpečení a stability a pochopení agregovaného využití; proti tomuto zpracování můžete vznést námitku</li></ul>
-<h2>Vaše práva</h2>
-<p>V závislosti na tom, kde žijete, máte práva týkající se vašich osobních údajů, mezi něž patří:</p>
-<ul><li>Přístup, oprava a výmaz</li><li>Přenositelnost údajů a námitka proti zpracování nebo jeho omezení</li><li>Odvolání souhlasu kdykoli</li><li>Podání stížnosti u vašeho úřadu pro ochranu osobních údajů</li></ul>
-<p>V Maďarsku je příslušným dozorovým úřadem Národní úřad pro ochranu osobních údajů a svobodu informací (NAIH, naih.hu); můžete se také obrátit na úřad ve své zemi bydliště.</p>
-<p>Chcete-li tato práva uplatnit nebo nechat vymazat anonymní data z cloudu, kontaktujte nás na níže uvedené adrese. Obyvatelé Kalifornie: neprodáváme ani nesdílíme osobní údaje za peníze ani pro kontextově přesahující behaviorální reklamu nad rámec výše popsaných voleb reklamy a respektujeme uznávané signály pro odhlášení, kde je to relevantní.</p>
-<h2>Uchovávání údajů</h2>
-<p>Místní údaje zůstávají, dokud je nevymažete nebo aplikaci neodinstalujete. Data cloudové zálohy se uchovávají, dokud nepožádáte o jejich smazání. Zprávy zpětné vazby se uchovávají po dobu nezbytnou k vyřízení vaší žádosti.</p>
-<h2>Mezinárodní předávání</h2>
-<p>Google a Apple mohou zpracovávat data na serverech mimo vaši zemi, včetně Spojených států. Takové předávání se opírá o záruky nabízené těmito poskytovateli, jako jsou standardní smluvní doložky Evropské komise.</p>
-<h2>Děti</h2>
-<p>Aplikace není určena dětem a vědomě neshromažďujeme osobní údaje dětí mladších 16 let. Pokud se domníváte, že nám dítě poskytlo údaje, kontaktujte nás a my je smažeme.</p>
-<h2>Změny těchto zásad</h2>
-<p>Tyto zásady můžeme čas od času aktualizovat. Verze zveřejněná na této adrese je vždy aktuální a datum v horní části uvádí, kdy se naposledy změnila. Významné změny zvýrazníme v aplikaci nebo na této stránce.</p>
-<h2>Kontakt</h2><p>Správcem údajů a poskytovatelem aplikace je Gábor Enikő, 1123 Budapest, Nagyenyed utca 5., Maďarsko.</p><p>S jakýmkoli dotazem nebo žádostí ohledně soukromí se obraťte na: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
-<p class="nav"><a href="privacy_policy.cs.html">Zásady ochrany osobních údajů</a> · <a href="manage_consent.cs.html">Spravovat souhlas</a> · <a href="terms_of_use.cs.html">Podmínky použití</a></p>
-<footer>Tento dokument slouží pro transparentnost a nepředstavuje právní poradenství.</footer>
+<p class="updated">Aplikace: Four Clues (com.enila.icongroups) &middot; Poslední aktualizace: 13. října 2026</p>
+<div class="box id"><strong>Správkyně a poskytovatelka:</strong> Fütyü-Gábor Enikő (Enila Studio), fyzická osoba &middot; 4032 Debrecen, Cívis utca 3., Maďarsko &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
+
+<p>Tyto Zásady ochrany osobních údajů vysvětlují, jaké údaje mobilní aplikace Four Clues („Aplikace“) — logická hra, ve které třídíš ikony do skupin — zpracovává, za jakým účelem, komu je předává a jaká máš práva. Mají pouze informativní povahu: tam, kde je potřeba tvůj souhlas, si o něj Aplikace požádá zvlášť.</p>
+
+<div class="box"><strong>Ve zkratce:</strong> Tvůj herní postup a nastavení se ukládají v tvém zařízení. Aby se tvůj postup neztratil, Aplikace jej také automaticky zálohuje do Google Firebase pod náhodným pseudonymním identifikátorem — bez tvého jména, e-mailové adresy nebo hesla. Aplikace zobrazuje reklamy prostřednictvím Google AdMob a k statistikám používání využívá Google Analytics for Firebase. Tyto služby Google zpracovávají pseudonymní technické identifikátory (např. ID instance aplikace nebo reklamní ID) a údaje o zařízení — nejde o anonymní údaje. V EHP, Spojeném království a Švýcarsku se tě formulář souhlasu Google zeptá na tvé volby týkající se reklam; v iOS se navíc zobrazí žádost Apple o povolení sledování.</div>
+
+<h2>1. Správce a kontakt</h2>
+
+<p>Správkyní tvých osobních údajů a poskytovatelkou Aplikace je <strong>Fütyü-Gábor Enikő</strong>, fyzická osoba vydávající aplikace pod názvem Enila Studio (adresa: 4032 Debrecen, Cívis utca 3., Maďarsko). S jakýmkoli dotazem nebo žádostí ohledně ochrany soukromí piš na <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. Pověřence pro ochranu osobních údajů jsme nejmenovali, protože k tomu nejsme povinni.</p>
+
+<h2>2. Údaje uložené pouze v tvém zařízení</h2>
+
+<ul>
+  <li>Herní postup: vyřešené hlavolamy a úrovně, statistiky, série a stav rozehrané hry</li>
+  <li>Stav denní výzvy a denního bonusu</li>
+  <li>Mince, nápovědy a další předměty získané ve hře (bez peněžní hodnoty)</li>
+  <li>Nastavení (např. jazyk, motiv, zvuk, vibrace)</li>
+  <li>Kterou z našich dalších aplikací naposledy doporučila karta „Další aplikace“</li>
+</ul>
+
+<p>Tyto údaje zůstávají v tvém zařízení, s výjimkou zálohy popsané v oddílu 3.</p>
+
+<p>Odinstalováním Aplikace se tyto místní údaje ze zařízení smažou. Poznámka: pokud používáš zálohu svého zařízení (např. zálohu Android nebo iCloud), operační systém může podle nastavení zařízení zálohovat i data aplikací — to je mimo naši kontrolu.</p>
+
+<h2>3. Automatická záloha v cloudu (Google Firebase)</h2>
+
+<p>Při prvním spuštění ti Aplikace automaticky vytvoří pseudonymní účet ve službě Firebase Authentication (anonymní přihlášení). Tento účet má náhodný identifikátor uživatele (UID) a není spojen s tvým jménem, e-mailovou adresou ani telefonním číslem.</p>
+
+<p>Pod tímto UID Aplikace automaticky ukládá kopii tvého postupu a nastavení (viz oddíl 2) do Google Cloud Firestore — obvykle když Aplikaci opouštíš —, aby byl tvůj postup chráněn a pokud možno obnovitelný. Tato záloha je součástí fungování Aplikace a neobsahuje kontaktní údaje.</p>
+
+<p>Odinstalování Aplikace samo o sobě zálohu v cloudu <strong>nesmaže</strong>. Pokud ji chceš smazat, napiš nám (oddíl 1). Protože je účet pseudonymní, potřebujeme k nalezení tvé zálohy informace: přibližné datum posledního použití a model zařízení.</p>
+
+<h2>4. Údaje, které nám posíláš</h2>
+
+<ul>
+  <li><strong>Zpětná vazba:</strong> pokud v Aplikaci odešleš zpětnou vazbu, obdržíme tvé hodnocení, text zprávy a technické údaje (model a výrobce zařízení, verze operačního systému, verze Aplikace, jazyk Aplikace) spolu s časem odeslání. Prosíme, neuváděj ve zprávě osobní údaje.</li>
+</ul>
+
+<p>Tyto údaje jsou uloženy v Google Cloud Firestore.</p>
+
+<h2>5. Reklama (Google AdMob)</h2>
+
+<p>Aplikace je zdarma a je financována z reklamy: bannerové reklamy, nativní reklamy začleněné do obrazovky a volitelné reklamy s odměnou, které se sám(a) rozhodneš zhlédnout výměnou za odměnu ve hře. Reklamy dodává Google AdMob (Google Ireland Limited / Google LLC). Aby mohl Google reklamy zobrazovat, omezovat, měřit a — kde je to povoleno — personalizovat a předcházet podvodům, může zpracovávat: reklamní ID (Android) a v iOS identifikátor IDFA pouze tehdy, pokud povolíš sledování (ATT); tvou IP adresu a z ní odvozenou přibližnou polohu; údaje o zařízení a aplikaci (model, verze systému, jazyk, verze aplikace) a interakce s reklamami (zobrazení, kliknutí). Google postupuje podle vlastních pravidel: <a href="https://policies.google.com/technologies/partner-sites">Jak Google využívá informace z webů a aplikací, které používají jeho služby</a>.</p>
+
+<h2>6. Statistiky používání (Google Analytics for Firebase)</h2>
+
+<p>Abychom pochopili, jak se Aplikace používá, a mohli vylepšovat hlavolamy a funkce, Aplikace odesílá události používání do Google Analytics for Firebase — například otevření aplikace, zahájení a dokončení hlavolamů nebo úrovní, použití nápovědy, interakce s reklamami s odměnou a zobrazení a kliknutí karty „Další aplikace“. Firebase také automaticky shromažďuje údaje, jako je náhodně vygenerované ID instance aplikace, model zařízení, verze systému, verze aplikace, jazyk/oblast, přibližná poloha odvozená z IP adresy a údaje o relaci; v systému Android může získat i reklamní ID.</p>
+
+<p>Tyto identifikátory jsou pseudonymní: nespojujeme je s tvým jménem ani kontaktními údaji, ale podle GDPR jde o osobní údaje. Analytika se spouští při otevření Aplikace a neřídí se formulářem souhlasu s reklamou. Proti zpracování pro účely analytiky můžeš kdykoli vznést námitku tím, že nám napíšeš (oddíl 1).</p>
+
+<h2>7. Souhlas a volby sledování</h2>
+
+<ul>
+  <li><strong>EHP, Spojené království, Švýcarsko:</strong> při spuštění Aplikace používá User Messaging Platform (UMP) od Google — platformu pro správu souhlasu certifikovanou společností Google —, aby se tě zeptala na tvé volby ohledně ukládání informací v zařízení nebo přístupu k nim a personalizace reklam. Reklamy si Aplikace vyžádá až po tomto kroku. Podle tvých voleb může Google zobrazovat personalizované, nepersonalizované nebo omezené reklamy, případně žádné. Svou volbu můžeš kdykoli změnit v nastavení Aplikace v části „Správa souhlasu“ / nastavení soukromí (zobrazuje se tam, kde to Google vyžaduje).</li>
+  <li><strong>iOS – App Tracking Transparency (ATT):</strong> po kroku souhlasu se iOS zeptá, zda tě Aplikace smí sledovat v aplikacích a na webech jiných společností. Pokud odmítneš, IDFA nebude dostupné Aplikaci ani Googlu; reklamy se přesto mohou zobrazovat. Kdykoli to můžeš změnit v Nastavení iOS → Soukromí a zabezpečení → Sledování. ATT je nezávislé na formuláři souhlasu Google — platí obojí.</li>
+</ul>
+
+<p>Podrobnosti: <a href="manage_consent.cs.html">Správa souhlasu</a>.</p>
+
+<h2>8. Další funkce a oprávnění</h2>
+
+<ul>
+  <li><strong>Kontakt e-mailem:</strong> pokud nám napíšeš (např. přes „Kontakt“ nebo „Mám nápad“), obdržíme tvou e-mailovou adresu a obsah zprávy a použijeme je pouze k odpovědi.</li>
+  <li><strong>Sdílení a odkazy do obchodu:</strong> „Sdílet“ otevře nabídku sdílení tvého zařízení; „Ohodnoť nás“ a karta „Další aplikace“ otevřou obchod s aplikacemi. O těchto akcích nedostáváme žádné údaje kromě výše popsaných analytických událostí.</li>
+  <li><strong>Aktualizace v aplikaci (Android):</strong> Aplikace se dotazuje Google Play, zda je k dispozici novější verze. Toto zajišťuje Google Play, nikoli naše servery.</li>
+  <li><strong>Připomenutí:</strong> pokud povolíš oznámení, Aplikace plánuje připomenutí místně v tvém zařízení. Nepoužíváme žádnou službu push oznámení a nedostáváme žádné údaje. Připomenutí můžeš vypnout v Aplikaci nebo v nastavení zařízení.</li>
+</ul>
+
+<p>Oprávnění, která Aplikace používá: přístup k internetu a oznámení (pro připomenutí; v systému Android včetně přeplánování po restartu). Aplikace nepřistupuje k tvé poloze, kontaktům, fotoaparátu, mikrofonu ani souborům a neobsahuje nákupy v aplikaci.</p>
+
+<h2>9. Účely a právní základy (GDPR)</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Zpracování</th><th>Účel</th><th>Právní základ</th></tr>
+  <tr><td>Místní postup a nastavení</td><td>Provoz hry, o kterou žádáš</td><td>Nezbytné pro poskytnutí služby (čl. 6 odst. 1 písm. b) GDPR); ukládání v zařízení nezbytně nutné pro službu</td></tr>
+  <tr><td>Pseudonymní účet a automatická záloha v cloudu</td><td>Ochrana a obnovení tvého postupu</td><td>Nezbytné pro poskytnutí služby (čl. 6 odst. 1 písm. b) a náš oprávněný zájem předejít ztrátě postupu (čl. 6 odst. 1 písm. f)</td></tr>
+  <tr><td>Zpětná vazba, hlášení chyb, jazyková přání a statistiky</td><td>Vyřízení tvé zprávy, oprava chyb, zlepšování Aplikace</td><td>Oprávněný zájem (čl. 6 odst. 1 písm. f)</td></tr>
+  <tr><td>Ukládání informací v zařízení nebo přístup k nim pro reklamní účely, personalizované reklamy</td><td>Zobrazování a personalizace reklam</td><td>Tvůj souhlas (čl. 6 odst. 1 písm. a) a pravidla ePrivacy), prostřednictvím UMP; v iOS také ATT</td></tr>
+  <tr><td>Doručování reklam, měření a prevence podvodů, kde je to povoleno bez souhlasu</td><td>Financování bezplatné Aplikace, bezpečnost</td><td>Oprávněný zájem (čl. 6 odst. 1 písm. f), v rámci tvých voleb souhlasu</td></tr>
+  <tr><td>Statistiky používání</td><td>Pochopení používání, zlepšování Aplikace</td><td>Oprávněný zájem (čl. 6 odst. 1 písm. f); můžeš kdykoli vznést námitku</td></tr>
+  <tr><td>E-maily podpory</td><td>Odpověď na tvou žádost</td><td>Kroky na tvou žádost / oprávněný zájem (čl. 6 odst. 1 písm. b) a f)</td></tr>
+</table></div>
+
+<h2>10. Příjemci (zpracovatelé a samostatní poskytovatelé)</h2>
+
+<ul>
+  <li>Google (Firebase: Analytics, Authentication, Cloud Firestore) — jako náš zpracovatel. <a href="https://firebase.google.com/support/privacy">Informace o ochraně soukromí ve Firebase</a></li>
+  <li>Google AdMob a případně reklamní partneři uvedení ve formuláři souhlasu — doručování reklam; Google zčásti vystupuje jako samostatný správce podle vlastních podmínek.</li>
+  <li>Google Play (Android) — kontrola aktualizací a stránky obchodu.</li>
+  <li>Apple (iOS) — oprávnění ATT spravuje iOS.</li>
+</ul>
+
+<p>Tvé osobní údaje neprodáváme za peníze. Údaje nepředáváme žádným dalším třetím stranám, pokud nám to neukládá zákon.</p>
+
+<h2>11. Doba uložení</h2>
+
+<ul>
+  <li>Místní údaje: dokud Aplikaci neodinstaluješ nebo údaje nesmažeš.</li>
+  <li>Záloha v cloudu: po dobu nezbytnou pro fungování Aplikace nebo dokud nepožádáš o její smazání.</li>
+  <li>Zpětná vazba, hlášení chyb, jazyková přání a statistiky: po dobu nezbytnou k jejich vyřízení a zlepšení Aplikace; na tvou žádost smazány dříve.</li>
+  <li>Analytické údaje: Google je uchovává podle nastavení uchovávání naší služby Google Analytics a vlastních pravidel; souhrnné přehledy mohou být uchovávány déle.</li>
+  <li>Reklamní údaje: Google je uchovává podle vlastních pravidel (<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
+  <li>E-maily podpory: po dobu nezbytnou k vyřízení žádosti, poté smazány, pokud zákon nevyžaduje jejich uchování.</li>
+</ul>
+
+<p>Odinstalováním Aplikace se smažou místní údaje, ale samo o sobě se nesmažou údaje, které již obdržel Google nebo které jsou uloženy v cloudu; viz oddíl 12.</p>
+
+<h2>12. Tvá práva a výmaz údajů</h2>
+
+<p>Pokud se na tebe vztahuje GDPR nebo britské GDPR, máš právo na přístup, opravu, výmaz, omezení zpracování, přenositelnost údajů, právo vznést námitku proti zpracování založenému na oprávněném zájmu (např. analytice) a právo kdykoli odvolat souhlas, aniž by tím byla dotčena zákonnost dřívějšího zpracování. Můžeš podat stížnost u dozorového úřadu, zejména ve státě svého bydliště. V Maďarsku: Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH), 1055 Budapest, Falk Miksa utca 9–11.; poštovní adresa: 1363 Budapest, Pf. 9.; telefon: +36 1 391 1400; <a href="https://naih.hu">naih.hu</a>.</p>
+
+<p>Svá práva můžeš uplatnit e-mailem na <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. Odpovíme do jednoho měsíce. Protože Aplikace nemá jmenný účet, můžeme tě požádat o informace, podle kterých tvé údaje najdeme (např. ID instance aplikace nebo u zálohy v cloudu údaje z oddílu 3). Reklamní ID si také můžeš resetovat v nastavení zařízení, souhlas s reklamou odvolat v části „Správa souhlasu“ a v iOS odvolat povolení sledování.</p>
+
+<p><strong>Obyvatelé USA:</strong> v závislosti na tvém státě (např. Kalifornie, CCPA/CPRA) můžeš mít právo na informace o osobních údajích, přístup k nim, jejich výmaz a opravu a právo odmítnout jejich „prodej“/„sdílení“ nebo cílenou reklamu. Použití reklamního ID pro personalizované reklamy může podle některých státních zákonů představovat „sdílení“; můžeš ho odmítnout omezením sledování reklam / smazáním reklamního ID v nastavení zařízení, odmítnutím sledování v iOS nebo tím, že nás kontaktuješ. Osobní údaje za peníze neprodáváme.</p>
+
+<h2>13. Mezinárodní předávání</h2>
+
+<p>Google může zpracovávat údaje mimo Evropský hospodářský prostor, mimo jiné ve Spojených státech. Tato předávání se opírají o rámec EU–USA pro ochranu osobních údajů (Data Privacy Framework, v němž je Google certifikován) a/nebo o standardní smluvní doložky schválené Evropskou komisí.</p>
+
+<h2>14. Děti</h2>
+
+<p>Aplikace je logická hra pro širokou veřejnost; není určena dětem mladším 13 let a není součástí programu Google Play pro rodiny. Vědomě neshromažďujeme osobní údaje dětí. Pokud jsi rodič nebo zákonný zástupce a myslíš si, že nám tvé dítě poskytlo osobní údaje (např. e-mailem), napiš nám a my je smažeme.</p>
+
+<h2>15. Zabezpečení</h2>
+
+<p>Údaje odesílané společnosti Google se přenášejí šifrovaně (HTTPS/TLS). Místní údaje se ukládají v soukromém úložišti Aplikace v tvém zařízení. Bezpečnostní pravidla Firestore omezují přístup k záloze na pseudonymní účet, který ji vytvořil.</p>
+
+<h2>16. Automatizované rozhodování</h2>
+
+<p>Aplikace nečiní rozhodnutí založená výhradně na automatizovaném zpracování, která by pro tebe měla právní účinky nebo se tě podobně významně dotkla. Výběr reklam společností Google může být automatizovaný.</p>
+
+<h2>17. Změny</h2>
+
+<p>Tyto zásady můžeme aktualizovat, když se změní Aplikace nebo právní předpisy. Aktuální verze je vždy dostupná na této adrese, s datem nahoře.</p>
+
+<p>Viz také: <a href="manage_consent.cs.html">Správa souhlasu</a> · <a href="terms_of_use.cs.html">Podmínky používání</a></p>
+<p class="note">Tento dokument slouží k transparentnosti a nepředstavuje právní poradenství.</p>
 </body>
 </html>

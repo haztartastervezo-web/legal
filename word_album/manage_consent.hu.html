@@ -1,55 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hozzájárulás kezelése – Word Album</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
-  h1 { font-size: 1.6rem; margin-bottom: 4px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
-  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
-  ul { padding-left: 1.4em; }
-  a { color: #0060df; }
-  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+  :root{color-scheme:light dark}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc;overflow-wrap:anywhere}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
 </head>
 <body>
+<p class="lang">Magyar · <a href="manage_consent.en.html">English</a> · <a href="manage_consent.el.html">Ελληνικά</a> · <a href="manage_consent.it.html">Italiano</a> · <a href="manage_consent.ro.html">Română</a></p>
 <h1>Hozzájárulás kezelése</h1>
-<p class="meta">
-  Alkalmazás neve: Word Album<br>
-  Csomagnév: com.enila.wordalbum<br>
-  Utolsó frissítés: 2026. szeptember 4.
-</p>
+<p class="updated">Alkalmazás: Word Album (com.enila.wordalbum) &middot; Utolsó frissítés: 2026. október 13.</p>
+<div class="box id"><strong>Adatkezelő és szolgáltató:</strong> Fütyü-Gábor Enikő (Enila Studio), magánszemély &middot; 4032 Debrecen, Cívis utca 3., Magyarország &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<p>Ez a dokumentum összefoglalja, milyen hozzájárulásokat kér az alkalmazás, és hogyan tudja ezeket bármikor módosítani. Ez az oldal a natív hozzájárulási felületek (Google UMP űrlap, iOS App Tracking Transparency párbeszédablak) <strong>kiegészítője</strong>, nem helyettesíti azokat.</p>
+<p>Ez az oldal kiegészíti az <a href="privacy_policy.hu.html">Adatvédelmi tájékoztatót</a>, és összefoglalja, milyen választási lehetőségeket kínál az Alkalmazás, és hogyan módosíthatod ezeket bármikor.</p>
 
-<h2>1. Milyen hozzájárulásokat kérünk</h2>
+<h2>1. Milyen döntéseket kér az Alkalmazás</h2>
+
 <ul>
-  <li><strong>Személyre szabott hirdetés (EGT/Egyesült Királyság/Svájc):</strong> a Google User Messaging Platform (UMP) hozzájárulási űrlapján keresztül kérdezzük meg, hogy engedélyezi-e a hirdetési azonosítója alapú, személyre szabott hirdetést. E hozzájárulás nélkül az alkalmazás csak nem személyre szabott hirdetést kér le.</li>
-  <li><strong>Nyomkövetés (App Tracking Transparency, csak iOS):</strong> a rendszer natív ATT párbeszédablakán keresztül kérünk engedélyt, mielőtt az eszköz hirdetési azonosítóját (IDFA) más alkalmazásokon/webhelyeken átívelő, személyre szabottabb hirdetéshez felhasználnánk.</li>
-</ul>
-<p>Az alkalmazás nem kér hozzájárulást fiókregisztrációhoz vagy bejelentkezéshez — a felhő-mentéshez használt Firebase-azonosító automatikusan, névtelenül jön létre, külön jóváhagyás nélkül, mivel nem társul hozzá személyazonosító adat.</p>
-
-<h2>2. Hogyan módosíthatja a hozzájárulását</h2>
-<ul>
-  <li><strong>Az alkalmazáson belül:</strong> Beállítások → „Hozzájárulás kezelése” menüpont (ez a tétel csak akkor jelenik meg, ha az Ön régiójában a Google előírja az újbóli hozzáférést a hirdetési hozzájárulási beállításokhoz — jellemzően EGT/Egyesült Királyság felhasználóknál). Itt bármikor megváltoztathatja, hogy engedélyezi-e a személyre szabott hirdetést.</li>
-  <li><strong>iOS nyomkövetés:</strong> eszköz Beállítások → Adatvédelem és biztonság → Nyomkövetés menüpont, ahol alkalmazásonként engedélyezheti vagy tilthatja le a nyomkövetést.</li>
+  <li><strong>Hirdetések (EGT, Egyesült Királyság, Svájc):</strong> induláskor, ha a régiód ezt megköveteli, az Alkalmazás megjeleníti a Google szabványos hozzájárulási ablakát a User Messaging Platformon (UMP), a Google által tanúsított hozzájáruláskezelő platformon keresztül. Ez a készüléken történő információtárolásra/-hozzáférésre, valamint a Google és hirdetési partnerei általi hirdetés-személyre szabásra vonatkozik.</li>
+  <li><strong>Követés (csak iOS):</strong> az Apple App Tracking Transparency (ATT) ablaka megkérdezi, hogy az Alkalmazás és hirdetési partnerei használhatják-e a készüléked hirdetési azonosítóját (IDFA) a tevékenységed más cégek alkalmazásaiban és webhelyein való követésére.</li>
+  <li><strong>Értesítések:</strong> az operációs rendszer megkérdezi, küldhet-e az Alkalmazás emlékeztetőket.</li>
+  <li><strong>Használati statisztika:</strong> a Google Analytics for Firebase jogos érdekünk alapján működik, és nem a hirdetési hozzájárulási ablak szabályozza. Bármikor tiltakozhatsz ellene, ha írsz ide: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</li>
 </ul>
 
-<h2>3. Mi történik, ha megtagadja a hozzájárulást</h2>
-<p>Az alkalmazás a hozzájárulás megtagadása esetén is teljes egészében működik. Ha nem engedélyezi a személyre szabott hirdetést vagy a nyomkövetést, az alkalmazás nem személyre szabott hirdetést jelenít meg — ez nem befolyásolja a játékmenetet, a mentett haladást vagy bármely más funkciót.</p>
+<h2>2. Hogyan módosíthatod a döntéseidet</h2>
 
-<h2>4. EGT/Egyesült Királyság felhasználók speciális jogai</h2>
-<p>A Google EU User Consent Policy szerint az EGT, az Egyesült Királyság és Svájc felhasználóitól kötelezően előzetes hozzájárulást kell kérni a hirdetési célú személyes adatkezeléshez. Az alkalmazás ezt a Google UMP tanúsított hozzájárulás-kezelő platformján (Consent Management Platform) keresztül, az IAB Transparency and Consent Framework (TCF) szabványnak megfelelően valósítja meg. Hozzájárulását bármikor visszavonhatja a fenti módon.</p>
-
-<h2>5. Kapcsolódó dokumentumok</h2>
 <ul>
-  <li><a href="privacy_policy.hu.html">Adatvédelmi irányelvek</a></li>
-  <li><a href="terms_of_use.hu.html">Felhasználási feltételek</a></li>
+  <li><strong>Hirdetési hozzájárulás:</strong> nyisd meg az Alkalmazás beállításait, és koppints a „Hozzájárulás kezelése” (adatvédelmi beállítások) pontra a Google ablakának újranyitásához és a döntésed módosításához. A lehetőség ott jelenik meg, ahol a Google ezt előírja.</li>
+  <li><strong>Követés (iOS):</strong> iOS Beállítások → Adatvédelem és biztonság → Követés — itt bármikor engedélyezheted vagy letilthatod a követést az Alkalmazás számára, újratelepítés nélkül.</li>
+  <li><strong>Értesítések:</strong> az Alkalmazás beállításaiban vagy a készülék értesítési beállításaiban.</li>
+  <li><strong>Hirdetési azonosító:</strong> a készülék beállításaiban visszaállíthatod vagy törölheted (Android: Beállítások → Adatvédelem → Hirdetések).</li>
 </ul>
 
-<h2>6. Kapcsolat</h2>
-<p>Kérdés esetén írjon nekünk: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<h2>3. Mi történik, ha elutasítod</h2>
+
+<p>Az Alkalmazás teljes körűen működik tovább, a jutalmazott hirdetésekért járó jutalmakkal együtt, amennyiben hirdetés megjeleníthető. Hozzájárulás nélkül a Google nem személyre szabott vagy korlátozott hirdetéseket jeleníthet meg, egyes esetekben pedig egyáltalán nem jelenít meg hirdetést. Az ATT elutasítása iOS-en azt jelenti, hogy az IDFA nem érhető el; a Google ablakában hozott többi döntésed ettől függetlenül érvényes.</p>
+
+<h2>4. A hozzájárulás visszavonása</h2>
+
+<p>Hozzájárulásodat a fent leírt módon bármikor visszavonhatod. A visszavonás nem érinti a visszavonás előtti, hozzájáruláson alapuló adatkezelés jogszerűségét.</p>
+
+<h2>5. Kapcsolat</h2>
+
+<p>Kérdés vagy kérés esetén: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> &middot; Fütyü-Gábor Enikő (Enila Studio), 4032 Debrecen, Cívis utca 3., Magyarország.</p>
+
+<p>Lásd még: <a href="privacy_policy.hu.html">Adatvédelmi tájékoztató</a> · <a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
+<p class="note">Ez a dokumentum az átláthatóságot szolgálja, és nem minősül jogi tanácsadásnak.</p>
 </body>
 </html>

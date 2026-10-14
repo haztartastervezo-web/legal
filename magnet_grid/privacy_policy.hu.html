@@ -1,119 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<title>MagnetGrid — Adatvédelmi irányelvek</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adatvédelmi tájékoztató – Magnet Grid</title>
 <style>
-body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px;line-height:1.55;color:#1a1a1a}
-h1{font-size:1.6em}h2{font-size:1.2em;margin-top:1.8em}
-a{color:#1a56db}
-.updated{color:#555;font-size:0.9em}
+  :root{color-scheme:light dark}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc;overflow-wrap:anywhere}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
 </head>
 <body>
-<h1>Adatvédelmi irányelvek — MagnetGrid</h1>
-<p class="updated">Utolsó frissítés: 2026. augusztus 26.</p>
+<p class="lang">Magyar · <a href="privacy_policy.en.html">English</a></p>
+<h1>Adatvédelmi tájékoztató</h1>
+<p class="updated">Alkalmazás: Magnet Grid (com.enila.magnetgrid) &middot; Utolsó frissítés: 2026. október 13.</p>
+<div class="box id"><strong>Adatkezelő és szolgáltató:</strong> Fütyü-Gábor Enikő (Enila Studio), magánszemély &middot; 4032 Debrecen, Cívis utca 3., Magyarország &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<p>Ez az Adatvédelmi irányelv leírja, hogy a MagnetGrid ("az App", csomagnév:
-<code>com.enila.magnet_grid</code>) hogyan gyűjti, használja és védi az
-adatokat a használat során. A MagnetGridet az Enila Studio fejleszti.</p>
+<p>Ez az adatvédelmi tájékoztató bemutatja, hogy a(z) Magnet Grid mobilalkalmazás (az „Alkalmazás”) — egy rácson játszott logikai fejtörő — milyen adatokat kezel, milyen célból, kivel osztja meg, és milyen jogaid vannak. A tájékoztató tájékoztató jellegű: ahol a hozzájárulásod szükséges, azt az Alkalmazás külön kéri.</p>
 
-<h2>1. Milyen adatokat gyűjtünk</h2>
-<p>A MagnetGrid a játékbeli haladásodat, beállításaidat és preferenciáidat
-helyben, az eszközödön tárolja (helyi tárolással, pl. Isar és
-SharedPreferences). Ez a helyi adat nem személyazonosításra alkalmas, és az
-eszközödön marad, kivéve, ha az alábbi opcionális felhő-mentés funkciót
-használod.</p>
+<div class="box"><strong>Röviden:</strong> A játékbeli haladásod és a beállításaid a készülékeden tárolódnak. Hogy a haladásod ne vesszen el, az Alkalmazás automatikusan biztonsági mentést is készít róla a Google Firebase-be, egy véletlenszerű, álnevesített azonosító alatt — a neved, e-mail-címed vagy jelszavad nélkül. Az Alkalmazás a Google AdMob segítségével hirdetéseket jelenít meg, és a Google Analytics for Firebase szolgáltatást használja használati statisztikákhoz. Ezek a Google-szolgáltatások álnevesített (pszeudonim) technikai azonosítókat (pl. alkalmazáspéldány-azonosító vagy hirdetési azonosító) és eszközadatokat kezelnek — ez nem anonim adat. Az EGT-ben, az Egyesült Királyságban és Svájcban a Google hozzájárulási ablaka kérdez rá a hirdetési beállításaidra; iOS-en emellett az Apple követési engedélykérése is megjelenik.</div>
 
-<p><strong>Opcionális felhő-mentés:</strong> a MagnetGrid a helyi
-haladásodat menteni tudja a felhőbe (Firebase Firestore), egy az eszközödön
-automatikusan létrehozott anonim Firebase-fiók segítségével. Ez az anonim
-fiók nincs összekötve a neveddel, e-mail-címeddel vagy más
-személyazonosításra alkalmas adattal. A haladás új eszközön történő
-visszaállításához a MagnetGrid egy, az eredeti eszközön generált rövid
-visszaállítási kódot használ — Google-, Apple- vagy e-mail-fiókkal történő
-bejelentkezés nem szükséges és nem is támogatott.</p>
+<h2>1. Adatkezelő és kapcsolat</h2>
 
-<h2>2. Harmadik féltől származó szolgáltatások</h2>
+<p>Személyes adataid kezelője és az Alkalmazás szolgáltatója <strong>Fütyü-Gábor Enikő</strong> magánszemély, aki Enila Studio néven ad ki alkalmazásokat (cím: 4032 Debrecen, Cívis utca 3., Magyarország). Adatvédelmi kérdéssel vagy kérelemmel írj ide: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. Adatvédelmi tisztviselőt nem neveztünk ki, mert erre nem vagyunk kötelesek.</p>
+
+<h2>2. Csak a készülékeden tárolt adatok</h2>
+
 <ul>
-<li><strong>Google AdMob</strong> — app-on belüli hirdetéseket (köztük
-jutalmazott hirdetéseket) jelenít meg. Az AdMob eszközazonosítókat és
-használati adatokat gyűjthet a hirdetések megjelenítéséhez, illetve
-személyre szabott hirdetések megjelenítéséhez, ha ehhez hozzájárultál.</li>
-<li><strong>Google User Messaging Platform (UMP)</strong> — az Európai
-Gazdasági Térség (EGT), az Egyesült Királyság és Svájc felhasználói esetében
-kezeli a hirdetési hozzájárulási döntéseidet, a Google EU felhasználói
-hozzájárulási szabályzatával összhangban.</li>
-<li><strong>Firebase Analytics</strong> — anonim, összesített
-játékesemény-adatokat gyűjt (pl. pálya indítása/teljesítése, oktatóanyag
-haladása, beállítások használata), hogy megérthessük és fejleszthessük az
-Appot. Ezek az események nem tartalmazzák a pálya tartalmát vagy más
-személyes adatot.</li>
-<li><strong>Firebase Authentication (anonim) és Cloud Firestore</strong> —
-kizárólag az 1. pontban leírt opcionális felhő-mentés funkcióhoz
-használjuk.</li>
+  <li>Játékbeli haladás: megoldott feladványok és szintek, statisztikák, sorozatok (streak) és egy félbehagyott játék állapota</li>
+  <li>A játékban szerzett érmék, tippek és egyéb játékbeli elemek (ezeknek nincs pénzbeli értéke)</li>
+  <li>Beállítások (pl. nyelv, téma, hang, rezgés)</li>
+  <li>Hogy a „További appjaink” kártya legutóbb melyik másik alkalmazásunkat ajánlotta</li>
 </ul>
 
-<h2>3. Hirdetések és nyomkövetés</h2>
-<p>A MagnetGrid a Google AdMobon keresztül jelenít meg hirdetéseket. Ha az
-EGT-ben, az Egyesült Királyságban vagy Svájcban tartózkodsz, a hirdetések
-lekérése előtt egy hozzájárulási űrlap (Google UMP) jelenik meg, amelyben
-kiválaszthatod, hogy személyre szabott vagy nem személyre szabott
-hirdetéseket szeretnél-e kapni. Ezt a döntést bármikor megváltoztathatod a
-Beállítások → Hozzájárulás kezelése menüpontban.</p>
-<p>A MagnetGrid nem használja az Apple App Tracking Transparency (ATT)
-keretrendszerét, és iOS-en nem fér hozzá az eszköz hirdetési azonosítójához
-appok közötti nyomkövetés céljából.</p>
+<p>Ezek az adatok a készülékeden maradnak, kivéve a 3. pontban leírt biztonsági mentést.</p>
 
-<h2>4. Gyermekek adatvédelme</h2>
-<p>A MagnetGrid általános közönségnek készült, és nem 13 év alatti
-gyermekeknek (vagy a te joghatóságodban érvényes minimális életkor alatti
-személyeknek) szól. Tudatosan nem gyűjtünk személyes adatot gyermekektől. Ha
-úgy gondolod, hogy egy gyermek személyes adatot adott meg számunkra, kérjük,
-lépj kapcsolatba velünk a 8. pontban megadott elérhetőségen, hogy törölhessük
-azt.</p>
+<p>Az Alkalmazás eltávolítása törli ezeket a helyi adatokat a készülékedről. Megjegyzés: ha a készüléked saját biztonsági mentését használod (pl. Android- vagy iCloud-eszközmentés), az operációs rendszer a készülékbeállításaid szerint az alkalmazásadatokat is mentheti — ez kívül esik a hatáskörünkön.</p>
 
-<h2>5. Adatbiztonság és -megőrzés</h2>
-<p>A helyi adatok az eszközödön maradnak, amíg el nem távolítod az Appot,
-vagy vissza nem állítod a haladásodat a Beállításokban. A felhő-mentési
-adatokat (1. pont) addig őrizzük meg, amíg nem kéred a törlésüket (lásd 6.
-pont), vagy amíg inaktívvá nem válnak a megőrzési gyakorlatunk szerint.
-Ésszerű technikai intézkedéseket alkalmazunk — beleértve a Google Firebase
-által biztosítottakat is — a továbbított vagy tárolt adatok védelme
-érdekében.</p>
+<h2>3. Automatikus felhőmentés (Google Firebase)</h2>
 
-<h2>6. Jogaid</h2>
-<p>Tartózkodási helyedtől függően jogaid lehetnek az Általános Adatvédelmi
-Rendelet (GDPR/UK GDPR) vagy a California Consumer Privacy Act (CCPA/CPRA)
-alapján, beleértve az adataidhoz való hozzáférés, azok helyesbítése,
-törlése, hordozhatósága, valamint a feldolgozás elleni tiltakozás vagy annak
-korlátozása iránti jogot. Mivel a MagnetGrid nem gyűjt a személyazonosságodhoz
-köthető adatot, ezek a jogok jellemzően csak az 1. pontban leírt anonim
-felhő-mentésre vonatkoznak; ezt bármikor törölheted, ha felveszed velünk a
-kapcsolatot (8. pont) a visszaállítási kódoddal.</p>
-<p><strong>Kaliforniai felhasználók:</strong> személyes adataidat nem adjuk
-el és nem osztjuk meg a CCPA/CPRA szerinti kontextusfüggetlen viselkedési
-hirdetés céljából.</p>
+<p>Az Alkalmazás első megnyitásakor automatikusan létrehoz számodra egy álnevesített fiókot a Firebase Authentication szolgáltatásban (névtelen bejelentkezés). Ennek a fióknak véletlenszerű felhasználói azonosítója (UID) van, és nem kapcsolódik a nevedhez, e-mail-címedhez vagy telefonszámodhoz.</p>
 
-<h2>7. Nemzetközi adattovábbítás</h2>
-<p>A felhő-mentés használata esetén az adatokat a Google (Firebase) által
-üzemeltetett, akár az országodon kívül — köztük az Amerikai Egyesült
-Államokban — található szervereken dolgozhatják fel és tárolhatják, a Google
-standard szerződéses garanciái mellett.</p>
+<p>Ezen az UID-n az Alkalmazás automatikusan elmenti a játékbeli haladásod és a beállításaid másolatát (lásd 2. pont) a Google Cloud Firestore-ba — általában akkor, amikor kilépsz az Alkalmazásból —, hogy a haladásod védve legyen, és lehetőség szerint visszaállítható legyen. Ez a mentés az Alkalmazás működésének része, és nem tartalmaz elérhetőségi adatot.</p>
 
-<h2>8. Az irányelv változásai</h2>
-<p>Ezt az Adatvédelmi irányelvet időről időre frissíthetjük. A lényeges
-változásokat a fenti "Utolsó frissítés" dátum frissítésével jelezzük. Az App
-további használata a változások hatálybalépése után a frissített irányelv
-elfogadását jelenti.</p>
+<p>Ha szeretnéd, az Alkalmazásban rövid visszaállító kódot generálhatsz. A kód a mentésedre mutató hivatkozással együtt a Firestore-ban tárolódik, és segítségével egy másik készüléken is visszaállíthatod a haladásodat. Aki ismeri a kódot, visszaállíthatja a mentést, ezért ne add ki másnak.</p>
 
-<h2>9. Kapcsolat</h2>
-<p>Kérdésed van az Adatvédelmi irányelvvel vagy az adataiddal kapcsolatban?
-Írj nekünk: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</p>
+<p>Az Alkalmazás eltávolítása önmagában <strong>nem</strong> törli a felhőmentést. Ha törölni szeretnéd, írj nekünk (1. pont). Mivel a fiók álnevesített, a mentésed megtalálásához adatra van szükségünk: a visszaállító kódodra, ha van ilyen, egyébként az utolsó használat hozzávetőleges dátumára és a készüléked típusára.</p>
 
-<hr>
-<p>Lásd még: <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> ·
-<a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
+<h2>4. Hirdetések (Google AdMob)</h2>
+
+<p>Az Alkalmazás ingyenes, a hirdetések tartják fenn: szalaghirdetések (banner), a képernyőbe illeszkedő natív hirdetések, a szintek között időnként megjelenő teljes képernyős (interstitial) hirdetések és opcionális jutalmazott hirdetések, amelyeket egy játékbeli jutalomért cserébe te döntesz el, hogy megnézel-e. A hirdetéseket a Google AdMob (Google Ireland Limited / Google LLC) szolgáltatja. A hirdetések megjelenítéséhez, korlátozásához, méréséhez és — ha engedélyezett — személyre szabásához, valamint a csalás megelőzéséhez a Google kezelheti: a hirdetési azonosítót (Android), illetve iOS-en csak ATT-engedélyed esetén az IDFA-t; az IP-címedet és az abból következtetett hozzávetőleges helyet; eszköz- és alkalmazásadatokat (típus, OS-verzió, nyelv, alkalmazásverzió); valamint a hirdetési interakciókat (megjelenés, kattintás). A Google saját szabályai szerint jár el: <a href="https://policies.google.com/technologies/partner-sites">Hogyan használja fel a Google a szolgáltatásait használó alkalmazásokból származó adatokat</a>.</p>
+
+<h2>5. Használati statisztika (Google Analytics for Firebase)</h2>
+
+<p>Annak megértésére, hogyan használják az Alkalmazást, valamint a feladványok és funkciók fejlesztésére az Alkalmazás használati eseményeket küld a Google Analytics for Firebase szolgáltatásnak — például az alkalmazás megnyitása, feladványok vagy szintek indítása és befejezése, tipphasználat, jutalmazott hirdetésekkel kapcsolatos műveletek, valamint a „További appjaink” kártya megjelenései és kattintásai. A Firebase automatikusan is gyűjt adatokat, például egy véletlenszerűen generált alkalmazáspéldány-azonosítót, a készülék típusát, OS-verzióját, az alkalmazás verzióját, nyelvet/régiót, az IP-címből következtetett hozzávetőleges helyet és munkamenet-adatokat; Androidon a hirdetési azonosítót is megkaphatja.</p>
+
+<p>Ezek az azonosítók álnevesítettek: nem kapcsoljuk őket a nevedhez vagy elérhetőségedhez, de a GDPR szerint személyes adatnak minősülnek. Az analitika az Alkalmazás megnyitásakor indul, és nem a hirdetési hozzájárulási ablak szabályozza. Az analitikai adatkezelés ellen bármikor tiltakozhatsz, ha írsz nekünk (1. pont).</p>
+
+<h2>6. Hozzájárulás és követési beállítások</h2>
+
+<ul>
+  <li><strong>EGT, Egyesült Királyság, Svájc:</strong> induláskor az Alkalmazás a Google User Messaging Platform (UMP) — a Google által tanúsított hozzájáruláskezelő platform — segítségével kérdez rá a készüléken történő információtárolással/-hozzáféréssel és a hirdetések személyre szabásával kapcsolatos döntéseidre. Hirdetést csak e lépés után kér le. Döntéseidtől függően a Google személyre szabott, nem személyre szabott vagy korlátozott hirdetéseket jeleníthet meg, vagy egyáltalán nem jelenít meg hirdetést. Döntésedet bármikor módosíthatod az Alkalmazás beállításaiban a „Hozzájárulás kezelése” / adatvédelmi beállítások pontban (ott látható, ahol a Google ezt előírja).</li>
+  <li><strong>iOS – App Tracking Transparency (ATT):</strong> a hozzájárulási lépés után az iOS megkérdezi, hogy az Alkalmazás követhet-e más cégek alkalmazásaiban és webhelyein. Ha elutasítod, az IDFA sem az Alkalmazás, sem a Google számára nem lesz elérhető; hirdetések ettől még megjelenhetnek. Ezt bármikor módosíthatod az iOS Beállítások → Adatvédelem és biztonság → Követés menüpontban. Az ATT független a Google hozzájárulási ablakától — mindkettő érvényes.</li>
+</ul>
+
+<p>Részletek: <a href="manage_consent.hu.html">Hozzájárulás kezelése</a>.</p>
+
+<h2>7. Egyéb funkciók és engedélyek</h2>
+
+<ul>
+  <li><strong>Kapcsolatfelvétel e-mailben:</strong> ha írsz nekünk (pl. a „Kapcsolat” vagy a „Van egy ötletem” lehetőségen keresztül), megkapjuk az e-mail-címedet és az üzeneted tartalmát, és ezeket kizárólag a válaszadásra használjuk.</li>
+  <li><strong>Megosztás és áruházlinkek:</strong> a „Megosztás” a készülék rendszerszintű megosztási ablakát nyitja meg; az „Értékelj minket” és a „További appjaink” kártya az alkalmazásáruházat nyitja meg. Ezekről a műveletekről a fent leírt analitikai eseményeken túl nem kapunk adatot.</li>
+  <li><strong>Alkalmazáson belüli frissítés (Android):</strong> az Alkalmazás lekérdezi a Google Playtől, hogy elérhető-e újabb verzió. Ezt a Google Play kezeli, nem a mi szervereink.</li>
+</ul>
+
+<p>Az Alkalmazás által használt engedélyek: internet-hozzáférés. Az Alkalmazás nem fér hozzá a helyadataidhoz, névjegyeidhez, kamerához, mikrofonhoz vagy fájljaidhoz, és nem tartalmaz alkalmazáson belüli vásárlást.</p>
+
+<h2>8. Adatkezelési célok és jogalapok (GDPR)</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>Adatkezelés</th><th>Cél</th><th>Jogalap</th></tr>
+  <tr><td>Helyi haladás és beállítások</td><td>Az általad kért játék működtetése</td><td>A szolgáltatás nyújtásához szükséges (GDPR 6. cikk (1) b)); a szolgáltatáshoz feltétlenül szükséges készülékoldali tárolás</td></tr>
+  <tr><td>Álnevesített fiók és automatikus felhőmentés</td><td>A haladásod védelme és visszaállítása</td><td>A szolgáltatás nyújtásához szükséges (6. cikk (1) b)), valamint jogos érdekünk a haladás elvesztésének megelőzésében (6. cikk (1) f))</td></tr>
+  <tr><td>Visszaállító kód</td><td>A haladásod visszaállítása egy másik készüléken, kérésedre</td><td>Az általad kért szolgáltatás nyújtásához szükséges (6. cikk (1) b))</td></tr>
+  <tr><td>Információ tárolása/elérése a készüléken hirdetési célból, személyre szabott hirdetések</td><td>Hirdetésmegjelenítés és személyre szabás</td><td>Hozzájárulásod (6. cikk (1) a) és az elektronikus hírközlési (ePrivacy) szabályok), UMP-n keresztül; iOS-en emellett ATT</td></tr>
+  <tr><td>Hirdetésmegjelenítés, mérés és csalásmegelőzés, ahol ez hozzájárulás nélkül megengedett</td><td>Az ingyenes Alkalmazás finanszírozása, biztonság</td><td>Jogos érdek (6. cikk (1) f)), a hozzájárulási döntéseid keretein belül</td></tr>
+  <tr><td>Használati statisztika</td><td>A használat megértése, az Alkalmazás fejlesztése</td><td>Jogos érdek (6. cikk (1) f)); bármikor tiltakozhatsz</td></tr>
+  <tr><td>Támogatási e-mailek</td><td>Kérésed megválaszolása</td><td>Kérésedre tett lépések / jogos érdek (6. cikk (1) b), f))</td></tr>
+</table></div>
+
+<h2>9. Címzettek (adatfeldolgozók és önálló szolgáltatók)</h2>
+
+<ul>
+  <li>Google (Firebase: Analytics, Authentication, Cloud Firestore) — adatfeldolgozóként. <a href="https://firebase.google.com/support/privacy">Firebase adatvédelmi tájékoztató</a></li>
+  <li>Google AdMob és adott esetben a hozzájárulási ablakban felsorolt hirdetési partnerek — hirdetésmegjelenítés; a Google részben önálló adatkezelőként, saját feltételei szerint jár el.</li>
+  <li>Google Play (Android) — frissítés-ellenőrzés és áruházi oldalak.</li>
+  <li>Apple (iOS) — az ATT-engedélyt az iOS kezeli.</li>
+</ul>
+
+<p>Személyes adataidat nem adjuk el pénzért. Más harmadik félnek nem adunk át adatot, kivéve, ha jogszabály kötelez rá.</p>
+
+<h2>10. Megőrzési idő</h2>
+
+<ul>
+  <li>Helyi adatok: amíg el nem távolítod az Alkalmazást, vagy nem törlöd az adatokat.</li>
+  <li>Felhőmentés és visszaállító kód: amíg az Alkalmazás működéséhez szükséges, vagy amíg nem kéred a törlését.</li>
+  <li>Analitikai adatok: a Google a Google Analytics-tulajdonságunk adatmegőrzési beállítása és a saját megőrzési szabályai szerint őrzi; az összesített jelentések tovább is megmaradhatnak.</li>
+  <li>Hirdetési adatok: a Google a saját szabályai szerint őrzi (<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
+  <li>Támogatási e-mailek: a kérés kezeléséhez szükséges ideig, utána töröljük, kivéve, ha jogszabály megőrzésre kötelez.</li>
+</ul>
+
+<p>Az Alkalmazás eltávolítása a helyi adatokat törli, de önmagában nem törli a Google-hoz már beérkezett vagy a felhőben tárolt adatokat; lásd a 11. pontot.</p>
+
+<h2>11. Jogaid és az adatok törlése</h2>
+
+<p>Ha rád a GDPR vagy az egyesült királysági GDPR vonatkozik, jogod van a hozzáféréshez, helyesbítéshez, törléshez, az adatkezelés korlátozásához, az adathordozhatósághoz, a jogos érdeken alapuló adatkezelés (így az analitika) elleni tiltakozáshoz, valamint ahhoz, hogy hozzájárulásodat bármikor visszavond, ami nem érinti a korábbi adatkezelés jogszerűségét. Panaszt tehetsz egy felügyeleti hatóságnál, különösen a lakóhelyed szerinti országban. Magyarországon: Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH), 1055 Budapest, Falk Miksa utca 9–11.; postacím: 1363 Budapest, Pf. 9.; telefon: +36 1 391 1400; <a href="https://naih.hu">naih.hu</a>.</p>
+
+<p>Jogaid gyakorlásához írj ide: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>. Egy hónapon belül válaszolunk. Mivel az Alkalmazásban nincs névvel ellátott fiók, elkérhetünk olyan adatot, amellyel megtaláljuk az adataidat (például az alkalmazáspéldány-azonosítót, illetve a felhőmentésnél a 3. pontban leírt adatokat). A hirdetési azonosítódat a készülék beállításaiban visszaállíthatod, a hirdetési hozzájárulást a „Hozzájárulás kezelése” pontban visszavonhatod, iOS-en pedig a követési engedélyt is visszavonhatod.</p>
+
+<p><strong>Egyesült államokbeli lakosok:</strong> államodtól függően (pl. Kalifornia, CCPA/CPRA) jogod lehet a személyes adatokról tájékoztatást kérni, azokhoz hozzáférni, törlésüket és helyesbítésüket kérni, valamint leiratkozni az adatok „eladásáról”/„megosztásáról” vagy a célzott hirdetésről. A hirdetési azonosító személyre szabott hirdetésekhez való használata egyes állami törvények szerint „megosztásnak” minősülhet; ettől elzárkózhatsz a hirdetéskövetés korlátozásával / a hirdetési azonosító törlésével a készülékbeállításokban, iOS-en a követés elutasításával, vagy ha kapcsolatba lépsz velünk. Személyes adatot pénzért nem adunk el.</p>
+
+<h2>12. Nemzetközi adattovábbítás</h2>
+
+<p>A Google az Európai Gazdasági Térségen kívül, többek között az Egyesült Államokban is kezelhet adatokat. Ezek a továbbítások az EU–USA adatvédelmi keretrendszeren (amelyben a Google tanúsított) és/vagy az Európai Bizottság által jóváhagyott általános szerződési feltételeken alapulnak.</p>
+
+<h2>13. Gyermekek</h2>
+
+<p>Az Alkalmazás általános közönségnek szóló fejtörő játék; nem 13 év alatti gyermekeknek szól, és nem része a Google Play Families (családi) programjának. Tudatosan nem gyűjtünk személyes adatot gyermekektől. Ha szülőként vagy gondviselőként úgy gondolod, hogy gyermeked személyes adatot adott meg nekünk (pl. e-mailben), írj nekünk, és töröljük.</p>
+
+<h2>14. Adatbiztonság</h2>
+
+<p>A Google felé küldött adatok továbbítása titkosított (HTTPS/TLS). A helyi adatok az Alkalmazás privát tárhelyén, a készülékeden tárolódnak. A Firestore biztonsági szabályai a mentéshez való hozzáférést az azt létrehozó álnevesített fiókra korlátozzák.</p>
+
+<h2>15. Automatizált döntéshozatal</h2>
+
+<p>Az Alkalmazás nem hoz kizárólag automatizált adatkezelésen alapuló, rád nézve joghatással vagy hasonlóan jelentős hatással járó döntést. A hirdetések Google általi kiválasztása automatizált lehet.</p>
+
+<h2>16. Változások</h2>
+
+<p>A tájékoztatót az Alkalmazás vagy a jogszabályok változásakor frissíthetjük. A mindenkor hatályos változat ezen a címen érhető el, a tetején a dátummal.</p>
+
+<p>Lásd még: <a href="manage_consent.hu.html">Hozzájárulás kezelése</a> · <a href="terms_of_use.hu.html">Felhasználási feltételek</a></p>
+<p class="note">Ez a dokumentum az átláthatóságot szolgálja, és nem minősül jogi tanácsadásnak.</p>
 </body>
 </html>

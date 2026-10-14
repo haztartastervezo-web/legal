@@ -1,83 +1,176 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası – Sum &amp; Pair</title>
 <style>
   :root{color-scheme:light dark}
-  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
   @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
   h1{font-size:1.7rem;margin-bottom:.25rem}
-  .updated{color:#666;font-size:.9rem;margin-bottom:2rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
   @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
   h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
   @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
   ul{padding-left:1.3rem}
   li{margin:.35rem 0}
-  a{color:#0066cc}
+  a{color:#0066cc;overflow-wrap:anywhere}
   @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
   .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
-  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
   table{border-collapse:collapse;width:100%;margin:1rem 0}
-  th,td{text-align:left;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
   @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
-
+</head>
+<body>
+<p class="lang"><a href="privacy_policy.hu.html">Magyar</a> · <a href="privacy_policy.en.html">English</a> · <a href="privacy_policy.cs.html">Čeština</a> · <a href="privacy_policy.de.html">Deutsch</a> · <a href="privacy_policy.el.html">Ελληνικά</a> · <a href="privacy_policy.es.html">Español</a> · <a href="privacy_policy.fr.html">Français</a> · <a href="privacy_policy.id.html">Bahasa Indonesia</a> · <a href="privacy_policy.it.html">Italiano</a> · <a href="privacy_policy.ja.html">日本語</a> · <a href="privacy_policy.ko.html">한국어</a> · <a href="privacy_policy.nl.html">Nederlands</a> · <a href="privacy_policy.pl.html">Polski</a> · <a href="privacy_policy.pt.html">Português</a> · <a href="privacy_policy.pt_BR.html">Português (Brasil)</a> · <a href="privacy_policy.ro.html">Română</a> · Türkçe</p>
 <h1>Gizlilik Politikası</h1>
-<p class="updated">Uygulama: Sum &amp; Pair / Sum &amp; Pair (paket: com.puzzles.number_puzzle) &middot; Son güncelleme: 4 Eylül 2026</p>
+<p class="updated">Uygulama: Sum &amp; Pair (com.puzzles.number_puzzle / iOS: com.puzzles.numberpuzzle) &middot; Son güncelleme: 13 Ekim 2026</p>
+<div class="box id"><strong>Veri sorumlusu ve sağlayıcı:</strong> Fütyü-Gábor Enikő (Enila Studio), gerçek kişi &middot; 4032 Debrecen, Cívis utca 3., Macaristan &middot; E-posta: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<p>Bu gizlilik politikası, Sum &amp; Pair ("Uygulama") uygulamasının kullanıcı verilerini nasıl işlediğini açıklar. Uygulamayı kullanarak burada açıklanan uygulamaları kabul etmiş olursunuz.</p>
+<p>Bu Gizlilik Politikası, sayılarla oynanan bir bulmaca oyunu olan Sum &amp; Pair mobil uygulamasının (“Uygulama”) hangi verileri hangi amaçlarla işlediğini, kimlerle paylaştığını ve hangi haklara sahip olduğunu açıklar. Yalnızca bilgilendirme amaçlıdır: Rızanın gerektiği durumlarda Uygulama bunu ayrıca ister.</p>
 
-<div class="box">
-  <strong>Özetle:</strong> Oyun verileriniz esas olarak cihazınızda saklanır. Uygulama ayrıca reklam gösterir (Google AdMob), anonim kullanım istatistikleri toplar (Firebase Analytics) ve anonim bulut yedekleme ile uygulama içi geri bildirim formu sunar (Firebase). Uygulama hiçbir zaman adınızı, e-postanızı veya şifrenizi istemez ve herhangi bir satın alma içermez.
-</div>
+<div class="box"><strong>Kısaca:</strong> Oyun ilerlemen ve ayarların cihazında saklanır. İlerlemenin kaybolmaması için Uygulama, ilerlemeni otomatik olarak Google Firebase'e de yedekler; bu yedek rastgele, takma adlı bir kimlik altında tutulur ve adını, e-posta adresini veya şifreni içermez. Uygulama, Google AdMob aracılığıyla reklam gösterir ve kullanım istatistikleri için Google Analytics for Firebase'i kullanır. Bu Google hizmetleri takma adlı teknik tanımlayıcıları (ör. uygulama örneği kimliği veya reklam kimliği) ve cihaz verilerini işler — bunlar anonim veri değildir. AEA, Birleşik Krallık ve İsviçre'de Google'ın izin formu reklam tercihlerini sorar; iOS'ta ayrıca Apple'ın izleme izni istemi görünür.</div>
 
-<h2>1. Veri sorumlusu</h2>
-<p>Uygulama bağımsız bir geliştirici tarafından oluşturulmuştur. Gizlilikle ilgili sorularınız için: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> adresinden bize ulaşabilirsiniz.</p>
+<h2>1. Veri sorumlusu ve iletişim</h2>
 
-<h2>2. Hangi verileri topluyoruz</h2>
-<p><strong>2.1 Yerel veriler (yalnızca cihazınızda saklanır)</strong></p>
+<p>Kişisel verilerinin sorumlusu ve Uygulamanın sağlayıcısı, uygulamaları Enila Studio adıyla yayımlayan gerçek kişi <strong>Fütyü-Gábor Enikő</strong>'dir (adres: 4032 Debrecen, Cívis utca 3., Macaristan). Gizlilikle ilgili her türlü soru veya talep için <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> adresine yaz. Yükümlü olmadığımız için bir veri koruma görevlisi atamadık.</p>
+
+<h2>2. Yalnızca cihazında saklanan veriler</h2>
+
 <ul>
-  <li>Oyun durumu, kaydedilmiş tahta ve bir oyuna devam etmek için gerekli veriler</li>
-  <li>En iyi skorlar, istatistikler, seviye ve ilerleme verileri</li>
-  <li>Kilidi açılan ödüller, oyun içi paralar, günlük bonus/sandık durumu</li>
-  <li>Uygulama ayarları (örn. ses, tema, zorluk, dil, bildirim tercihleri)</li>
-</ul>
-<p><strong>2.2 Anonim bulut yedekleme (Firebase Authentication + Cloud Firestore)</strong></p>
-<p>Uygulama, ilerlemenizi anonim olarak buluta yedeklemenize olanak tanır. Bu işlem, cihazınızda adınıza, e-postanıza veya başka herhangi bir kişisel tanımlayıcınıza bağlı olmayan anonim bir Firebase kimliği oluşturur.</p>
-<p><strong>2.3 Geri bildirim (Cloud Firestore)</strong></p>
-<p>Profil ekranından geri bildirim gönderirseniz (bir puan ve isteğe bağlı bir mesaj), sunucumuza şunlar gönderilir: puan, mesaj metni, cihazınızın modeli ve üreticisi, işletim sistemi sürümü, Uygulama sürümü, seçtiğiniz dil ve gönderim zaman damgası. Mesaj metnine kendiniz eklemediğiniz sürece bu, adınızı veya e-postanızı içermez.</p>
-<p><strong>2.4 Reklamcılık (Google AdMob)</strong></p>
-<p>Uygulama, Google AdMob aracılığıyla banner ve ödüllü reklamlar gösterir. AdMob ve reklam ortakları, reklamları sunmak ve ölçmek için bir cihaz tanımlayıcısı (örn. reklam kimliği/IDFA) ve diğer teknik verileri kullanabilir. Avrupa Ekonomik Alanı (AEA), Birleşik Krallık ve İsviçre'de, bölüm 4'te açıklandığı şekilde bunun için onayınızı isteriz.</p>
-<p><strong>2.5 Kullanım analitiği (Firebase Analytics)</strong></p>
-<p>Anonim, toplu oyun etkinlikleri kaydedilir (örn. seviye başlatıldı/tamamlandı/başarısız oldu, bölüm tamamlandı, alıştırma modu kullanıldı, ipucu/karıştırma kullanıldı, geri bildirim puanı). Bunlar kişisel olarak tanımlanabilir bilgiler içermez.</p>
-
-<h2>3. İzinler</h2>
-<table>
-  <tr><th>İzin</th><th>Amaç</th></tr>
-  <tr><td>Bildirim gönderme (Android: POST_NOTIFICATIONS)</td><td>Hatırlatıcı bildirimlerinin gösterilmesi</td></tr>
-  <tr><td>Yeniden başlatma sonrası yeniden zamanlama (Android: RECEIVE_BOOT_COMPLETED)</td><td>Cihaz yeniden başlatıldıktan sonra hatırlatıcıların zamanlanmış kalmasının sağlanması</td></tr>
-  <tr><td>Takip izni (iOS App Tracking Transparency)</td><td>İzin verirseniz kişiselleştirilmiş reklamların sunulması</td></tr>
-</table>
-<p>Uygulama konum, kişiler, kamera, mikrofon veya dosyalara erişim talep etmez.</p>
-
-<h2>4. Reklamlar ve takip (onay)</h2>
-<p>AEA, Birleşik Krallık ve İsviçre'deki kullanıcılar için Uygulama, başlangıçta Google'ın sertifikalı onay yönetim platformu (User Messaging Platform, UMP) aracılığıyla kişiselleştirilmiş reklamlar için onay ister. iOS'ta, cihaz tanımlayıcısına dayalı (kişiselleştirilmiş) herhangi bir reklam talep edilmeden önce yerel Apple App Tracking Transparency (ATT) istemi de gösterilir. Reddetmeniz durumunda Uygulama tam olarak çalışmaya devam eder ve bunun yerine kişiselleştirilmemiş reklamlar gösterir. Seçiminizi istediğiniz zaman Ayarlar'daki "Reklam gizliliği" seçeneğinden değiştirebilirsiniz. Kişiselleştirilmiş reklamlara onay verilmesi, ödüllü reklamlar dahil olmak üzere Uygulamanın temel oyun özelliklerinin kullanılmasından tamamen ayrıdır ve bunların kullanılması için gerekli değildir. Ayrıntılar için <a href="manage_consent.tr.html">Onay Yönetimi</a> sayfasına bakın.</p>
-
-<h2>5. Çocukların gizliliği</h2>
-<p>Uygulama çocuklara yönelik değildir ve 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamayız. Bir ebeveyn veya vasi, çocuğunun bize kişisel veri sağladığını düşünüyorsa, bu verileri kaldırabilmemiz için lütfen bölüm 10'daki bilgileri kullanarak bizimle iletişime geçin.</p>
-
-<h2>6. Veri güvenliği ve saklanması</h2>
-<p>Yerel veriler cihazınızda kalır ve Uygulamayı kaldırdığınızda silinir. Buluta gönderilen veriler (yedekleme, geri bildirim), sektör standardı erişim kontrollerine sahip Google Firebase altyapısında saklanır (Firestore güvenlik kuralları, yedekleme verilerini yalnızca eşleşen anonim tanımlayıcıya sahip cihazla sınırlar). Bu verileri yalnızca toplandıkları amaç için gerekli olduğu süre boyunca veya silinmesini talep edene kadar saklarız; talep üzerine, silme işlemi tamamlandığında bunu onaylarız.</p>
-
-<h2>7. Haklarınız</h2>
-<p>AEA/Birleşik Krallık'taki kullanıcılar, GDPR kapsamında verilerine erişme, düzeltme, silme, taşıma ve işlenmesine itiraz etme haklarına sahiptir. Kaliforniya sakinleri, CCPA/CPRA kapsamında verilerine erişme ve silme haklarının yanı sıra kişisel bilgilerin satışını/paylaşımını reddetme hakkına sahiptir — Uygulama, kullanıcı verilerini parasal veya başka bir değerli karşılık karşılığında üçüncü taraflarla satmaz veya paylaşmaz.</p>
-<ul>
-  <li><strong>Yerel veriler:</strong> Uygulamayı kaldırmak, cihazınızdaki tüm yerel verileri kalıcı olarak siler.</li>
-  <li><strong>Bulut verileri (yedekleme, geri bildirim):</strong> bölüm 10'daki e-posta adresini kullanarak bunların silinmesini, erişimini veya düzeltilmesini talep edebilirsiniz; talebinize makul bir süre içinde yanıt vereceğiz.</li>
+  <li>Oyun ilerlemesi: çözülen bulmacalar ve seviyeler, istatistikler, seriler ve yarım kalan bir oyunun durumu</li>
+  <li>Günlük görev ve günlük bonus durumu</li>
+  <li>Oyunda kazanılan altınlar, ipuçları ve diğer öğeler (parasal değeri yoktur)</li>
+  <li>Ayarlar (ör. dil, tema, ses, titreşim)</li>
+  <li>“Diğer uygulamalar” kartının en son hangi uygulamamızı önerdiği</li>
 </ul>
 
-<h2>8. Uluslararası veri aktarımları</h2>
-<p>Bulut hizmetlerimiz (Firebase: Authentication, Cloud Firestore, Analytics), Google'ın GDPR'ye uygun sözleşmesel güvenceleri (örn. Standart Sözleşme Hükümleri) kapsamında verileri Avrupa Ekonomik Alanı dışına aktarabilecek olan Google LLC tarafından işletilmektedir.</p>
+<p>Bu veriler, 3. bölümde açıklanan yedek dışında cihazında kalır.</p>
 
-<h2>9. Bu politikadaki değişiklikler</h2>
-<p>Uygulamanın özellikleri değiştikçe bu gizlilik politikasını zaman zaman güncelleyebiliriz. En son güncelleme tarihi bu sayfanın üst kısmında gösterilir. Lütfen periyodik olarak kontrol edin.</p>
+<p>Uygulamayı kaldırmak bu yerel verileri cihazından siler. Not: Cihazının kendi yedeklemesini kullanıyorsan (ör. Android veya iCloud yedeklemesi), işletim sistemi cihaz ayarlarına göre uygulama verilerini de yedekleyebilir — bu bizim kontrolümüz dışındadır.</p>
 
-<h2>10. İletişim</h2>
-<p>Bir sorunuz veya talebiniz varsa bize yazın: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<h2>3. Otomatik bulut yedeği (Google Firebase)</h2>
+
+<p>Uygulamayı ilk açtığında, Uygulama Firebase Authentication'da (anonim oturum açma) senin için otomatik olarak takma adlı bir hesap oluşturur. Bu hesabın rastgele bir kullanıcı kimliği (UID) vardır ve adın, e-posta adresin veya telefon numaranla bağlantılı değildir.</p>
+
+<p>Uygulama, bu UID altında oyun ilerlemenin ve ayarlarının bir kopyasını (2. bölüme bak) Google Cloud Firestore'a otomatik olarak kaydeder — genellikle Uygulamadan çıktığında — böylece ilerlemen korunur ve mümkün olduğunda geri yüklenebilir. Bu yedek Uygulamanın işleyişinin bir parçasıdır ve iletişim bilgisi içermez.</p>
+
+<p>Uygulamayı kaldırmak bulut yedeğini tek başına <strong>silmez</strong>. Silinmesini istiyorsan bize yaz (1. bölüm). Hesap takma adlı olduğundan yedeğini bulmak için bilgiye ihtiyacımız var: yaklaşık son kullanım tarihi ve cihaz modelin.</p>
+
+<h2>4. Bize gönderdiğin veriler</h2>
+
+<ul>
+  <li><strong>Geri bildirim:</strong> Uygulamada geri bildirim gönderirsen puanını, mesajının metnini ve teknik verileri (cihaz modeli ve üreticisi, işletim sistemi sürümü, uygulama sürümü, uygulama dili) gönderim zamanıyla birlikte alırız. Lütfen mesaja kişisel veri yazma.</li>
+  <li><strong>Dil isteği:</strong> Uygulamayı hangi dilde kullanmak istediğini bize bildirirsen seçimini (ve varsa serbest metni) takma adlı UID'ne bağlı olarak saklarız; yeni bir yanıt öncekinin yerine geçer.</li>
+  <li><strong>Dil istatistikleri:</strong> Uygulama, hangi çevirilere öncelik vereceğimize karar verebilmemiz için günde en fazla bir kez cihazının dil/bölge ayarını, uygulamanın dilini ve platformu (Android/iOS) bir zaman damgasıyla Firestore'a gönderir. Bu kayda herhangi bir tanımlayıcı eklenmez.</li>
+</ul>
+
+<p>Bu veriler Google Cloud Firestore'da saklanır.</p>
+
+<h2>5. Reklamlar (Google AdMob)</h2>
+
+<p>Uygulama ücretsizdir ve reklamlarla finanse edilir: banner reklamlar, ekrana yerleşen yerel (native) reklamlar ve oyun içi bir ödül karşılığında izlemeyi kendin seçtiğin isteğe bağlı ödüllü reklamlar. Reklamlar Google AdMob (Google Ireland Limited / Google LLC) tarafından sunulur. Reklamları göstermek, sınırlamak, ölçmek ve — izin verildiği ölçüde — kişiselleştirmek ve dolandırıcılığı önlemek için Google şunları işleyebilir: reklam kimliği (Android) ve iOS'ta yalnızca izlemeye izin verirsen (ATT) IDFA; IP adresin ve bundan çıkarılan yaklaşık konum; cihaz ve uygulama verileri (model, işletim sistemi sürümü, dil, uygulama sürümü) ve reklam etkileşimleri (gösterimler, tıklamalar). Google kendi kurallarına göre hareket eder: <a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerini kullanan site veya uygulamalardaki bilgileri nasıl kullanır?</a></p>
+
+<h2>6. Kullanım istatistikleri (Google Analytics for Firebase)</h2>
+
+<p>Uygulamanın nasıl kullanıldığını anlamak ve bulmacaları ile özellikleri geliştirmek için Uygulama, Google Analytics for Firebase'e kullanım olayları gönderir — örneğin uygulamanın açılması, bulmaca veya seviyelerin başlatılması ve tamamlanması, ipucu kullanımı, ödüllü reklam etkileşimleri ile “Diğer uygulamalar” kartının gösterimleri ve tıklamaları. Firebase ayrıca rastgele oluşturulan bir uygulama örneği kimliği, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, dil/bölge, IP adresinden çıkarılan yaklaşık konum ve oturum verileri gibi verileri otomatik olarak toplar; Android'de reklam kimliğini de alabilir.</p>
+
+<p>Bu tanımlayıcılar takma adlıdır: bunları adınla veya iletişim bilgilerinle ilişkilendirmeyiz, ancak GDPR kapsamında kişisel veri sayılırlar. Analiz, Uygulama açıldığında başlar ve reklam izin formu tarafından kontrol edilmez. Bize yazarak (1. bölüm) analiz amaçlı işlemeye istediğin zaman itiraz edebilirsin.</p>
+
+<h2>7. İzin ve izleme tercihleri</h2>
+
+<ul>
+  <li><strong>AEA, Birleşik Krallık, İsviçre:</strong> Uygulama başlangıçta, cihazında bilgi depolanması/bilgiye erişilmesi ve reklamların kişiselleştirilmesiyle ilgili tercihlerini sormak için Google'ın User Messaging Platform'unu (UMP) — Google tarafından sertifikalandırılmış bir izin yönetim platformu — kullanır. Uygulama reklamları ancak bu adımdan sonra ister. Tercihlerine bağlı olarak Google kişiselleştirilmiş, kişiselleştirilmemiş veya sınırlı reklamlar gösterebilir ya da hiç reklam göstermeyebilir. Tercihini istediğin zaman Uygulama ayarlarındaki “İzin Yönetimi” / gizlilik ayarları bölümünden değiştirebilirsin (Google'ın gerektirdiği yerlerde görünür).</li>
+  <li><strong>iOS – App Tracking Transparency (ATT):</strong> İzin adımından sonra iOS, Uygulamanın seni diğer şirketlerin uygulamalarında ve web sitelerinde izleyip izleyemeyeceğini sorar. Reddedersen IDFA ne Uygulama ne de Google tarafından kullanılabilir; reklamlar yine de gösterilebilir. Bunu istediğin zaman iOS Ayarlar → Gizlilik ve Güvenlik → İzleme bölümünden değiştirebilirsin. ATT, Google'ın izin formundan bağımsızdır — her ikisi de geçerlidir.</li>
+</ul>
+
+<p>Ayrıntılar: <a href="manage_consent.tr.html">İzin Yönetimi</a>.</p>
+
+<h2>8. Diğer özellikler ve izinler</h2>
+
+<ul>
+  <li><strong>E-postayla iletişim:</strong> Bize yazarsan (ör. “İletişim” veya “Bir fikrim var” üzerinden), e-posta adresini ve mesajının içeriğini alırız ve bunları yalnızca sana yanıt vermek için kullanırız.</li>
+  <li><strong>Paylaşım ve mağaza bağlantıları:</strong> “Paylaş”, cihazının paylaşım menüsünü açar; “Bizi değerlendir” ve “Diğer uygulamalar” kartı uygulama mağazasını açar. Yukarıda açıklanan analiz olayları dışında bu işlemler hakkında veri almayız.</li>
+  <li><strong>Uygulama içi güncelleme (Android):</strong> Uygulama, daha yeni bir sürüm olup olmadığını Google Play'e sorar. Bu işlem bizim sunucularımız tarafından değil, Google Play tarafından yürütülür.</li>
+  <li><strong>Hatırlatıcılar:</strong> Bildirimlere izin verirsen Uygulama hatırlatıcıları cihazında yerel olarak planlar. Anlık bildirim (push) hizmeti kullanmayız ve veri almayız. Hatırlatıcıları Uygulamada veya cihaz ayarlarında kapatabilirsin.</li>
+</ul>
+
+<p>Uygulamanın kullandığı izinler: internet erişimi ve bildirimler (hatırlatıcılar için; Android'de yeniden başlatma sonrası yeniden planlama dahil). Uygulama konumuna, kişilerine, kamerana, mikrofonuna veya dosyalarına erişmez ve uygulama içi satın alma içermez.</p>
+
+<h2>9. Amaçlar ve hukuki dayanaklar (GDPR)</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>İşleme</th><th>Amaç</th><th>Hukuki dayanak</th></tr>
+  <tr><td>Yerel ilerleme ve ayarlar</td><td>İstediğin oyunun çalıştırılması</td><td>Hizmetin sunulması için gerekli (GDPR m. 6(1)(b)); hizmet için kesinlikle gerekli cihaz içi depolama</td></tr>
+  <tr><td>Takma adlı hesap ve otomatik bulut yedeği</td><td>İlerlemenin korunması ve geri yüklenmesi</td><td>Hizmetin sunulması için gerekli (m. 6(1)(b)) ve ilerleme kaybını önlemeye yönelik meşru menfaatimiz (m. 6(1)(f))</td></tr>
+  <tr><td>Geri bildirimler, hata bildirimleri, dil istekleri ve istatistikleri</td><td>Mesajının ele alınması, hataların düzeltilmesi, Uygulamanın geliştirilmesi</td><td>Meşru menfaat (m. 6(1)(f))</td></tr>
+  <tr><td>Reklam amacıyla cihazda bilgi depolanması/bilgiye erişilmesi, kişiselleştirilmiş reklamlar</td><td>Reklamların gösterilmesi ve kişiselleştirilmesi</td><td>Rızan (m. 6(1)(a) ve ePrivacy kuralları), UMP aracılığıyla; iOS'ta ayrıca ATT</td></tr>
+  <tr><td>Rıza olmadan izin verildiği ölçüde reklam sunumu, ölçüm ve dolandırıcılığın önlenmesi</td><td>Ücretsiz Uygulamanın finansmanı, güvenlik</td><td>Meşru menfaat (m. 6(1)(f)), izin tercihlerin çerçevesinde</td></tr>
+  <tr><td>Kullanım istatistikleri</td><td>Kullanımı anlamak, Uygulamayı geliştirmek</td><td>Meşru menfaat (m. 6(1)(f)); istediğin zaman itiraz edebilirsin</td></tr>
+  <tr><td>Destek e-postaları</td><td>Talebine yanıt verilmesi</td><td>Talebin üzerine atılan adımlar / meşru menfaat (m. 6(1)(b), (f))</td></tr>
+</table></div>
+
+<h2>10. Alıcılar (veri işleyenler ve bağımsız sağlayıcılar)</h2>
+
+<ul>
+  <li>Google (Firebase: Analytics, Authentication, Cloud Firestore) — veri işleyenimiz olarak. <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a></li>
+  <li>Google AdMob ve varsa izin formunda listelenen reklam ortakları — reklam sunumu; Google kısmen kendi koşullarına tabi bağımsız veri sorumlusu olarak hareket eder.</li>
+  <li>Google Play (Android) — güncelleme kontrolü ve mağaza sayfaları.</li>
+  <li>Apple (iOS) — ATT izni iOS tarafından yönetilir.</li>
+</ul>
+
+<p>Kişisel verilerini para karşılığında satmayız. Kanunen zorunlu olmadıkça verileri başka üçüncü taraflara açıklamayız.</p>
+
+<h2>11. Saklama süresi</h2>
+
+<ul>
+  <li>Yerel veriler: Uygulamayı kaldırana veya verileri silene kadar.</li>
+  <li>Bulut yedeği: Uygulamanın çalışması için gerekli olduğu sürece veya silinmesini talep edene kadar.</li>
+  <li>Geri bildirimler, hata bildirimleri, dil istekleri ve istatistikleri: işlenmeleri ve Uygulamanın geliştirilmesi için gerekli olduğu sürece; talebin üzerine daha erken silinir.</li>
+  <li>Analiz verileri: Google tarafından Google Analytics mülkümüzün veri saklama ayarına ve Google'ın kendi saklama kurallarına göre saklanır; toplu raporlar daha uzun süre tutulabilir.</li>
+  <li>Reklam verileri: Google tarafından kendi kurallarına göre saklanır (<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
+  <li>Destek e-postaları: talebin ele alınması için gerekli süre boyunca; sonrasında, kanunen saklanması gerekmedikçe silinir.</li>
+</ul>
+
+<p>Uygulamayı kaldırmak yerel verileri siler, ancak Google'a ulaşmış veya bulutta saklanan verileri tek başına silmez; 12. bölüme bak.</p>
+
+<h2>12. Hakların ve verilerin silinmesi</h2>
+
+<p>GDPR veya Birleşik Krallık GDPR'ı senin için geçerliyse erişim, düzeltme, silme, işlemenin kısıtlanması, veri taşınabilirliği, meşru menfaate dayalı işlemeye (ör. analiz) itiraz etme ve önceki işlemenin hukuka uygunluğunu etkilemeksizin rızanı istediğin zaman geri çekme hakların vardır. Özellikle ikamet ettiğin ülkedeki bir denetim makamına şikâyette bulunabilirsin. Macaristan'da: Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH), 1055 Budapest, Falk Miksa utca 9–11.; posta adresi: 1363 Budapest, Pf. 9.; telefon: +36 1 391 1400; <a href="https://naih.hu">naih.hu</a>.</p>
+
+<p>Haklarını kullanmak için <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> adresine yaz. Bir ay içinde yanıt veririz. Uygulamada isme bağlı bir hesap olmadığından, verilerini bulmamızı sağlayacak bilgiler isteyebiliriz (örneğin uygulama örneği kimliği veya bulut yedeği için 3. bölümdeki bilgiler). Ayrıca reklam kimliğini cihaz ayarlarından sıfırlayabilir, reklam iznini “İzin Yönetimi” bölümünden geri çekebilir ve iOS'ta izleme iznini iptal edebilirsin.</p>
+
+<p><strong>ABD'de yaşayanlar:</strong> Eyaletine bağlı olarak (ör. Kaliforniya, CCPA/CPRA) kişisel bilgiler hakkında bilgi alma, bunlara erişme, bunları sildirme ve düzeltme ve bunların “satışını”/“paylaşımını” veya hedefli reklamcılığı reddetme hakkın olabilir. Reklam kimliğinin kişiselleştirilmiş reklamlar için kullanılması bazı eyalet yasalarına göre “paylaşım” sayılabilir; bunu cihaz ayarlarında reklam izlemeyi sınırlayarak / reklam kimliğini silerek, iOS'ta izlemeyi reddederek veya bizimle iletişime geçerek reddedebilirsin. Kişisel verileri para karşılığında satmayız.</p>
+
+<h2>13. Uluslararası aktarımlar</h2>
+
+<p>Google, verileri Avrupa Ekonomik Alanı dışında, Amerika Birleşik Devletleri dahil olmak üzere işleyebilir. Bu aktarımlar, AB-ABD Veri Gizliliği Çerçevesi'ne (Google'ın sertifikalı olduğu Data Privacy Framework) ve/veya Avrupa Komisyonu tarafından onaylanan standart sözleşme hükümlerine dayanır.</p>
+
+<h2>14. Çocuklar</h2>
+
+<p>Uygulama genel kitleye yönelik bir bulmaca oyunudur; 13 yaşın altındaki çocuklara yönelik değildir ve Google Play Aile programının bir parçası değildir. Çocuklardan bilerek kişisel veri toplamayız. Ebeveyn veya vasiysen ve çocuğunun bize kişisel veri verdiğini düşünüyorsan (ör. e-postayla), bize yaz; bu verileri sileriz.</p>
+
+<h2>15. Güvenlik</h2>
+
+<p>Google'a gönderilen veriler şifreli olarak (HTTPS/TLS) iletilir. Yerel veriler, cihazındaki Uygulamanın özel depolama alanında saklanır. Firestore güvenlik kuralları, bir yedeğe erişimi onu oluşturan takma adlı hesapla sınırlar.</p>
+
+<h2>16. Otomatik karar verme</h2>
+
+<p>Uygulama, yalnızca otomatik işlemeye dayanan ve senin hakkında hukuki sonuç doğuran veya seni benzer şekilde önemli ölçüde etkileyen kararlar almaz. Reklamların Google tarafından seçilmesi otomatik olabilir.</p>
+
+<h2>17. Değişiklikler</h2>
+
+<p>Uygulama veya mevzuat değiştiğinde bu politikayı güncelleyebiliriz. Güncel sürüm her zaman bu adreste, en üstte tarihiyle birlikte yer alır.</p>
+
+<p>Ayrıca bak: <a href="manage_consent.tr.html">İzin Yönetimi</a> · <a href="terms_of_use.tr.html">Kullanım Koşulları</a></p>
+<p class="note">Bu belge şeffaflık amacıyla sunulmuştur ve hukuki tavsiye niteliği taşımaz.</p>
+</body>
+</html>

@@ -19,6 +19,18 @@ Claude Code skill run. Do not edit them by hand in an app's own repo — edit
 the app, then re-run `/legal-docs` there, which pushes the refreshed files
 here.
 
+## Controller / provider (identical in every app and language)
+
+Fütyü-Gábor Enikő (Enila Studio), private individual — 4032 Debrecen,
+Cívis utca 3., Hungary — haztartastervezo@gmail.com. "Enila Studio" is a
+brand name only, never the controller on its own.
+
+The puzzle apps (decode_quest, sum_and_pair, four_clues, word_album,
+magnet_grid, nectar_flow, clue_riddles) are generated from one shared
+template by `0_AppFactory/tool/legal_gen` (facts in `apps.py`, wording in
+`i18n/<locale>.py`). Change the facts or wording there and regenerate — do not
+hand-edit those folders.
+
 ## Apps
 
 - [meal_plan](meal_plan/privacy_policy.hu.html) — Meal Plan / Heti Menü (meal-planning app)

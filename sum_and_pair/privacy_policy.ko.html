@@ -1,83 +1,176 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>개인정보 처리방침 – Sum &amp; Pair</title>
 <style>
   :root{color-scheme:light dark}
-  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
   @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
   h1{font-size:1.7rem;margin-bottom:.25rem}
-  .updated{color:#666;font-size:.9rem;margin-bottom:2rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
   @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
   h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
   @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
   ul{padding-left:1.3rem}
   li{margin:.35rem 0}
-  a{color:#0066cc}
+  a{color:#0066cc;overflow-wrap:anywhere}
   @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
   .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
-  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
   table{border-collapse:collapse;width:100%;margin:1rem 0}
-  th,td{text-align:left;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
   @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
-
+</head>
+<body>
+<p class="lang"><a href="privacy_policy.hu.html">Magyar</a> · <a href="privacy_policy.en.html">English</a> · <a href="privacy_policy.cs.html">Čeština</a> · <a href="privacy_policy.de.html">Deutsch</a> · <a href="privacy_policy.el.html">Ελληνικά</a> · <a href="privacy_policy.es.html">Español</a> · <a href="privacy_policy.fr.html">Français</a> · <a href="privacy_policy.id.html">Bahasa Indonesia</a> · <a href="privacy_policy.it.html">Italiano</a> · <a href="privacy_policy.ja.html">日本語</a> · 한국어 · <a href="privacy_policy.nl.html">Nederlands</a> · <a href="privacy_policy.pl.html">Polski</a> · <a href="privacy_policy.pt.html">Português</a> · <a href="privacy_policy.pt_BR.html">Português (Brasil)</a> · <a href="privacy_policy.ro.html">Română</a> · <a href="privacy_policy.tr.html">Türkçe</a></p>
 <h1>개인정보 처리방침</h1>
-<p class="updated">앱: Sum &amp; Pair / Sum &amp; Pair (패키지: com.puzzles.number_puzzle) &middot; 최종 업데이트: 2026년 9월 4일</p>
+<p class="updated">앱: Sum &amp; Pair (com.puzzles.number_puzzle / iOS: com.puzzles.numberpuzzle) &middot; 최종 업데이트: 2026년 10월 13일</p>
+<div class="box id"><strong>개인정보 처리자 및 제공자:</strong> Fütyü-Gábor Enikő (Enila Studio), 개인 &middot; 4032 Debrecen, Cívis utca 3., 헝가리 &middot; 이메일: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<p>본 개인정보 처리방침은 Sum &amp; Pair(이하 "본 앱")가 사용자 데이터를 어떻게 처리하는지 설명합니다. 본 앱을 이용함으로써 귀하는 여기에 설명된 관행에 동의하는 것으로 간주됩니다.</p>
+<p>본 개인정보 처리방침은 모바일 앱 Sum &amp; Pair(이하 "앱") — 숫자 퍼즐 게임 — 이 어떤 데이터를 어떤 목적으로 처리하고, 누구와 공유하며, 귀하가 어떤 권리를 가지는지 설명합니다. 본 방침은 안내 목적으로만 제공되며, 귀하의 동의가 필요한 경우 앱이 별도로 동의를 요청합니다.</p>
 
-<div class="box">
-  <strong>요약:</strong> 게임 데이터는 주로 사용자의 기기에 저장됩니다. 본 앱은 광고(Google AdMob)를 표시하고, 익명의 사용 통계(Firebase Analytics)를 수집하며, 익명 클라우드 백업 및 앱 내 피드백 양식(Firebase)을 제공합니다. 본 앱은 사용자의 이름, 이메일, 비밀번호를 요구하지 않으며, 어떠한 구매 항목도 포함하지 않습니다.
-</div>
+<div class="box"><strong>요약:</strong> 게임 진행 상황과 설정은 귀하의 기기에 저장됩니다. 진행 상황이 사라지지 않도록 앱은 무작위 가명 ID로 Google Firebase에 자동 백업도 생성합니다. 이름, 이메일 주소 또는 비밀번호는 포함되지 않습니다. 앱은 Google AdMob을 통해 광고를 표시하고 사용 통계를 위해 Google Analytics for Firebase를 사용합니다. 이러한 Google 서비스는 가명 처리된 기술적 식별자(예: 앱 인스턴스 ID 또는 광고 ID)와 기기 데이터를 처리하며, 이는 익명 데이터가 아닙니다. EEA, 영국 및 스위스에서는 Google의 동의 양식이 광고 관련 선택을 묻고, iOS에서는 Apple의 추적 허용 요청도 표시됩니다.</div>
 
-<h2>1. 데이터 관리자</h2>
-<p>본 앱은 독립 개발자가 제작하였습니다. 개인정보 관련 문의는 다음 주소로 연락해 주십시오: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<h2>1. 개인정보 처리자 및 연락처</h2>
 
-<h2>2. 수집하는 데이터</h2>
-<p><strong>2.1 로컬 데이터(사용자의 기기에만 저장됨)</strong></p>
+<p>귀하의 개인정보 처리자이자 앱 제공자는 Enila Studio라는 이름으로 앱을 출시하는 개인 <strong>Fütyü-Gábor Enikő</strong>입니다(주소: 4032 Debrecen, Cívis utca 3., 헝가리). 개인정보 관련 문의나 요청은 <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>로 보내 주십시오. 당사는 의무 대상이 아니므로 개인정보 보호책임자(DPO)를 지정하지 않았습니다.</p>
+
+<h2>2. 귀하의 기기에만 저장되는 데이터</h2>
+
 <ul>
-  <li>게임 상태, 저장된 보드, 게임을 계속하는 데 필요한 데이터</li>
-  <li>최고 점수, 통계, 레벨 및 진행 상황 데이터</li>
-  <li>해금된 보상, 게임 내 코인, 일일 보너스/보물상자 상태</li>
-  <li>앱 설정(예: 사운드, 테마, 난이도, 언어, 알림 환경설정)</li>
-</ul>
-<p><strong>2.2 익명 클라우드 백업(Firebase Authentication + Cloud Firestore)</strong></p>
-<p>본 앱은 진행 상황을 익명으로 클라우드에 백업할 수 있도록 합니다. 이 과정에서 사용자의 기기에 익명의 Firebase 식별자가 생성되며, 이는 사용자의 이름, 이메일 또는 그 밖의 개인 식별정보와 연결되지 않습니다.</p>
-<p><strong>2.3 피드백(Cloud Firestore)</strong></p>
-<p>프로필 화면에서 피드백(평점 및 선택적 메시지)을 제출하면, 평점, 메시지 내용, 기기 모델 및 제조사, OS 버전, 앱 버전, 선택한 언어, 제출 시각이 당사 서버로 전송됩니다. 사용자가 메시지 내용에 직접 이름이나 이메일을 포함하지 않는 한, 이는 포함되지 않습니다.</p>
-<p><strong>2.4 광고(Google AdMob)</strong></p>
-<p>본 앱은 Google AdMob을 통해 배너 광고 및 보상형 광고를 표시합니다. AdMob 및 광고 파트너는 광고 제공 및 측정을 위해 기기 식별자(예: 광고 ID/IDFA) 및 기타 기술 데이터를 사용할 수 있습니다. 유럽경제지역(EEA), 영국, 스위스에서는 섹션 4에서 설명하는 바와 같이 이에 대한 동의를 요청합니다.</p>
-<p><strong>2.5 이용 분석(Firebase Analytics)</strong></p>
-<p>익명화되고 집계된 게임 이벤트(예: 레벨 시작/완료/실패, 챕터 완료, 연습 모드 사용, 힌트/셔플 사용, 피드백 평점)가 기록됩니다. 이 데이터에는 개인을 식별할 수 있는 정보가 포함되지 않습니다.</p>
-
-<h2>3. 권한</h2>
-<table>
-  <tr><th>권한</th><th>목적</th></tr>
-  <tr><td>알림 전송(Android: POST_NOTIFICATIONS)</td><td>리마인더 알림 표시</td></tr>
-  <tr><td>재부팅 후 재예약(Android: RECEIVE_BOOT_COMPLETED)</td><td>기기 재시작 후에도 예약된 리마인더 유지</td></tr>
-  <tr><td>추적 권한(iOS App Tracking Transparency)</td><td>허용 시 맞춤형 광고 제공</td></tr>
-</table>
-<p>본 앱은 위치, 연락처, 카메라, 마이크 또는 파일에 대한 접근 권한을 요청하지 않습니다.</p>
-
-<h2>4. 광고 및 추적(동의)</h2>
-<p>EEA, 영국, 스위스 사용자의 경우, 본 앱은 시작 시 Google의 인증된 동의 관리 플랫폼(User Messaging Platform, UMP)을 통해 맞춤형 광고에 대한 동의를 요청합니다. iOS에서는 기기 식별자를 기반으로 한(맞춤형) 광고가 요청되기 전에 Apple의 기본 App Tracking Transparency(ATT) 프롬프트도 표시됩니다. 동의를 거부하더라도 본 앱은 완전히 정상적으로 작동하며, 대신 비맞춤형 광고를 표시합니다. 설정의 "광고 개인정보 보호" 옵션에서 언제든지 선택을 변경할 수 있습니다. 맞춤형 광고에 대한 동의는 보상형 광고를 포함한 본 앱의 핵심 게임 기능 이용과는 완전히 별개이며, 해당 기능 이용에 필수적이지 않습니다. 자세한 내용은 <a href="manage_consent.ko.html">동의 관리</a>를 참조하십시오.</p>
-
-<h2>5. 아동의 개인정보 보호</h2>
-<p>본 앱은 아동을 대상으로 하지 않으며, 당사는 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다. 부모 또는 보호자가 자녀가 당사에 개인정보를 제공했다고 판단하는 경우, 해당 정보를 삭제할 수 있도록 섹션 10에 명시된 연락처로 문의해 주시기 바랍니다.</p>
-
-<h2>6. 데이터 보안 및 보관</h2>
-<p>로컬 데이터는 사용자의 기기에 저장되며, 본 앱을 삭제하면 함께 삭제됩니다. 클라우드로 전송된 데이터(백업, 피드백)는 업계 표준 접근 통제가 적용된 Google Firebase 인프라에 저장됩니다(Firestore 보안 규칙에 따라 백업 데이터는 해당 익명 식별자를 보유한 기기로만 제한됩니다). 당사는 이러한 데이터를 수집 목적 달성에 필요한 기간 동안, 또는 삭제를 요청하실 때까지만 보관하며, 요청 시 삭제가 완료되면 이를 확인해 드립니다.</p>
-
-<h2>7. 귀하의 권리</h2>
-<p>EEA/영국 사용자는 GDPR에 따라 자신의 데이터에 대한 접근, 정정, 삭제, 이전 및 처리 반대에 관한 권리를 가집니다. 캘리포니아 거주자는 CCPA/CPRA에 따라 자신의 데이터에 대한 접근 및 삭제 권리와, 개인정보의 판매/공유를 거부할 권리를 가집니다 — 본 앱은 금전적 대가나 그 밖의 유상 대가를 대가로 사용자 데이터를 제3자에게 판매하거나 공유하지 않습니다.</p>
-<ul>
-  <li><strong>로컬 데이터:</strong> 본 앱을 삭제하면 기기에서 모든 로컬 데이터가 영구적으로 삭제됩니다.</li>
-  <li><strong>클라우드 데이터(백업, 피드백):</strong> 섹션 10의 이메일을 통해 삭제, 접근 또는 정정을 요청할 수 있으며, 당사는 합리적인 기간 내에 요청에 조치를 취합니다.</li>
+  <li>게임 진행 상황: 완료한 퍼즐과 레벨, 통계, 연속 기록, 중단된 게임의 상태</li>
+  <li>일일 도전과 일일 보너스 상태</li>
+  <li>게임에서 얻은 코인, 힌트 및 기타 아이템(금전적 가치 없음)</li>
+  <li>설정(예: 언어, 테마, 소리, 진동)</li>
+  <li>"더 많은 앱" 카드가 마지막으로 추천한 당사의 다른 앱</li>
 </ul>
 
-<h2>8. 국제 데이터 이전</h2>
-<p>당사의 클라우드 서비스(Firebase: Authentication, Cloud Firestore, Analytics)는 Google LLC가 운영하며, Google의 GDPR 준수 계약상 보호조치(예: 표준계약조항)에 따라 데이터가 유럽경제지역 외부로 이전될 수 있습니다.</p>
+<p>이 데이터는 3항에 설명된 백업을 제외하고 귀하의 기기에 남아 있습니다.</p>
 
-<h2>9. 본 방침의 변경</h2>
-<p>본 앱의 기능 변경에 따라 본 개인정보 처리방침을 수시로 업데이트할 수 있습니다. 최종 업데이트 날짜는 이 페이지 상단에 표시됩니다. 주기적으로 확인해 주시기 바랍니다.</p>
+<p>앱을 삭제하면 이 로컬 데이터가 기기에서 삭제됩니다. 참고: 기기 자체 백업(예: Android 또는 iCloud 백업)을 사용하는 경우 운영체제가 기기 설정에 따라 앱 데이터도 백업할 수 있으며, 이는 당사가 통제할 수 없습니다.</p>
 
-<h2>10. 문의</h2>
-<p>질문이나 요청 사항이 있으시면 다음 주소로 연락해 주십시오: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<h2>3. 자동 클라우드 백업(Google Firebase)</h2>
+
+<p>앱을 처음 열면 앱은 Firebase Authentication(익명 로그인)에서 귀하를 위한 가명 계정을 자동으로 만듭니다. 이 계정에는 무작위 사용자 ID(UID)가 있으며 귀하의 이름, 이메일 주소 또는 전화번호와 연결되지 않습니다.</p>
+
+<p>앱은 이 UID로 게임 진행 상황과 설정(2항 참조)의 사본을 Google Cloud Firestore에 자동 저장합니다(일반적으로 앱을 나갈 때). 이를 통해 진행 상황이 보호되고 가능한 경우 복원할 수 있습니다. 이 백업은 앱 작동 방식의 일부이며 연락처 정보는 포함되지 않습니다.</p>
+
+<p>앱을 삭제해도 그것만으로 클라우드 백업이 삭제되지는 <strong>않습니다</strong>. 삭제를 원하시면 당사에 연락해 주십시오(1항). 계정이 가명 처리되어 있으므로 백업을 찾으려면 다음 정보가 필요합니다: 대략적인 마지막 사용 날짜와 기기 모델.</p>
+
+<h2>4. 귀하가 당사에 보내는 데이터</h2>
+
+<ul>
+  <li><strong>피드백:</strong> 앱에서 피드백을 보내면 당사는 평점, 메시지 내용 및 기술 데이터(기기 모델 및 제조사, 운영체제 버전, 앱 버전, 앱 언어)를 전송 시각과 함께 받습니다. 메시지에 개인정보를 포함하지 마십시오.</li>
+  <li><strong>언어 희망:</strong> 앱을 사용하고 싶은 언어를 알려 주시면 그 선택(및 선택 사항인 자유 입력 텍스트)을 귀하의 가명 UID와 연결하여 저장합니다. 새 답변은 이전 답변을 덮어씁니다.</li>
+  <li><strong>언어 통계:</strong> 우선적으로 번역할 언어를 결정하기 위해 앱은 하루 최대 한 번 기기의 언어/지역 설정, 앱 언어 및 플랫폼(Android/iOS)을 타임스탬프와 함께 Firestore로 전송합니다. 이 기록에는 식별자가 첨부되지 않습니다.</li>
+</ul>
+
+<p>이 데이터는 Google Cloud Firestore에 저장됩니다.</p>
+
+<h2>5. 광고(Google AdMob)</h2>
+
+<p>앱은 무료이며 광고로 운영됩니다: 배너 광고, 화면에 자연스럽게 어우러지는 네이티브 광고 및 게임 내 보상을 받기 위해 직접 시청을 선택하는 선택형 보상형 광고. 광고는 Google AdMob(Google Ireland Limited / Google LLC)이 제공합니다. 광고를 표시, 제한, 측정하고 (허용되는 경우) 맞춤화하며 사기를 방지하기 위해 Google은 다음을 처리할 수 있습니다: 광고 ID(Android) 및 iOS에서는 추적을 허용한 경우(ATT)에만 IDFA, IP 주소와 이를 통해 추정한 대략적인 위치, 기기 및 앱 데이터(모델, OS 버전, 언어, 앱 버전), 광고 상호작용(노출, 클릭). Google은 자체 규칙에 따라 행동합니다: <a href="https://policies.google.com/technologies/partner-sites">Google 서비스를 사용하는 사이트 또는 앱에서 수집한 정보를 Google이 사용하는 방법</a>.</p>
+
+<h2>6. 사용 통계(Google Analytics for Firebase)</h2>
+
+<p>앱이 어떻게 사용되는지 이해하고 퍼즐과 기능을 개선하기 위해 앱은 Google Analytics for Firebase에 사용 이벤트를 전송합니다. 예: 앱 실행, 퍼즐 또는 레벨 시작 및 완료, 힌트 사용, 보상형 광고 관련 상호작용, "더 많은 앱" 카드의 노출 및 클릭. Firebase는 또한 무작위로 생성된 앱 인스턴스 ID, 기기 모델, OS 버전, 앱 버전, 언어/지역, IP 주소로 추정한 대략적인 위치, 세션 데이터 등을 자동으로 수집하며, Android에서는 광고 ID를 받을 수도 있습니다.</p>
+
+<p>이러한 식별자는 가명 처리되어 있습니다. 당사는 이를 귀하의 이름이나 연락처와 연결하지 않지만, GDPR상 개인정보에 해당합니다. 분석은 앱을 열 때 시작되며 광고 동의 양식으로 제어되지 않습니다. 당사에 연락하여(1항) 언제든지 분석 목적의 처리에 반대할 수 있습니다.</p>
+
+<h2>7. 동의 및 추적 선택</h2>
+
+<ul>
+  <li><strong>EEA, 영국, 스위스:</strong> 시작 시 앱은 Google이 인증한 동의 관리 플랫폼인 Google User Messaging Platform(UMP)을 사용하여 기기의 정보 저장/접근 및 광고 맞춤화에 대한 귀하의 선택을 묻습니다. 앱은 이 단계 이후에만 광고를 요청합니다. 귀하의 선택에 따라 Google은 맞춤 광고, 비맞춤 광고 또는 제한된 광고를 표시하거나 광고를 전혀 표시하지 않을 수 있습니다. 선택은 언제든지 앱 설정의 "동의 관리"/개인정보 설정에서 변경할 수 있습니다(Google이 요구하는 경우 표시).</li>
+  <li><strong>iOS – App Tracking Transparency(ATT):</strong> 동의 단계 후 iOS는 앱이 다른 회사의 앱과 웹사이트에서 귀하를 추적해도 되는지 묻습니다. 거부하면 IDFA는 앱과 Google 모두에게 제공되지 않으며, 광고는 여전히 표시될 수 있습니다. iOS 설정 → 개인정보 보호 및 보안 → 추적에서 언제든지 변경할 수 있습니다. ATT는 Google의 동의 양식과 별개이며 둘 다 적용됩니다.</li>
+</ul>
+
+<p>자세히 보기: <a href="manage_consent.ko.html">동의 관리</a>.</p>
+
+<h2>8. 기타 기능 및 권한</h2>
+
+<ul>
+  <li><strong>이메일 문의:</strong> 당사에 이메일을 보내시면(예: "문의" 또는 "아이디어가 있어요"를 통해) 이메일 주소와 메시지 내용을 받으며, 이는 답장을 위해서만 사용합니다.</li>
+  <li><strong>공유 및 스토어 링크:</strong> "공유"는 기기의 공유 메뉴를 엽니다. "평가하기"와 "더 많은 앱" 카드는 앱 스토어를 엽니다. 위에서 설명한 분석 이벤트 외에는 이러한 작업에 관한 데이터를 받지 않습니다.</li>
+  <li><strong>인앱 업데이트(Android):</strong> 앱은 새 버전이 있는지 Google Play에 확인합니다. 이는 당사 서버가 아닌 Google Play가 처리합니다.</li>
+  <li><strong>알림:</strong> 알림을 허용하면 앱은 기기에서 로컬로 알림을 예약합니다. 당사는 푸시 알림 서비스를 사용하지 않으며 데이터를 받지 않습니다. 알림은 앱 또는 기기 설정에서 끌 수 있습니다.</li>
+</ul>
+
+<p>앱이 사용하는 권한: 인터넷 접근 및 알림(리마인더용, Android에서는 재부팅 후 재예약 포함). 앱은 위치, 연락처, 카메라, 마이크 또는 파일에 접근하지 않으며 인앱 구매가 없습니다.</p>
+
+<h2>9. 목적 및 법적 근거(GDPR)</h2>
+
+<div class="table-wrap"><table>
+  <tr><th>처리</th><th>목적</th><th>법적 근거</th></tr>
+  <tr><td>로컬 진행 상황 및 설정</td><td>귀하가 요청한 게임 운영</td><td>서비스 제공에 필요(GDPR 제6조 제1항 (b)); 서비스에 반드시 필요한 기기 내 저장</td></tr>
+  <tr><td>가명 계정 및 자동 클라우드 백업</td><td>진행 상황 보호 및 복원</td><td>서비스 제공에 필요(제6조 제1항 (b)) 및 진행 상황 손실을 방지하려는 당사의 정당한 이익(제6조 제1항 (f))</td></tr>
+  <tr><td>피드백, 오류 신고, 언어 희망 및 통계</td><td>메시지 처리, 오류 수정, 앱 개선</td><td>정당한 이익(제6조 제1항 (f))</td></tr>
+  <tr><td>광고 목적의 기기 내 정보 저장/접근, 맞춤 광고</td><td>광고 표시 및 맞춤화</td><td>귀하의 동의(제6조 제1항 (a) 및 ePrivacy 규정), UMP를 통해; iOS에서는 ATT도 적용</td></tr>
+  <tr><td>동의 없이 허용되는 범위의 광고 게재, 측정 및 사기 방지</td><td>무료 앱 운영 자금, 보안</td><td>정당한 이익(제6조 제1항 (f)), 귀하의 동의 선택 범위 내</td></tr>
+  <tr><td>사용 통계</td><td>사용 현황 파악, 앱 개선</td><td>정당한 이익(제6조 제1항 (f)); 언제든지 반대할 수 있음</td></tr>
+  <tr><td>지원 이메일</td><td>요청에 대한 답변</td><td>귀하의 요청에 따른 조치 / 정당한 이익(제6조 제1항 (b), (f))</td></tr>
+</table></div>
+
+<h2>10. 수령인(수탁자 및 독립 제공자)</h2>
+
+<ul>
+  <li>Google(Firebase: Analytics, Authentication, Cloud Firestore) — 당사의 수탁자로서. <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 정보</a></li>
+  <li>Google AdMob 및 해당하는 경우 동의 양식에 나열된 광고 파트너 — 광고 게재; Google은 일부 자체 약관에 따라 독립적인 처리자로 행동합니다.</li>
+  <li>Google Play(Android) — 업데이트 확인 및 스토어 페이지.</li>
+  <li>Apple(iOS) — ATT 권한은 iOS가 관리합니다.</li>
+</ul>
+
+<p>당사는 귀하의 개인정보를 돈을 받고 판매하지 않습니다. 법률상 의무가 있는 경우를 제외하고 다른 제3자에게 데이터를 공개하지 않습니다.</p>
+
+<h2>11. 보관 기간</h2>
+
+<ul>
+  <li>로컬 데이터: 앱을 삭제하거나 데이터를 지울 때까지.</li>
+  <li>클라우드 백업: 앱 작동에 필요한 동안 또는 삭제를 요청할 때까지.</li>
+  <li>피드백, 오류 신고, 언어 희망 및 통계: 처리 및 앱 개선에 필요한 기간 동안; 요청 시 더 일찍 삭제.</li>
+  <li>분석 데이터: 당사 Google 애널리틱스 속성의 데이터 보관 설정과 Google 자체 보관 규칙에 따라 Google이 보관하며, 집계 보고서는 더 오래 보관될 수 있습니다.</li>
+  <li>광고 데이터: Google이 자체 규칙에 따라 보관합니다(<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
+  <li>지원 이메일: 요청 처리에 필요한 기간 동안 보관 후, 법률상 보관 의무가 없는 한 삭제합니다.</li>
+</ul>
+
+<p>앱을 삭제하면 로컬 데이터는 삭제되지만, 이미 Google이 받았거나 클라우드에 저장된 데이터는 그것만으로 삭제되지 않습니다. 12항을 참조하십시오.</p>
+
+<h2>12. 귀하의 권리 및 데이터 삭제</h2>
+
+<p>GDPR 또는 영국 GDPR이 적용되는 경우 귀하는 열람, 정정, 삭제, 처리 제한, 데이터 이동권, 정당한 이익에 근거한 처리(예: 분석)에 대한 반대권, 그리고 이전 처리의 적법성에 영향을 주지 않고 언제든지 동의를 철회할 권리가 있습니다. 특히 거주 국가의 감독 기관에 민원을 제기할 수 있습니다. 헝가리: Nemzeti Adatvédelmi és Információszabadság Hatóság(NAIH), 1055 Budapest, Falk Miksa utca 9–11.; 우편 주소: 1363 Budapest, Pf. 9.; 전화: +36 1 391 1400; <a href="https://naih.hu">naih.hu</a>.</p>
+
+<p>권리를 행사하려면 <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>로 연락해 주십시오. 한 달 이내에 답변합니다. 앱에는 실명 계정이 없으므로 귀하의 데이터를 찾기 위한 정보(예: 앱 인스턴스 ID 또는 클라우드 백업의 경우 3항의 정보)를 요청할 수 있습니다. 또한 기기 설정에서 광고 ID를 재설정하고, "동의 관리"에서 광고 동의를 철회하며, iOS에서 추적 권한을 취소할 수 있습니다.</p>
+
+<p><strong>미국 거주자:</strong> 거주하는 주(예: 캘리포니아주, CCPA/CPRA)에 따라 개인정보에 대해 알 권리, 열람, 삭제 및 정정을 요청할 권리, 그리고 개인정보의 "판매"/"공유" 또는 타깃 광고를 거부할 권리가 있을 수 있습니다. 맞춤 광고를 위한 광고 ID 사용은 일부 주법상 "공유"로 간주될 수 있으며, 기기 설정에서 광고 추적을 제한하거나 광고 ID를 삭제하거나, iOS에서 추적을 거부하거나, 당사에 연락하여 거부할 수 있습니다. 당사는 개인정보를 돈을 받고 판매하지 않습니다.</p>
+
+<h2>13. 국외 이전</h2>
+
+<p>Google은 미국을 포함하여 유럽경제지역 외부에서 데이터를 처리할 수 있습니다. 이러한 이전은 EU-미국 데이터 프라이버시 프레임워크(Google 인증) 및/또는 유럽연합 집행위원회가 승인한 표준계약조항에 근거합니다.</p>
+
+<h2>14. 아동</h2>
+
+<p>앱은 일반 이용자를 위한 퍼즐 게임으로, 13세 미만 아동을 대상으로 하지 않으며 Google Play 가족 프로그램에 속하지 않습니다. 당사는 고의로 아동의 개인정보를 수집하지 않습니다. 부모 또는 보호자로서 자녀가 당사에 개인정보를 제공했다고(예: 이메일로) 생각되시면 연락해 주십시오. 해당 정보를 삭제하겠습니다.</p>
+
+<h2>15. 보안</h2>
+
+<p>Google로 전송되는 데이터는 암호화되어 전송됩니다(HTTPS/TLS). 로컬 데이터는 기기의 앱 전용 저장 공간에 저장됩니다. Firestore 보안 규칙에 따라 백업에 대한 접근은 해당 백업을 생성한 가명 계정으로 제한됩니다.</p>
+
+<h2>16. 자동화된 의사결정</h2>
+
+<p>앱은 귀하에게 법적 효력이나 이와 유사한 중대한 영향을 미치는, 자동화된 처리에만 근거한 결정을 내리지 않습니다. Google의 광고 선택은 자동화될 수 있습니다.</p>
+
+<h2>17. 변경</h2>
+
+<p>앱이나 법령이 변경되면 본 방침을 업데이트할 수 있습니다. 최신 버전은 항상 이 주소에서 확인할 수 있으며 상단에 날짜가 표시됩니다.</p>
+
+<p>함께 보기: <a href="manage_consent.ko.html">동의 관리</a> · <a href="terms_of_use.ko.html">이용약관</a></p>
+<p class="note">이 문서는 투명성을 위해 제공되며 법률 자문에 해당하지 않습니다.</p>
+</body>
+</html>

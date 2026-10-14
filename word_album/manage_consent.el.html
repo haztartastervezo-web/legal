@@ -1,55 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Διαχείριση συγκατάθεσης – Word Album</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 20px 64px; line-height: 1.55; color: #1c1c1e; background: #fff; }
-  h1 { font-size: 1.6rem; margin-bottom: 4px; }
-  h2 { font-size: 1.15rem; margin-top: 2em; border-bottom: 1px solid #e0e0e0; padding-bottom: 4px; }
-  .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5em; }
-  ul { padding-left: 1.4em; }
-  a { color: #0060df; }
-  footer { margin-top: 3em; font-size: 0.85rem; color: #888; }
+  :root{color-scheme:light dark}
+  body{max-width:760px;margin:0 auto;padding:2.5rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.65;color:#1d1d1f;background:#fff}
+  @media (prefers-color-scheme: dark){body{color:#e8e8ea;background:#111113}}
+  h1{font-size:1.7rem;margin-bottom:.25rem}
+  .updated{color:#666;font-size:.9rem;margin-bottom:1rem}
+  @media (prefers-color-scheme: dark){.updated{color:#9a9a9e}}
+  h2{font-size:1.15rem;margin-top:2.25rem;border-bottom:1px solid #e2e2e5;padding-bottom:.4rem}
+  @media (prefers-color-scheme: dark){h2{border-color:#2c2c30}}
+  ul{padding-left:1.3rem}
+  li{margin:.35rem 0}
+  a{color:#0066cc;overflow-wrap:anywhere}
+  @media (prefers-color-scheme: dark){a{color:#5aa9ff}}
+  .box{background:#f4f4f6;border-radius:10px;padding:1rem 1.25rem;margin:1rem 0}
+  .id{border-left:4px solid #0066cc;font-size:.92rem}
+  @media (prefers-color-scheme: dark){.box{background:#1c1c1f}.id{border-color:#5aa9ff}}
+  .table-wrap{overflow-x:auto}
+  table{border-collapse:collapse;width:100%;margin:1rem 0}
+  th,td{text-align:left;vertical-align:top;padding:.5rem;border-bottom:1px solid #e2e2e5;font-size:.92rem}
+  @media (prefers-color-scheme: dark){th,td{border-color:#2c2c30}}
+  .lang{font-size:.85rem;margin-bottom:1rem;line-height:1.9}
+  .note{color:#666;font-size:.85rem;margin-top:2rem}
+  @media (prefers-color-scheme: dark){.note{color:#9a9a9e}}
 </style>
 </head>
 <body>
+<p class="lang"><a href="manage_consent.hu.html">Magyar</a> · <a href="manage_consent.en.html">English</a> · Ελληνικά · <a href="manage_consent.it.html">Italiano</a> · <a href="manage_consent.ro.html">Română</a></p>
 <h1>Διαχείριση συγκατάθεσης</h1>
-<p class="meta">
-  Όνομα εφαρμογής: Word Album<br>
-  Όνομα πακέτου: com.enila.wordalbum<br>
-  Τελευταία ενημέρωση: 4 Σεπτεμβρίου 2026
-</p>
+<p class="updated">Εφαρμογή: Word Album (com.enila.wordalbum) &middot; Τελευταία ενημέρωση: 13 Οκτωβρίου 2026</p>
+<div class="box id"><strong>Υπεύθυνη επεξεργασίας και πάροχος:</strong> Fütyü-Gábor Enikő (Enila Studio), φυσικό πρόσωπο &middot; 4032 Debrecen, Cívis utca 3., Ουγγαρία &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
-<p>Αυτό το έγγραφο εξηγεί ποιες συγκαταθέσεις ζητά η εφαρμογή και πώς μπορείτε να τις αλλάξετε ανά πάσα στιγμή. Αυτή η σελίδα αποτελεί <strong>συμπλήρωμα</strong> των εγγενών διεπαφών συγκατάθεσης (φόρμα Google UMP, παράθυρο διαλόγου iOS App Tracking Transparency) — δεν τις αντικαθιστά.</p>
+<p>Η σελίδα αυτή συμπληρώνει την <a href="privacy_policy.el.html">Πολιτική απορρήτου</a> και συνοψίζει τις επιλογές που προσφέρει η Εφαρμογή και πώς μπορείς να τις αλλάξεις οποτεδήποτε.</p>
 
-<h2>1. Ποιες συγκαταθέσεις ζητάμε</h2>
+<h2>1. Ποιες επιλογές σού ζητά η Εφαρμογή</h2>
+
 <ul>
-  <li><strong>Εξατομικευμένη διαφήμιση (ΕΟΧ/ΗΒ/Ελβετία):</strong> μέσω της φόρμας συγκατάθεσης Google User Messaging Platform (UMP), σας ρωτάμε αν επιτρέπετε εξατομικευμένες διαφημίσεις βάσει του διαφημιστικού αναγνωριστικού. Χωρίς αυτή τη συγκατάθεση, η εφαρμογή μπορεί να ζητά μόνο μη εξατομικευμένες διαφημίσεις.</li>
-  <li><strong>Παρακολούθηση (App Tracking Transparency, μόνο iOS):</strong> μέσω του εγγενούς παραθύρου διαλόγου ATT του συστήματος, ζητάμε άδεια πριν χρησιμοποιήσουμε το διαφημιστικό αναγνωριστικό της συσκευής σας (IDFA) για παρακολούθηση σε εφαρμογές/ιστότοπους άλλων εταιρειών, με σκοπό πιο εξατομικευμένη διαφήμιση.</li>
-</ul>
-<p>Η εφαρμογή δεν ζητά συγκατάθεση για εγγραφή λογαριασμού ή σύνδεση — το αναγνωριστικό Firebase που χρησιμοποιείται για το αντίγραφο ασφαλείας στο cloud δημιουργείται αυτόματα και ανώνυμα, χωρίς ξεχωριστή έγκριση, επειδή δεν συνδέονται με αυτό στοιχεία προσωπικής ταυτοποίησης.</p>
-
-<h2>2. Πώς να αλλάξετε τη συγκατάθεσή σας</h2>
-<ul>
-  <li><strong>Στην εφαρμογή:</strong> Ρυθμίσεις → «Διαχείριση συγκατάθεσης» (αυτό το στοιχείο εμφανίζεται μόνο όπου η Google απαιτεί εκ νέου πρόσβαση στις ρυθμίσεις διαφημιστικής συγκατάθεσης για την περιοχή σας — συνήθως χρήστες ΕΟΧ/ΗΒ). Εδώ μπορείτε να αλλάξετε ανά πάσα στιγμή αν επιτρέπονται εξατομικευμένες διαφημίσεις.</li>
-  <li><strong>Παρακολούθηση iOS:</strong> Ρυθμίσεις συσκευής → Απόρρητο και ασφάλεια → Παρακολούθηση, όπου μπορείτε να επιτρέψετε ή να αποκλείσετε την παρακολούθηση ανά εφαρμογή.</li>
+  <li><strong>Διαφημίσεις (ΕΟΧ, Ηνωμένο Βασίλειο, Ελβετία):</strong> κατά την εκκίνηση, αν το απαιτεί η περιοχή σου, η Εφαρμογή εμφανίζει την τυπική φόρμα συγκατάθεσης της Google μέσω της User Messaging Platform (UMP), μιας πλατφόρμας διαχείρισης συγκατάθεσης πιστοποιημένης από την Google. Αφορά την αποθήκευση/πρόσβαση σε πληροφορίες στη συσκευή σου και την εξατομίκευση διαφημίσεων από την Google και τους διαφημιστικούς συνεργάτες της.</li>
+  <li><strong>Παρακολούθηση (μόνο iOS):</strong> το αίτημα App Tracking Transparency (ATT) της Apple ρωτά αν η Εφαρμογή και οι διαφημιστικοί συνεργάτες της μπορούν να χρησιμοποιούν το διαφημιστικό αναγνωριστικό της συσκευής σου (IDFA) για να παρακολουθούν τη δραστηριότητά σου σε εφαρμογές και ιστότοπους άλλων εταιρειών.</li>
+  <li><strong>Ειδοποιήσεις:</strong> το λειτουργικό σύστημα ρωτά αν η Εφαρμογή μπορεί να σου στέλνει υπενθυμίσεις.</li>
+  <li><strong>Στατιστικά χρήσης:</strong> το Google Analytics for Firebase λειτουργεί βάσει του έννομου συμφέροντός μας και δεν ελέγχεται από τη φόρμα συγκατάθεσης για τις διαφημίσεις. Μπορείς να αντιταχθείς οποτεδήποτε γράφοντας στο <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a>.</li>
 </ul>
 
-<h2>3. Τι συμβαίνει αν αρνηθείτε τη συγκατάθεση</h2>
-<p>Η εφαρμογή λειτουργεί πλήρως ακόμη και αν αρνηθείτε τη συγκατάθεση. Αν δεν επιτρέψετε εξατομικευμένες διαφημίσεις ή παρακολούθηση, η εφαρμογή εμφανίζει μη εξατομικευμένες διαφημίσεις — αυτό δεν επηρεάζει το παιχνίδι, την αποθηκευμένη πρόοδο ή οποιαδήποτε άλλη λειτουργία.</p>
+<h2>2. Πώς αλλάζεις τις επιλογές σου</h2>
 
-<h2>4. Ειδικά δικαιώματα για χρήστες ΕΟΧ/ΗΒ</h2>
-<p>Σύμφωνα με την Πολιτική Συγκατάθεσης Χρηστών ΕΕ της Google, οι χρήστες στον ΕΟΧ, το ΗΒ και την Ελβετία πρέπει να δώσουν προηγούμενη συγκατάθεση για τη χρήση προσωπικών δεδομένων για διαφημιστικούς σκοπούς. Η εφαρμογή το υλοποιεί μέσω της πιστοποιημένης Πλατφόρμας Διαχείρισης Συγκατάθεσης UMP της Google, σύμφωνα με το IAB Transparency and Consent Framework (TCF). Μπορείτε να ανακαλέσετε τη συγκατάθεσή σας ανά πάσα στιγμή όπως περιγράφεται παραπάνω.</p>
-
-<h2>5. Σχετικά έγγραφα</h2>
 <ul>
-  <li><a href="privacy_policy.el.html">Πολιτική Απορρήτου</a></li>
-  <li><a href="terms_of_use.el.html">Όροι Χρήσης</a></li>
+  <li><strong>Συγκατάθεση για διαφημίσεις:</strong> άνοιξε τις ρυθμίσεις της Εφαρμογής και πάτησε «Διαχείριση συγκατάθεσης» (ρυθμίσεις απορρήτου) για να ανοίξεις ξανά τη φόρμα της Google και να αλλάξεις την επιλογή σου. Η επιλογή εμφανίζεται όπου το απαιτεί η Google.</li>
+  <li><strong>Παρακολούθηση (iOS):</strong> Ρυθμίσεις iOS → Απόρρητο και ασφάλεια → Παρακολούθηση — εδώ μπορείς οποτεδήποτε να επιτρέψεις ή να απαγορεύσεις την παρακολούθηση για την Εφαρμογή, χωρίς επανεγκατάσταση.</li>
+  <li><strong>Ειδοποιήσεις:</strong> στις ρυθμίσεις της Εφαρμογής ή στις ρυθμίσεις ειδοποιήσεων της συσκευής σου.</li>
+  <li><strong>Διαφημιστικό αναγνωριστικό:</strong> μπορείς να το επαναφέρεις ή να το διαγράψεις στις ρυθμίσεις της συσκευής (Android: Ρυθμίσεις → Απόρρητο → Διαφημίσεις).</li>
 </ul>
 
-<h2>6. Επικοινωνία</h2>
-<p>Ερωτήσεις; Επικοινωνήστε μαζί μας στο: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></p>
+<h2>3. Τι συμβαίνει αν αρνηθείς</h2>
+
+<p>Η Εφαρμογή συνεχίζει να λειτουργεί πλήρως, μαζί με τις ανταμοιβές των διαφημίσεων με ανταμοιβή, εφόσον μπορούν να προβληθούν διαφημίσεις. Χωρίς συγκατάθεση, η Google μπορεί να προβάλλει μη εξατομικευμένες ή περιορισμένες διαφημίσεις ή, σε ορισμένες περιπτώσεις, καμία διαφήμιση. Η άρνηση του ATT στο iOS σημαίνει ότι το IDFA δεν είναι διαθέσιμο· οι άλλες επιλογές σου στη φόρμα της Google εξακολουθούν να ισχύουν.</p>
+
+<h2>4. Ανάκληση της συγκατάθεσης</h2>
+
+<p>Μπορείς να ανακαλέσεις τη συγκατάθεσή σου οποτεδήποτε όπως περιγράφεται παραπάνω. Η ανάκληση δεν θίγει τη νομιμότητα της επεξεργασίας που βασίστηκε στη συγκατάθεση πριν από την ανάκληση.</p>
+
+<h2>5. Επικοινωνία</h2>
+
+<p>Για κάθε ερώτηση ή αίτημα: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a> &middot; Fütyü-Gábor Enikő (Enila Studio), 4032 Debrecen, Cívis utca 3., Ουγγαρία.</p>
+
+<p>Δείτε επίσης: <a href="privacy_policy.el.html">Πολιτική απορρήτου</a> · <a href="terms_of_use.el.html">Όροι χρήσης</a></p>
+<p class="note">Το παρόν έγγραφο παρέχεται για λόγους διαφάνειας και δεν αποτελεί νομική συμβουλή.</p>
 </body>
 </html>
