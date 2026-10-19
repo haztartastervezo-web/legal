@@ -40,7 +40,7 @@ hand-edit those folders.
 - [word_album](word_album/privacy_policy.hu.html) — Word Album
 - [magnet_grid](magnet_grid/privacy_policy.en.html) — Magnet Grid
 - [nectar_flow](nectar_flow/privacy_policy.en.html) — Nectar Flow
-- [quick_daily_fitness](quick_daily_fitness/privacy_policy.hu.html) — Quick Daily Fitness (short daily home-workout app)
+- [daily_7_min](daily_7_min/privacy_policy.hu.html) — Daily 7 Min (short daily home-workout app)
 - [clue_riddles](clue_riddles/privacy_policy.en.html) — Clue Riddles (visual logic-grid puzzle game)
 - [family_cards_and_moves](family_cards_and_moves/privacy_policy.hu.html) — Family Cards & Moves (picture routines, KITs and movements for families)
 - [quest_word_search](quest_word_search/privacy_policy.hu.html) — Szókereső (Quest Word Search)
