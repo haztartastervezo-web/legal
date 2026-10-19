@@ -1,56 +1,51 @@
-# English and Hungarian legal documents — release review
+# Routine Cards & Moves — legal release review
 
-Reviewed on October 18, 2026 against the supplied `lib 2.zip` and `assets.zip`.
-Provider identity was retained from this repository's existing provider notice.
+Reviewed October 19, 2026. This supersedes the no-advertising/no-remote-analytics assessment of October 18.
 
-## Public pages
+## Evidence
 
-- `privacy_policy.en.html`: local data, selected files, notifications, manual exports, platform backups, support, providers, rights and children.
-- `terms_of_use.en.html`: family use, licence, user content, safety, service limits and statutory rights.
-- `manage_consent.en.html`: permissions and privacy choices; no advertising-consent form in this version.
-- `data_deletion.en.html`: reset limits, complete local deletion and support-email requests.
-- `children_privacy.en.html`: parent-facing child privacy information.
-- `movement_safety.en.html`: movement, medication and everyday-task safety.
-- `support.en.html`: provider and support contact.
-- Matching `.hu.html` pages provide all seven documents in Hungarian.
-- `index.en.html` and `index.hu.html`: language-specific document directories.
-- `index.html`: English default directory, with a Hungarian language link.
+Authoritative Dart source: the newly uploaded `lib.zip` (SHA-256 `b7235a9807d33f18d86bacd259b101d7ad0b29ed49c4abb1ef7ec85238641c79`), rather than the older `lib 2.zip`. The developer separately confirmed that Firebase Analytics will be added for button/feature usage. The app repository at `c97d55a5961a7927da9b046a1e2eb39159838dfe` supplies additional dependency/native context; it is not proof that those native files are paired with this exact archive.
 
-Unqualified document `.html` paths contain the same bytes as the `.en.html` pages. All public pages have language navigation, and document links stay in the selected language. Existing in-app privacy and terms URLs remain valid. The Hungarian privacy policy dated October 18 was compared against the supplied implementation; its incompatible claims about image selection, deletion and permissions were replaced. The three earlier Hungarian pages were rewritten to match the English content, and the four missing Hungarian pages were added. Public English and Hungarian pages use the October 18 revision date.
+- `app_constants.dart`: display name **Routine Cards & Moves**, package `com.enila.cardsmoves`. Existing hosted routes remain unchanged.
+- `main.dart` and `ad_service.dart`: Mobile Ads starts at launch, uses Google's test IDs, non-personalised requests, child age treatment and G content rating.
+- `shell.dart`, Settings and parent-key flow: native placements in parent planning/settings when the daily key is closed; no mounted banner/native placements on home or routine/movement players. Optional daily-key and separate support videos are different flows. Unavailable daily-key advertising grants access; early dismissal does not. Support does not unlock the daily key.
+- `analytics_service.dart`: debug-only `app_open`, `settings_open` and review-prompt hooks. Firebase initialisation and remote Analytics are not implemented in this archive. Public pages disclose Firebase as planned and do not invent an event schema, console retention period or working opt-out.
+- Settings still has a permanently false consent visibility callback and an empty action. No connected advertising-consent or Analytics consent flow was found. Child ad treatment does not establish Analytics consent or certify compliance.
+- `family_store.dart`: optional child labels and day-specific routine steps; paused routines; end-of-routine feedback (latest 200); approximately 60 days of saved daily completion history. Daily parent entitlement survives reset.
+- `movement_preferences.dart`: movement favourites, feedback and custom sequences use separate preference keys. Family reset does not clear them and the family JSON export does not include them.
+- Family JSON export includes routine feedback and optional child labels but omits daily progress, paused runs, image/audio files, PIN, daily key and separately stored movement/app preferences. Export files are readable and unencrypted; temporary copies can remain.
+- `legal_doc_screen.dart`: documents are fetched from GitHub Pages, converted to text and shown in-app, with an in-memory cache.
+- PIN, palette/theme/language, dismissed tips and review-prompt preferences are separately stored. A disabled PIN permits parent-area entry without age verification; the forgotten-PIN arithmetic is not verifiable parental consent.
+- The music service and credit dialog name three Kevin MacLeod tracks under CC BY 4.0 and two generated loops. Observed attribution is not independent verification of the audio files or every asset's rights.
 
-## Evidence and corrections
+All seven public documents have English and Hungarian versions. Obsolete feature branding was removed from public copy. English aliases are byte-identical; current app routes are preserved.
 
-- `lib/core/constants/app_constants.dart` defines the app, package, support email and hosted legal URL paths.
-- `lib/data/family_store.dart` saves family content to SharedPreferences. Exports omit daily progress, music files, image files and the PIN. `reset()` removes only `family_data_v1`, leaving a possible `family_data_v1_broken` recovery key.
-- `lib/features/settings/settings_screen.dart` exports a JSON file into temporary storage and opens the share sheet. Reset attempts to remove imported images and audio; it does not clear all preferences or temporary export files.
-- `lib/providers/parent_lock_provider.dart` stores the PIN as a local string. PIN, language and theme survive reset.
-- `lib/services/goal_images.dart` and `routine_music.dart` import selected files. The earlier notice's claim of no photo access was inaccurate for selected goal images.
-- `lib/services/routine_reminders.dart` requests notification permission and schedules local reminders. The earlier no-permissions wording was inaccurate.
-- `lib/services/app_update_service.dart` uses Google Play update APIs. No Android Internet-permission claim is made because native manifests were not supplied.
-- `lib/services/analytics_service.dart` logs only in debug mode and has no analytics backend in the supplied source. No Firebase, ad network or billing integration was identified in this source.
-- The supplied `lib/widgets/legal_about_section.dart` uses `LaunchMode.externalApplication`, but repository commit `031b5569f26f09db04a0913eeaa08b334da4c7ec` reports a newer in-app legal viewer. Both policies therefore describe the common verified privacy implication: documents are loaded from GitHub Pages and GitHub receives a network request. They do not impose a browser or viewer implementation. Check the final release separately.
-- The optional parent PIN is not proof of adulthood or verifiable parental consent. Public child notices do not promise that all outbound actions are gated.
+## Required before production release or Firebase activation
 
-## Checks still required on the release binary
+1. Review startup SDK operations, actual release ad requests and merged permissions. Replace test ad/App IDs only after configuration is ready. Non-personalised requests are not a blanket consent exemption.
+2. Implement any required consent collection, choice reopening and withdrawal before consent-dependent SDK operations. The hidden consent entry and unconditional startup initialisation require review. Written notices do not implement UMP.
+3. Add minimal Firebase events for non-sensitive interface actions. Do not log routine titles, child labels, school entries, free text, mood/health values, files or PINs. Review automatic events, screen names, identifiers and user properties as well as explicit button events; avoid sensitive behavioural inferences.
+4. Set collection and consent defaults before initialisation and implement separate Analytics enable/disable and withdrawal handling. UMP does not automatically prove the correct Firebase configuration. Evaluate basic/advanced consent mode, including denied-consent requests.
+5. Choose and verify Analytics event/user-level retention, reset-on-activity, advertising-personalisation eligibility, Google Signals/ad-sharing links, advertising identifiers and any exports. Publish the actual retention period and available controls before enabling Analytics. No console setting is guessed here.
+6. Assess actual child users separately for advertising and Analytics. A parent-labelled screen or 16+ store rating does not prove children never use the app. Match Play audience declarations and any Apple Kids Category requirements to actual use.
+7. Update Play Data safety and App Store privacy labels for all actual SDK data, not just family files/custom button payloads. Review identifiers, interactions, approximate location and diagnostics against locked SDKs and the actual release binary. Do not declare the entire app “no data collected”.
+8. Establish the provider agreements, transfer safeguards and Google-held-data rights/deletion workflow. Local reset/uninstall does not erase remote records; support email alone may not identify a pseudonymous installation.
+9. Correct in-app “no data collected” and “all data deleted” summaries, or implement corresponding behaviour. Public deletion pages disclose the actual limits; this legal-only update does not change source behaviour.
+10. Verify dependency licences and bundled asset rights from the final project. Keep music credits accessible and verify source/attribution/edit requirements. No licence grant or ownership is invented.
 
-These pages are drafted for the supplied version. They are not a certification of the final Android/iOS build or a complete licence inventory.
+Firebase disclosures remain preparatory until integration, consent controls and retention are finalised. These documents are not certification of the production binary.
 
-1. Review `pubspec.yaml`, `pubspec.lock`, transitive dependencies, native manifests, entitlements and release network behaviour; these were not supplied. Confirm absence of hidden collection or advertising SDKs and actual permissions/backup rules.
-2. Ensure store privacy labels, Google Play Data safety, target age groups and content declarations match the actual binary. Local-only processing is not automatically off-device collection; platform services and SDK behaviour still need assessment. Do not infer that a family app has an adult-only audience.
-3. Review external links, cross-promotion, review prompts and backup sharing in child-accessible flows. An optional PIN is not verified parental consent. A written notice cannot substitute for a required working parental gate. For an Apple Kids Category release, verify the actual implementation against Guidelines 1.3 and 5.1.4.
-4. Review the movement and health-related store declarations for actual features and marketing claims. Do not claim therapeutic or neurological outcomes without suitable evidence and regulatory assessment.
-5. Compile the actual third-party copyright/licence notices from locked dependencies, including the external `fitness_engine` package, and make them accessible as required by their licences. No dependency licence text or asset ownership was invented. Confirm rights for bundled illustrations, app promotion images, fonts and the four music files in `assets/audio/`; source and asset archives do not establish those rights. Keep evidence of permissions and any attribution obligations. No open-source licence for the app itself has been added.
-6. Reassess documents and consent before adding rewarded ads, remote analytics, online music embeds, accounts or cloud sync. Earlier product plans do not establish that those features exist in this archive.
-7. Check whether release fixes should remove the recovery key and export cache during a complete in-app deletion. The public deletion page accurately describes their current limitations. The supplied app's reset labels still say all data is deleted, and the short in-app privacy summary omits manual exports. Those UI strings should be corrected in the release source or the corresponding behaviour changed before release. This legal-repository update does not change app source or claim that deletion behaviour was fixed.
+## Official references
 
-## Official references checked
-
-- Google Play User Data: https://support.google.com/googleplay/android-developer/answer/10144311?hl=en
-- Google Play Families: https://support.google.com/googleplay/android-developer/answer/9893335?hl=en
-- Apple App Review Guidelines: https://developer.apple.com/app-store/review/guidelines/
-- GDPR: https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
-- GitHub Pages IP logging: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
-- NAIH: https://www.naih.hu/
-- FTC COPPA FAQ: https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions
-
-Legal requirements depend on actual distribution, audience and processing. Review material changes against current rules before release. No signatures, consent logs, asset licence grants, company registrations or release-binary compliance have been invented.
+- https://developers.google.com/admob/android/privacy/play-data-disclosure
+- https://developers.google.com/admob/flutter/targeting
+- https://developers.google.com/admob/flutter/privacy/ad-serving-modes
+- https://developers.google.com/admob/flutter/privacy/gdpr
+- https://developers.google.com/admob/flutter/privacy/consent-mode
+- https://support.google.com/analytics/answer/11593727?hl=en
+- https://firebase.google.com/docs/analytics/configure-data-collection
+- https://firebase.google.com/support/privacy
+- https://support.google.com/googleplay/android-developer/answer/10144311?hl=en
+- https://support.google.com/googleplay/android-developer/answer/9893335?hl=en
+- https://developer.apple.com/app-store/review/guidelines/
+- https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng
