@@ -42,5 +42,5 @@ hand-edit those folders.
 - [nectar_flow](nectar_flow/privacy_policy.en.html) — Nectar Flow
 - [daily_7_min](daily_7_min/privacy_policy.hu.html) — Daily 7 Min (short daily home-workout app)
 - [clue_riddles](clue_riddles/privacy_policy.en.html) — Clue Riddles (visual logic-grid puzzle game)
-- [family_cards_and_moves](family_cards_and_moves/privacy_policy.hu.html) — Family Cards & Moves (picture routines, KITs and movements for families)
+- [routine_cards_and_moves](routine_cards_and_moves/privacy_policy.hu.html) — Routine Cards & Moves (picture routines, KITs and movements for families)
 - [quest_word_search](quest_word_search/privacy_policy.hu.html) — Szókereső (Quest Word Search)

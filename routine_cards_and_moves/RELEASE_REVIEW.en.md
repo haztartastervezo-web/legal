@@ -1,5 +1,20 @@
 # Routine Cards & Moves — legal release review
 
+## Update 2026-10-19 (afternoon) — Firebase Analytics live as opt-in, UMP connected
+
+Folder renamed `family_cards_and_moves` → `routine_cards_and_moves` (store name). Evidence: the app repository working tree on 2026-10-19 (uncommitted changes on top of `c97d55a`).
+
+- `analytics_service.dart` + `firebase_options.dart`: Firebase project `cardsmoves-enila` (Android + iOS). Collection is **off natively** (`firebase_analytics_collection_enabled` / `FIREBASE_ANALYTICS_COLLECTION_ENABLED` false, Consent Mode defaults denied) and turned on only after the parent's yes (`FamilyStore.analyticsConsent`, device-only; asked once when the parent area first opens; switch in Settings → Data). A later no calls `setAnalyticsCollectionEnabled(false)`, denies analytics storage and `resetAnalyticsData()`. Debug builds never collect.
+- Event payloads: counts, durations, yes/no flags, built-in content ids (own content = `custom`), KIT rating as fixed code, rewarded-video outcome, backup/reset actions, rate-prompt and cross-promo ids; 3 user properties (routine-count band, has custom routine, reminders on). Never names, child labels, notes, school entries, mood answers, files, PIN, typed text, dates or a user id (mood was removed from `routine_feedback`).
+- Identifiers: AD_ID / ADSERVICES permissions removed (manifest `tools:node="remove"`), `google_analytics_adid_collection_enabled` / `ssaid` false, iOS IDFV collection false, `$FirebaseAnalyticsWithoutAdIdSupport`, ad-personalisation signals false, ad storage / ad user data denied.
+- AdMob: own IDs in release (test IDs in debug), non-personalised, child age treatment, G rating; UMP `gatherConsent()` before `MobileAds.initialize()`, `canRequestAds()` before every load, "Manage consent" shown when `getPrivacyOptionsRequirementStatus() == required`. No ATT prompt.
+
+Remaining before release (see the app's `legal_docs_report.md`): link Google Analytics to the Firebase project and set event-data retention to **2 months** (the documents state 2 months), keep Google Signals and Google Ads links off; Play Data safety / Apple App Privacy answers; target-audience / Families decisions; Apple Kids Category not to be selected (third-party analytics + ads).
+
+---
+
+## Original review (earlier on 2026-10-19)
+
 Reviewed October 19, 2026. This supersedes the no-advertising/no-remote-analytics assessment of October 18.
 
 ## Evidence
