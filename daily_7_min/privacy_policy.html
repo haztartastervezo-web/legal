@@ -32,13 +32,13 @@
 <p class="lang">English · <a href="privacy_policy.hu.html">Magyar</a></p>
 
 <h1>Privacy Policy</h1>
-<p class="updated">App: Daily 7 Min (Android package / iOS bundle ID: com.enila.quickdailyfitness) &middot; Developer: Enila Studio &middot; Last updated: October 19, 2026</p>
+<p class="updated">App: Daily 7 Min (Android package: com.enila.quickdailyfitness · iOS bundle ID: com.enila.fitness) &middot; Developer: Enila Studio &middot; Last updated: October 19, 2026</p>
 <div class="box"><strong>Controller and provider:</strong> Fütyü-Gábor Enikő (Enila Studio), private individual &middot; 4032 Debrecen, Cívis utca 3., Hungary &middot; E-mail: <a href="mailto:haztartastervezo@gmail.com">haztartastervezo@gmail.com</a></div>
 
 <p>This privacy policy explains what data the Daily 7 Min mobile app (the "App"), a short daily home-workout app, processes, why, with whom it is shared, and what rights you have. This policy is for information only; where your consent is required, the App asks for it separately.</p>
 
 <div class="box">
-  <strong>In short:</strong> Your workouts, fitness-test results, journal notes, mood entries and settings are stored only on your device — we do not receive them. The App has no user accounts and does not ask for your name, email address or password. The App contains Google's Mobile Ads SDK (AdMob) with Google's consent dialog, and in the Android version it uses Google Analytics for Firebase and Firebase Crashlytics. These Google services process pseudonymous technical identifiers (for example an app-instance ID or advertising ID) and device data — this is not anonymous data. In the EEA, the UK and Switzerland, Analytics follows your choices in Google's consent dialog. The current version does not ask for Apple's tracking permission (ATT) and does not access the iOS advertising identifier (IDFA).
+  <strong>In short:</strong> Your workouts, fitness-test results, journal notes, mood entries and settings are stored only on your device — we do not receive them. The App has no user accounts and does not ask for your name, email address or password. The App contains Google's Mobile Ads SDK (AdMob) with Google's consent dialog, and it uses Google Analytics for Firebase, Firebase Crashlytics and Firebase Performance Monitoring. These Google services process pseudonymous technical identifiers (for example an app-instance ID or advertising ID) and device data — this is not anonymous data. In the EEA, the UK and Switzerland, Analytics follows your choices in Google's consent dialog. The current version does not ask for Apple's tracking permission (ATT) and does not access the iOS advertising identifier (IDFA).
 </div>
 
 <h2>1. Controller and contact</h2>
@@ -59,14 +59,15 @@
 <h2>3. Advertising (Google AdMob)</h2>
 <p>The App contains the Google Mobile Ads SDK, which is initialized at startup after the consent step (section 5). The App may show banner ads and optional rewarded ads that you choose to watch to temporarily unlock extra content or a period without banner ads. Ads are delivered by Google AdMob (Google Ireland Limited / Google LLC). To deliver, limit, measure and — if permitted — personalize ads and to prevent fraud, Google may process: the advertising ID (Android; the current iOS version does not request ATT, so the IDFA is not available); IP address and approximate location derived from it; device and app information (model, OS version, language, app version); and ad interactions (impressions, clicks). Google acts under its own policies: <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a>.</p>
 
-<h2>4. Usage analytics and crash reports (Firebase, Android version)</h2>
-<p>In the Android version, the App uses Google Analytics for Firebase and Firebase Crashlytics. In the current iOS version these Firebase services are not activated.</p>
+<h2>4. Usage analytics, crash reports and performance data (Firebase)</h2>
+<p>On Android and iOS, the App uses Google Analytics for Firebase, Firebase Crashlytics and Firebase Performance Monitoring (Google Ireland Limited / Google LLC).</p>
 <ul>
-  <li><strong>Analytics:</strong> the App records whether the "rate the app" prompt was shown and which answer was chosen (rate / I have an idea / not now). Firebase also collects automatically recorded data such as a randomly generated app-instance ID, first open, sessions and screens used, device model, OS version, app version, language/region, approximate location (derived from the IP address); it may also receive the advertising ID. Your workouts, test results, journal and mood are <strong>not</strong> sent to Analytics.</li>
-  <li><strong>Crash reports (Crashlytics):</strong> if the App crashes or hits an error, a report is sent with the error details and stack trace, device model, OS version, app version, the time of the crash and a Crashlytics installation identifier.</li>
+  <li><strong>Analytics:</strong> the App records which screens you open and these in-app actions: starting a workout (program identifier, chosen length, extra warm-up / extra stretch on or off); finishing a workout or leaving it early (program identifier, length, how far you got in percent); swapping or excluding an exercise (exercise identifier); starting a ritual; completing the fitness test (only that it was completed — not the result); reaching the first-week milestone; the outcome of a rewarded ad (watched / closed / no ad available) and the content it unlocked; changing the app language; turning the daily reminder on or off; opening another app's store page from "Our other apps"; starting or installing an in-app update; and whether the "rate the app" prompt was shown and which answer was chosen (rate / I have an idea / not now). The app language, whether the reminder is on and the chosen session length are also stored as analytics user properties. Firebase also collects automatically recorded data such as a randomly generated app-instance ID, first open, sessions and screens used, device model, OS version, app version, language/region, approximate location (derived from the IP address); it may also receive the advertising ID. Your fitness-test results (repetitions, score, level), journal notes and mood are <strong>not</strong> sent to Analytics; workout events contain only the program/exercise identifiers and settings listed above.</li>
+  <li><strong>Crash reports (Crashlytics):</strong> if the App crashes or hits an error, a report is sent with the error details and stack trace, device model, OS version, app version, the time of the crash and a Crashlytics installation identifier and Firebase installation ID. Non-fatal errors caught by the App are reported the same way.</li>
+  <li><strong>Performance (Performance Monitoring):</strong> the App measures technical performance such as app start time, screen rendering (slow or frozen frames) and, where measured automatically, the duration of network requests, together with device model, OS version, app version, network type, country (derived from the IP address) and a Firebase installation ID. No workout, test, journal or mood content is included.</li>
 </ul>
 <p>These identifiers are <strong>pseudonymous</strong>: we do not link them to your name or contact details, but they are personal data under the GDPR.</p>
-<p><strong>Google Consent Mode:</strong> Analytics starts with the storage of analytics and advertising identifiers <strong>denied</strong>. Where consent is not required, it is then enabled. In the EEA, the UK and Switzerland it follows your choices in the consent dialog (section 5): analytics storage only if you consent to storing and/or accessing information on your device, and ad-related signals only with the corresponding ad consents. Without that consent, Analytics receives only limited signals without an analytics identifier stored on your device. Crash reports are sent based on our legitimate interest, independently of the dialog; you may object to them (section 1).</p>
+<p><strong>Google Consent Mode:</strong> Analytics starts with the storage of analytics and advertising identifiers <strong>denied</strong>. Where consent is not required, it is then enabled. In the EEA, the UK and Switzerland it follows your choices in the consent dialog (section 5): analytics storage only if you consent to storing and/or accessing information on your device, and ad-related signals only with the corresponding ad consents. Without that consent, Analytics receives only limited signals without an analytics identifier stored on your device. Crash reports and performance data are sent based on our legitimate interest, independently of the dialog; you may object to them (section 1).</p>
 
 <h2>5. Consent and tracking choices</h2>
 <ul>
@@ -91,14 +92,15 @@
   <tr><td>Local workout, test, journal data and settings</td><td>Providing the workout service you requested</td><td>Stored only on your device and not processed by us; device storage strictly necessary for the service</td></tr>
   <tr><td>Storing/accessing information on your device for ads, personalized ads</td><td>Ad delivery and personalization</td><td>Your consent (Art. 6(1)(a) GDPR, ePrivacy rules), collected via UMP; on iOS also ATT</td></tr>
   <tr><td>Ad delivery, measurement and fraud prevention where permitted without consent</td><td>Funding the free App, security</td><td>Legitimate interest (Art. 6(1)(f) GDPR), within the limits of your consent choices</td></tr>
-  <tr><td>Usage analytics (Android)</td><td>Understanding usage, improving the App</td><td>EEA, UK, Switzerland: your consent to device storage (Art. 6(1)(a) GDPR, ePrivacy rules), via the consent dialog; elsewhere legitimate interest (Art. 6(1)(f) GDPR)</td></tr>
-  <tr><td>Crash reports (Android)</td><td>Finding and fixing errors, App stability</td><td>Legitimate interest (Art. 6(1)(f) GDPR); you may object at any time</td></tr>
+  <tr><td>Usage analytics</td><td>Understanding usage, improving the App</td><td>EEA, UK, Switzerland: your consent to device storage (Art. 6(1)(a) GDPR, ePrivacy rules), via the consent dialog; elsewhere legitimate interest (Art. 6(1)(f) GDPR)</td></tr>
+  <tr><td>Crash reports</td><td>Finding and fixing errors, App stability</td><td>Legitimate interest (Art. 6(1)(f) GDPR); you may object at any time</td></tr>
+  <tr><td>Performance data</td><td>Finding and fixing slowness (start time, rendering), App quality</td><td>Legitimate interest (Art. 6(1)(f) GDPR); you may object at any time</td></tr>
   <tr><td>Support and feedback emails</td><td>Answering your request</td><td>Steps at your request / legitimate interest (Art. 6(1)(b), (f) GDPR)</td></tr>
 </table></div>
 
 <h2>8. Recipients (processors and independent providers)</h2>
 <ul>
-  <li><strong>Google (Firebase: Google Analytics for Firebase, Crashlytics)</strong> — analytics and crash reports, as our processor. <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
+  <li><strong>Google (Firebase: Google Analytics for Firebase, Crashlytics, Performance Monitoring)</strong> — analytics, crash reports and performance data, as our processor. <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a></li>
   <li><strong>Google AdMob and, where applicable, ad partners displayed in the consent dialog</strong> — ad delivery; Google acts partly as an independent controller under its own terms.</li>
   <li><strong>Google Play</strong> (Android) — in-app update check, under its own privacy policy.</li>
 </ul>
@@ -108,7 +110,8 @@
 <ul>
   <li><strong>Local data:</strong> until you delete it, clear the App's data or uninstall the App.</li>
   <li><strong>Analytics data:</strong> retained by Google according to the data-retention setting of our Google Analytics property and Google's own retention policies; aggregated reports may be kept longer.</li>
-  <li><strong>Crash reports:</strong> retained by Google according to Firebase Crashlytics' retention rules (<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>).</li>
+  <li><strong>Crash reports:</strong> Firebase Crashlytics keeps crash stack traces and associated identifiers for 90 days (<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>).</li>
+  <li><strong>Performance data:</strong> Firebase Performance Monitoring keeps IP-associated events for 30 days and installation-associated and de-identified performance data for 60 days (<a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>).</li>
   <li><strong>Advertising data:</strong> retained by Google under Google's retention policies (<a href="https://policies.google.com/technologies/retention">policies.google.com/technologies/retention</a>).</li>
   <li><strong>Support emails:</strong> as long as needed to handle your request, then deleted unless we must keep them by law.</li>
 </ul>
